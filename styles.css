@@ -387,25 +387,21 @@ h1, h2, h3 {
 
 .home-stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
 .home-stat {
+  min-width: 0;
   border-left: 2px solid var(--terminal-green);
   padding: 8px 10px;
   background: rgba(255, 255, 255, 0.025);
 }
 
 .home-stat strong {
-  display: block;
-  color: var(--dd-green);
+  font-size: 2rem;
+  color: var(--terminal-green);
   font-family: 'Orbitron', sans-serif;
-
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
-
-  line-height: 1;
-  overflow: hidden;
 }
 
 .home-stat span {
