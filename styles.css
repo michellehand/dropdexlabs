@@ -759,6 +759,20 @@ h1, h2, h3 {
 .metric-tension span { color: var(--dd-green); }
 .metric-brightness span { color: var(--laser-cyan); }
 
+.spectrogram-wrap {
+  margin: 12px 0;
+  border: 1px solid rgba(0, 255, 102, 0.22);
+  background: rgba(0, 0, 0, 0.42);
+  overflow: hidden;
+}
+
+.spectrogram-wrap img {
+  display: block;
+  width: 100%;
+  height: 88px;
+  object-fit: cover;
+}
+
 .footer {
   border-top: 1px solid var(--line);
   padding: 34px clamp(18px, 5vw, 72px);
