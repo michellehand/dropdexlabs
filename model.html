@@ -1,4 +1,14 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DropDex Model</title><link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" /><link rel="stylesheet" href="styles.css"></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropDex Model</title>
+  <link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
   <header class="site-header">
     <a class="logo-lockup" href="index.html" aria-label="DropDex home">
       <img class="logo-image" src="assets/logos/dropdex-logo-lasers.png" alt="DropDex laser logo" />
@@ -12,4 +22,129 @@
     </nav>
   </header>
 
-  <main><section class="page-hero"><div class="kicker">Scoring System</div><h1>Model</h1><p class="hero-copy">DropDex scores drops by turning audio characteristics into comparable metrics, then combining them into a ranking system.</p></section><section class="page-content"><div class="grid"><article class="panel"><h3>1. Detect</h3><p>Identify drop sections and define the analysis window.</p></article><article class="panel"><h3>2. Measure</h3><p>Calculate features tied to loudness, spectral energy, build-up, and impact.</p></article><article class="panel"><h3>3. Rank</h3><p>Normalize the results and assign DropDex rankings and card stats.</p></article></div></section></main><footer class="footer"><div><strong>DROPDEX</strong> // Model</div><div>No hype. Just data.</div></footer></body></html>
+  <main>
+    <section class="page-hero">
+      <div class="kicker">Model Notes // Edition 001</div>
+      <h1>Scoring Model</h1>
+      <p class="hero-copy">
+        DropDex converts audio evidence into fixed card scores, relative rankings, drop classes,
+        rarity tiers, and achievement badges. The model does not decide whether a song is good.
+        It records how a drop behaves.
+      </p>
+    </section>
+
+    <section class="page-content">
+      <div class="section-head">
+        <div class="kicker">Model Structure</div>
+        <h2>From waveform to archive rank.</h2>
+        <p>
+          Each drop moves through three layers: raw audio analysis, 0–100 fixed card scores,
+          and edition-specific rankings. Scores are stable against fixed caps; ranks are relative
+          to the current card pool.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="panel">
+          <h3>1. Measure</h3>
+          <p>Analyze build, predrop, and postdrop windows for energy, frequency balance, brightness, transients, texture, width, sustain, and musicality.</p>
+        </article>
+        <article class="panel">
+          <h3>2. Score</h3>
+          <p>Convert raw features into fixed 0–100 scores such as Weight, Shock, Build, Production, Style, Musicality, Battle, and DropDex.</p>
+        </article>
+        <article class="panel">
+          <h3>3. Classify</h3>
+          <p>Rank drops inside the edition, assign drop classes, calculate rarity, and award badges for top-percentile traits.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="kicker">Scoring Philosophy</div>
+        <h2>Fixed scores. Relative ranks.</h2>
+        <p>
+          DropDex uses fixed scoring caps instead of dataset-relative min/max scaling. A score of 100
+          means the drop reaches or exceeds the fixed cap for that metric. Adding new songs can change
+          ranks, but it does not automatically change the underlying score.
+        </p>
+      </div>
+
+      <div class="metric-list">
+        <div class="metric"><strong>Fixed Score</strong><p>Scores are scaled to a 0–100 range using predefined caps.</p></div>
+        <div class="metric"><strong>Global Rank</strong><p>Ranks are recalculated within the current Edition 001 card pool.</p></div>
+        <div class="metric"><strong>Card Pool</strong><p>The first edition keeps up to three drops per song to increase variety.</p></div>
+        <div class="metric"><strong>Archive Logic</strong><p>Rarity and badges belong to the frozen edition, not the entire future archive.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="kicker">Composite Scores</div>
+        <h2>The main model layers.</h2>
+      </div>
+
+      <div class="grid">
+        <article class="panel">
+          <h3>Power</h3>
+          <p>Average of Weight, Shock, Brightness, and Aggression. Measures raw drop force.</p>
+        </article>
+        <article class="panel">
+          <h3>Build</h3>
+          <p>Combines Tension and Charge-Up. Measures anticipation, setup, and pre-impact movement.</p>
+        </article>
+        <article class="panel">
+          <h3>Production</h3>
+          <p>Combines width, attack, density, texture, sustain, and flow. Measures sound design execution.</p>
+        </article>
+        <article class="panel">
+          <h3>Style</h3>
+          <p>Rewards a strong identity while accounting for overall style breadth across groove, nasty, melt, technical, cinematic, wonk, mass, and musicality traits.</p>
+        </article>
+        <article class="panel">
+          <h3>Battle Score</h3>
+          <p>Weighted toward Power, with Build, Production, and Style included. This is the combat-style card score.</p>
+        </article>
+        <article class="panel">
+          <h3>DropDex Score</h3>
+          <p>Equal-weight archive score across Power, Build, Production, Style, and Musicality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="kicker">Edition System</div>
+        <h2>Ranks freeze inside an edition.</h2>
+        <p>
+          Edition 001 is treated as a scored card pool. The model can evolve later, but cards from a frozen
+          edition keep their edition rank, rarity, and badge assignments.
+        </p>
+      </div>
+
+      <div class="cta-strip">
+        <strong>Archive principle: the archive expands, editions are preserved.</strong>
+        <a class="button" href="archive.html">View Archive</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div class="kicker">Boundaries</div>
+        <h2>What the model does not claim.</h2>
+        <p>
+          DropDex does not measure taste, nostalgia, cultural importance, live crowd reaction, or whether a
+          song is personally meaningful. It measures audio behavior inside a selected drop window. The archive
+          is evidence, not final authority.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>DROPDEX</strong> // Document. Analyze. Archive.</div>
+    <div>The Statistical Archive of Bass Drops. The search continues.</div>
+  </footer>
+</body>
+</html>
