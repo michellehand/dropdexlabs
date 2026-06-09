@@ -760,16 +760,15 @@ h1, h2, h3 {
 .metric-brightness span { color: var(--laser-cyan); }
 
 .spectrogram-wrap {
-  margin: 12px 0;
-  border: 1px solid rgba(0, 255, 102, 0.22);
-  background: rgba(0, 0, 0, 0.42);
+  margin: 10px 0;
   overflow: hidden;
+  border: 1px solid rgba(0,255,102,0.15);
 }
 
 .spectrogram-wrap img {
   display: block;
   width: 100%;
-  height: 88px;
+  height: 48px;
   object-fit: cover;
 }
 
