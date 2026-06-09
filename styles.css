@@ -907,7 +907,11 @@ h1, h2, h3 {
   object-fit: cover;
   border: 1px solid rgba(0, 255, 102, 0.22);
 }
-
+.asset-error {
+  color: var(--laser-pink);
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
 .drop-all-fields {
   margin-top: 36px;
 }

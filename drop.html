@@ -62,9 +62,12 @@
     };
 
     const formatAssetPath = value => {
-      const text = formatText(value);
-      if (text === "--") return "";
-      return text.replaceAll("\\/", "/");
+    const text = formatText(value);
+    if (text === "--") return "";
+
+    return encodeURI(
+        text.replaceAll("\\/", "/")
+    );
     };
 
     const formatFieldName = key => {
@@ -147,6 +150,7 @@
 
           const artworkPath = formatAssetPath(drop.artwork_path);
           const spectrogramPath = formatAssetPath(drop.spectrogram_path);
+          console.log("Artwork path:", artworkPath);
 
           document.title = `${artist} - ${track} | DropDex`;
 
@@ -173,15 +177,16 @@
                 </div>
 
                 ${artworkPath ? `
-                  <div class="artwork-wrap">
+                <div class="artwork-wrap">
                     <div class="spectrogram-label">Artwork</div>
                     <img
-                      src="${artworkPath}"
-                      alt="${artist} - ${track} artwork"
-                      loading="lazy"
+                    src="${artworkPath}"
+                    alt="${artist} - ${track} artwork"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('beforeend', '<p class=&quot;asset-error&quot;>Artwork failed to load.</p>')"
                     >
-                  </div>
-                ` : ""}
+                </div>
+                ` : ""} 
 
                 ${spectrogramPath ? `
                   <div class="spectrogram-wrap detail-spectrogram">
