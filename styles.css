@@ -373,6 +373,44 @@ h1, h2, h3 {
   box-shadow: 0 0 20px rgba(0, 229, 255, 0.22);
 }
 
+.home-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.home-stat {
+  border: 1px solid rgba(0, 255, 102, 0.22);
+  background:
+    linear-gradient(135deg, rgba(0, 255, 102, 0.08), transparent 40%),
+    rgba(12, 12, 16, 0.82);
+  padding: 22px;
+}
+
+.home-stat strong {
+  display: block;
+  color: var(--dd-green);
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.home-stat span {
+  display: block;
+  margin-top: 8px;
+  color: var(--laser-cyan);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .home-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .scan-panel {
   border: 1px solid var(--terminal-dim);
   background: linear-gradient(180deg, rgba(0,229,255,0.12), rgba(17,17,22,0.88));

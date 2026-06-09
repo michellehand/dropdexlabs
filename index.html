@@ -52,6 +52,35 @@
           The question is simple. Why do certain drops hit harder than others?
           The answer is still being documented.
         </p>
+        <section class="section archive-stats-section">
+          <div class="section-head">
+            <div class="kicker">Archive Status</div>
+            <h2>Edition 001 is live.</h2>
+          </div>
+
+          <div id="home-archive-stats" class="home-stats-grid">
+            <div class="home-stat"><strong>--</strong><span>Drops Analyzed</span></div>
+            <div class="home-stat"><strong>--</strong><span>Card Pool Entries</span></div>
+            <div class="home-stat"><strong>--</strong><span>Artists</span></div>
+            <div class="home-stat"><strong>001</strong><span>Edition</span></div>
+          </div>
+        </section>
+
+        <script>
+          fetch("data/archive.json")
+            .then(response => response.json())
+            .then(data => {
+              const drops = data.length;
+              const artists = new Set(data.map(d => d.artist).filter(Boolean)).size;
+
+              document.getElementById("home-archive-stats").innerHTML = `
+                <div class="home-stat"><strong>${drops}</strong><span>Drops Analyzed</span></div>
+                <div class="home-stat"><strong>${drops}</strong><span>Card Pool Entries</span></div>
+                <div class="home-stat"><strong>${artists}</strong><span>Artists</span></div>
+                <div class="home-stat"><strong>001</strong><span>Edition</span></div>
+              `;
+            });
+        </script>
         <div class="button-row">
           <a class="button primary" href="archive.html">Enter Archive</a>
           <a class="button" href="model.html">Review Model</a>
