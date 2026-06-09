@@ -406,12 +406,46 @@ h1 span { color: var(--dd-green); text-shadow: 0 0 20px rgba(0, 255, 102, 0.28);
 
 .archive-controls input,
 .archive-controls select {
-  background: #050505;
-  color: #e6e6e6;
+  background: rgba(17, 17, 22, 0.94);
+  color: var(--dd-light);
   border: 1px solid rgba(0, 255, 102, 0.35);
-  border-radius: 10px;
-  padding: 0.8rem;
-  font-family: inherit;
+  border-radius: 16px;
+  padding: 0.95rem 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03), 0 0 22px rgba(0, 255, 102, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.archive-controls input {
+  min-width: 0;
+}
+
+.archive-controls input::placeholder {
+  color: rgba(230, 230, 230, 0.55);
+}
+
+.archive-controls select {
+  appearance: none;
+  background-image: linear-gradient(135deg, rgba(0, 255, 102, 0.12) 25%, transparent 25%, transparent 50%, rgba(0, 255, 102, 0.12) 50%, rgba(0, 255, 102, 0.12) 75%, transparent 75%, transparent);
+  background-size: 10px 10px;
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  padding-right: 2.4rem;
+}
+
+.archive-controls input:hover,
+.archive-controls select:hover,
+.archive-controls input:focus,
+.archive-controls select:focus {
+  border-color: var(--laser-cyan);
+  box-shadow: 0 0 0 1px rgba(138, 40, 226, 0.16), 0 0 28px rgba(0, 255, 102, 0.18);
+}
+
+.archive-controls input:focus,
+.archive-controls select:focus {
+  outline: none;
+  transform: translateY(-1px);
 }
 
 .archive-count {
