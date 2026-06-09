@@ -323,6 +323,24 @@ h1 span { color: var(--dd-green); text-shadow: 0 0 20px rgba(0, 255, 102, 0.28);
 
 .archive-meta p {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.archive-meta .meta-label {
+  color: var(--laser-cyan);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.92;
+}
+
+.archive-meta strong {
+  color: var(--dd-light);
+  font-weight: 700;
 }
 
 .metric-mini-grid {
@@ -333,22 +351,42 @@ h1 span { color: var(--dd-green); text-shadow: 0 0 20px rgba(0, 255, 102, 0.28);
 }
 
 .metric-mini-grid div {
-  border: 1px solid rgba(0, 255, 102, 0.25);
-  background: rgba(0, 255, 102, 0.04);
-  padding: 0.65rem;
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  min-height: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.45rem;
 }
 
 .metric-mini-grid span {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.7;
+  letter-spacing: 0.12em;
+  opacity: 0.85;
 }
 
 .metric-mini-grid strong {
   display: block;
-  margin-top: 0.25rem;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  line-height: 1.1;
+  color: var(--dd-light);
+}
+
+.metric-power span { color: var(--laser-cyan); }
+.metric-build span { color: var(--laser-purple); }
+.metric-production span { color: var(--laser-pink); }
+.metric-musicality span { color: var(--laser-yellow); }
+.metric-weight span { color: var(--green); }
+.metric-shock span { color: var(--laser-orange); }
+.metric-aggression span { color: var(--terminal-green); }
+.metric-tension span { color: var(--dd-green); }
+.metric-brightness span { color: var(--laser-cyan); }
+
+.metric-mini-grid div strong::before {
+  content: "";
 }

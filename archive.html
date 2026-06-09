@@ -74,7 +74,7 @@
         const rarity = drop.rarity ?? "Unclassified";
         const badges = drop.badges ?? "";
 
-        const dropdexScore = Number(drop.dropdex_score);
+        const dropdexScore = Number(drop.dropdex_score_abs);
         const battleScore = Number(drop.battle_score_abs);
         const power = Number(drop.power_score_abs);
         const build = Number(drop.build_score_abs);
@@ -104,30 +104,30 @@
           <p><strong>${track}</strong> — Drop ${dropNo}</p>
 
           <div class="archive-meta">
-            <p><strong>DropDex Score:</strong> ${formatScore(dropdexScore)}</p>
-            <p><strong>Battle Rank:</strong> #${battleRank}</p>
-            <p><strong>Battle Score:</strong> ${formatScore(battleScore)}</p>
-            <p><strong>Badges:</strong> ${formatBadge(badges)}</p>
+            <p><span class="meta-label">DropDex Score:</span> <strong>${formatScore(dropdexScore)}</strong></p>
+            <p><span class="meta-label">Battle Rank:</span> <strong>#${battleRank}</strong></p>
+            <p><span class="meta-label">Battle Score:</span> <strong>${formatScore(battleScore)}</strong></p>
+            <p><span class="meta-label">Badges:</span> <strong>${formatBadge(badges)}</strong></p>
           </div>
 
           <div class="archive-meta">
-            <p><strong>Class:</strong> ${dropClass}${secondaryClass ? " / " + secondaryClass : ""}</p>
-            <p><strong>Rarity:</strong> ${rarity}</p>
+            <p><span class="meta-label">Class:</span> <strong>${dropClass}${secondaryClass ? " / " + secondaryClass : ""}</strong></p>
+            <p><span class="meta-label">Rarity:</span> <strong>${rarity}</strong></p>
           </div>
 
           <div class="metric-mini-grid">
-            <div><span>Power</span><strong>${formatScore(power)}</strong></div>
-            <div><span>Build</span><strong>${formatScore(build)}</strong></div>
-            <div><span>Production</span><strong>${formatScore(production)}</strong></div>
-            <div><span>Musicality</span><strong>${formatScore(musicality)}</strong></div>
+            <div class="metric-block metric-power"><span>Power</span><strong>${formatScore(power)}</strong></div>
+            <div class="metric-block metric-build"><span>Build</span><strong>${formatScore(build)}</strong></div>
+            <div class="metric-block metric-production"><span>Production</span><strong>${formatScore(production)}</strong></div>
+            <div class="metric-block metric-musicality"><span>Musicality</span><strong>${formatScore(musicality)}</strong></div>
           </div>
 
           <div class="metric-mini-grid">
-            <div><span>Weight</span><strong>${formatScore(weight)}</strong></div>
-            <div><span>Shock</span><strong>${formatScore(shock)}</strong></div>
-            <div><span>Aggression</span><strong>${formatScore(aggression)}</strong></div>
-            <div><span>Tension</span><strong>${formatScore(tension)}</strong></div>
-            <div><span>Brightness</span><strong>${formatScore(brightness)}</strong></div>
+            <div class="metric-block metric-weight"><span>Weight</span><strong>${formatScore(weight)}</strong></div>
+            <div class="metric-block metric-shock"><span>Shock</span><strong>${formatScore(shock)}</strong></div>
+            <div class="metric-block metric-aggression"><span>Aggression</span><strong>${formatScore(aggression)}</strong></div>
+            <div class="metric-block metric-tension"><span>Tension</span><strong>${formatScore(tension)}</strong></div>
+            <div class="metric-block metric-brightness"><span>Brightness</span><strong>${formatScore(brightness)}</strong></div>
           </div>
         `;
 
