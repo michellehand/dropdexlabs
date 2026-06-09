@@ -401,8 +401,11 @@ h1, h2, h3 {
   display: block;
   color: var(--dd-green);
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.45rem;
+
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+
   line-height: 1;
+  overflow: hidden;
 }
 
 .home-stat span {
