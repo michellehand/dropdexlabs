@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropDex Drop Record</title>
+  <link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo-lockup" href="index.html" aria-label="DropDex home">
+      <img class="logo-image" src="assets/logos/dropdex-logo-lasers.png" alt="DropDex laser logo" />
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Lab</a>
+      <a href="archive.html">Archive</a>
+      <a href="model.html">Model</a>
+      <a href="metrics.html">Metrics</a>
+      <a href="shop.html">Specimens</a>
+    </nav>
+  </header>
+
+  <main id="drop-detail">
+    <section class="page-hero">
+      <div class="kicker">Loading DropDex Record...</div>
+      <h1>Initializing</h1>
+      <p class="hero-copy">Searching the archive.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>DROPDEX</strong> // Document. Analyze. Archive.</div>
+    <div>The Statistical Archive of Bass Drops. The search continues.</div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const dropId = params.get("id");
+    const detail = document.getElementById("drop-detail");
+
+    const formatScore = value => {
+      const num = Number(value);
+      return Number.isFinite(num) ? num.toFixed(1) : "--";
+    };
+
+    const formatRank = value => {
+      const num = Number(value);
+      return Number.isFinite(num) ? `#${num}` : "#--";
+    };
+
+    const formatText = value => {
+      if (value === null || value === undefined) return "--";
+      const text = String(value).trim();
+      return text.length ? text : "--";
+    };
+
+    const formatBadge = value => {
+      const text = formatText(value);
+      return text === "--" ? "None" : text;
+    };
+
+    const formatSpectrogramPath = value => {
+      const text = formatText(value);
+      if (text === "--") return "";
+      return text.replaceAll("\\/", "/");
+    };
+
+    if (!dropId) {
+      detail.innerHTML = `
+        <section class="page-hero">
+          <div class="kicker">Archive Error</div>
+          <h1>Drop Not Found</h1>
+          <p class="hero-copy">No DropDex ID was provided.</p>
+          <div class="button-row">
+            <a class="button primary" href="archive.html">Return to Archive</a>
+          </div>
+        </section>
+      `;
+    } else {
+      fetch("data/archive.json")
+        .then(response => {
+          if (!response.ok) throw new Error("Archive data not found");
+          return response.json();
+        })
+        .then(data => {
+          const drop = data.find(d => String(d.dropdex_id) === dropId);
+
+          if (!drop) {
+            detail.innerHTML = `
+              <section class="page-hero">
+                <div class="kicker">Archive Error</div>
+                <h1>Drop Not Found</h1>
+                <p class="hero-copy">No archive record exists for ${dropId}.</p>
+                <div class="button-row">
+                  <a class="button primary" href="archive.html">Return to Archive</a>
+                </div>
+              </section>
+            `;
+            return;
+          }
+
+          const artist = formatText(drop.artist);
+          const track = formatText(drop.track);
+          const dropNo = formatText(drop.drop_no);
+          const releaseYear = formatText(drop.release_year);
+          const rarity = formatText(drop.rarity);
+          const dropClass = formatText(drop.drop_class);
+          const secondaryClass = formatText(drop.secondary_class);
+          const classLine = secondaryClass !== "--" ? `${dropClass} / ${secondaryClass}` : dropClass;
+          const badges = formatBadge(drop.badges);
+          const spectrogramPath = formatSpectrogramPath(drop.spectrogram_path);
+
+          document.title = `${artist} - ${track} | DropDex`;
+
+          detail.innerHTML = `
+            <section class="page-hero drop-detail-hero">
+              <div class="kicker">${rarity} // ${drop.dropdex_id}</div>
+              <h1>${formatRank(drop.dropdex_rank_global)} ${artist}</h1>
+              <p class="hero-copy">${track} // Drop ${dropNo} // ${releaseYear}</p>
+            </section>
+
+            <section class="page-content drop-detail-shell">
+              <article class="archive-card drop-detail-card">
+                <div class="card-topline">
+                  <span>${rarity}</span>
+                  <span>${drop.dropdex_id}</span>
+                </div>
+
+                <div class="card-rank-row">
+                  <div class="global-rank">${formatRank(drop.dropdex_rank_global)}</div>
+                  <div>
+                    <h3>${artist}</h3>
+                    <p>${track} <span>// Drop ${dropNo} // ${releaseYear}</span></p>
+                  </div>
+                </div>
+
+                ${spectrogramPath ? `
+                  <div class="spectrogram-wrap detail-spectrogram">
+                    <div class="spectrogram-label">Audio Fingerprint</div>
+                    <img
+                      src="${spectrogramPath}"
+                      alt="${artist} - ${track} spectrogram"
+                      loading="lazy"
+                    >
+                  </div>
+                ` : ""}
+
+                <div class="archive-stat-list">
+                  <div><span>DropDex</span><strong>${formatScore(drop.dropdex_score_abs)}</strong></div>
+                  <div><span>Battle Rank</span><strong>${formatRank(drop.battle_rank)}</strong></div>
+                  <div><span>Battle Score</span><strong>${formatScore(drop.battle_score_abs)}</strong></div>
+                  <div><span>Class</span><strong>${classLine}</strong></div>
+                  <div><span>Badges</span><strong>${badges}</strong></div>
+                </div>
+
+                <div class="metric-strip core-strip">
+                  <div class="metric-power"><span>Power</span><strong>${formatScore(drop.power_score_abs)}</strong></div>
+                  <div class="metric-build"><span>Build</span><strong>${formatScore(drop.build_score_abs)}</strong></div>
+                  <div class="metric-production"><span>Production</span><strong>${formatScore(drop.production_score_abs)}</strong></div>
+                  <div class="metric-musicality"><span>Musicality</span><strong>${formatScore(drop.musicality_score_abs)}</strong></div>
+                </div>
+
+                <div class="metric-strip trait-strip">
+                  <div class="metric-weight"><span>Weight</span><strong>${formatScore(drop.weight_score_abs)}</strong></div>
+                  <div class="metric-shock"><span>Shock</span><strong>${formatScore(drop.shock_score_abs)}</strong></div>
+                  <div class="metric-aggression"><span>Aggression</span><strong>${formatScore(drop.aggression_score_abs)}</strong></div>
+                  <div class="metric-tension"><span>Tension</span><strong>${formatScore(drop.tension_score_abs)}</strong></div>
+                  <div class="metric-brightness"><span>Brightness</span><strong>${formatScore(drop.brightness_score_abs)}</strong></div>
+                </div>
+              </article>
+
+              <div class="button-row">
+                <a class="button" href="archive.html">Back to Archive</a>
+              </div>
+            </section>
+          `;
+        })
+        .catch(error => {
+          detail.innerHTML = `
+            <section class="page-hero">
+              <div class="kicker">Archive Offline</div>
+              <h1>Record Unavailable</h1>
+              <p class="hero-copy">The DropDex archive could not be loaded.</p>
+              <div class="button-row">
+                <a class="button primary" href="archive.html">Return to Archive</a>
+              </div>
+            </section>
+          `;
+          console.error(error);
+        });
+    }
+  </script>
+</body>
+</html>
