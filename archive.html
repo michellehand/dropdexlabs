@@ -1,1 +1,104 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DropDex Archive</title><link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" /><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="logo-lockup" href="index.html"><div class="logo-mark">DD</div><div class="logo-text"><span>Drop</span>Dex</div></a><nav class="nav"><a href="index.html">Home</a><a class="active" href="archive.html">Archive</a><a href="model.html">Model</a><a href="metrics.html">Metrics</a><a href="shop.html">Shop</a></nav></header><main><section class="page-hero"><div class="kicker">Database</div><h1>Archive</h1><p class="hero-copy">The future home of the DropDex database: searchable rankings, artist pages, track pages, card IDs, and metric filters.</p></section><section class="page-content"><h2>Coming Soon</h2><p>For now, this page is a static placeholder. Later, this can connect to your database/API and display real card rows.</p><table class="placeholder-table"><thead><tr><th>Rank</th><th>Artist</th><th>Track</th><th>Power</th><th>Class</th></tr></thead><tbody><tr><td>#--</td><td>Artist Name</td><td>Track Title</td><td>--</td><td>Coming Soon</td></tr><tr><td>#--</td><td>Artist Name</td><td>Track Title</td><td>--</td><td>Coming Soon</td></tr></tbody></table></section></main><footer class="footer"><div><strong>DROPDEX</strong> // Archive</div><div>Rankings in development.</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropDex Archive</title>
+  <link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo-lockup" href="index.html">
+      <div class="logo-mark">DD</div>
+      <div class="logo-text"><span>Drop</span>Dex</div>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Lab</a>
+      <a class="active" href="archive.html">Archive</a>
+      <a href="model.html">Model</a>
+      <a href="metrics.html">Metrics</a>
+      <a href="shop.html">Specimens</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="kicker">Archive Database // Edition 001</div>
+      <h1>Drop Archive</h1>
+      <p class="hero-copy">
+        The DropDex archive is a growing record of measured bass drops:
+        ranked, classified, scored, and preserved as audio evidence.
+      </p>
+    </section>
+
+    <section class="page-content">
+      <div class="section-head">
+        <div class="kicker">Live Archive Feed</div>
+        <h2>Edition 001 Card Pool</h2>
+        <p>
+          These entries are loaded from the frozen Edition 001 archive export.
+        </p>
+      </div>
+
+      <div id="archive-grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>DROPDEX</strong> // Document. Analyze. Archive.</div>
+    <div>The Statistical Archive of Bass Drops. The search continues.</div>
+  </footer>
+
+  <script>
+    fetch("data/archive.json")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Archive data not found");
+        }
+        return response.json();
+      })
+      .then(data => {
+        const grid = document.getElementById("archive-grid");
+
+        data.forEach(drop => {
+          const rank = drop.dropdex_rank_global ?? "--";
+          const artist = drop.artist ?? "Unknown Artist";
+          const track = drop.track ?? "Unknown Track";
+          const dropNo = drop.drop_no ?? "--";
+          const power = Number(drop.power_score_abs);
+          const rarity = drop.rarity ?? "Unclassified";
+          const dropClass = drop.drop_class ?? "Unknown Class";
+
+          const card = document.createElement("article");
+          card.className = "panel archive-card";
+
+          card.innerHTML = `
+            <div class="kicker">Archive Entry</div>
+            <h3>#${rank} // ${artist}</h3>
+            <p><strong>${track}</strong> — Drop ${dropNo}</p>
+            <p>Power Score: ${Number.isFinite(power) ? power.toFixed(1) : "--"}</p>
+            <p>Class: ${dropClass}</p>
+            <p>Rarity: ${rarity}</p>
+          `;
+
+          grid.appendChild(card);
+        });
+      })
+      .catch(error => {
+        const grid = document.getElementById("archive-grid");
+
+        grid.innerHTML = `
+          <article class="panel">
+            <h3>Archive Offline</h3>
+            <p>The archive data could not be loaded. Confirm that <code>data/archive.json</code> exists and has been pushed to GitHub.</p>
+          </article>
+        `;
+
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
