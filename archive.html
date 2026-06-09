@@ -76,15 +76,6 @@
     const archiveCount = document.getElementById("archive-count");
     const grid = document.getElementById("archive-grid");
 
-    ${drop.spectrogram_path ? `
-    <div class="spectrogram-wrap">
-      <img src="${drop.spectrogram_path}"
-          alt="${artist} spectrogram"
-          loading="lazy">
-    </div>
-    ` : ""}
-    <p><strong>${track}</strong> — Drop ${dropNo}</p>
-
     const formatScore = value => {
       const num = Number(value);
       return Number.isFinite(num) ? num.toFixed(1) : "--";
@@ -157,6 +148,7 @@
         const artist = formatText(drop.artist);
         const track = formatText(drop.track);
         const dropNo = formatText(drop.drop_no);
+        const releaseYear = formatText(drop.release_year);
         const dropdexId = formatText(drop.dropdex_id);
         const dropClass = formatText(drop.drop_class);
         const secondaryClass = formatText(drop.secondary_class);
@@ -168,35 +160,52 @@
         card.className = "archive-card";
 
         card.innerHTML = `
-          <div class="card-topline"><span>${rarity}</span><span>${dropdexId}</span></div>
-          <div class="card-rank-row">
-            <div class="global-rank">#${rank}</div>
-            <div><h3>${artist}</h3><p>${track} <span>// Drop ${dropNo}</span></p></div>
-          </div>
+        <div class="card-topline">
+          <span>${rarity}</span>
+          <span>${dropdexId}</span>
+        </div>
 
-          <div class="archive-stat-list">
-            <div><span>DropDex</span><strong>${formatScore(drop.dropdex_score_abs)}</strong></div>
-            <div><span>Battle Rank</span><strong>${formatRank(battleRank)}</strong></div>
-            <div><span>Battle Score</span><strong>${formatScore(drop.battle_score_abs)}</strong></div>
-            <div><span>Class</span><strong>${classLine}</strong></div>
-            <div><span>Badges</span><strong>${badges}</strong></div>
+        <div class="card-rank-row">
+          <div class="global-rank">#${rank}</div>
+          <div>
+            <h3>${artist}</h3>
+            <p>${track} <span>// Drop ${dropNo} // ${releaseYear}</span></p>
           </div>
+        </div>
 
-          <div class="metric-strip core-strip">
-            <div class="metric-power"><span>Power</span><strong>${formatScore(drop.power_score_abs)}</strong></div>
-            <div class="metric-build"><span>Build</span><strong>${formatScore(drop.build_score_abs)}</strong></div>
-            <div class="metric-production"><span>Production</span><strong>${formatScore(drop.production_score_abs)}</strong></div>
-            <div class="metric-musicality"><span>Musicality</span><strong>${formatScore(drop.musicality_score_abs)}</strong></div>
+        ${drop.spectrogram_path ? `
+          <div class="spectrogram-wrap">
+            <img
+              src="${drop.spectrogram_path}"
+              alt="${artist} - ${track} spectrogram"
+              loading="lazy"
+            >
           </div>
+        ` : ""}
 
-          <div class="metric-strip trait-strip">
-            <div class="metric-weight"><span>Weight</span><strong>${formatScore(drop.weight_score_abs)}</strong></div>
-            <div class="metric-shock"><span>Shock</span><strong>${formatScore(drop.shock_score_abs)}</strong></div>
-            <div class="metric-aggression"><span>Aggression</span><strong>${formatScore(drop.aggression_score_abs)}</strong></div>
-            <div class="metric-tension"><span>Tension</span><strong>${formatScore(drop.tension_score_abs)}</strong></div>
-            <div class="metric-brightness"><span>Brightness</span><strong>${formatScore(drop.brightness_score_abs)}</strong></div>
-          </div>
-        `;
+        <div class="archive-stat-list">
+          <div><span>DropDex</span><strong>${formatScore(drop.dropdex_score_abs)}</strong></div>
+          <div><span>Battle Rank</span><strong>${formatRank(battleRank)}</strong></div>
+          <div><span>Battle Score</span><strong>${formatScore(drop.battle_score_abs)}</strong></div>
+          <div><span>Class</span><strong>${classLine}</strong></div>
+          <div><span>Badges</span><strong>${badges}</strong></div>
+        </div>
+
+        <div class="metric-strip core-strip">
+          <div class="metric-power"><span>Power</span><strong>${formatScore(drop.power_score_abs)}</strong></div>
+          <div class="metric-build"><span>Build</span><strong>${formatScore(drop.build_score_abs)}</strong></div>
+          <div class="metric-production"><span>Production</span><strong>${formatScore(drop.production_score_abs)}</strong></div>
+          <div class="metric-musicality"><span>Musicality</span><strong>${formatScore(drop.musicality_score_abs)}</strong></div>
+        </div>
+
+        <div class="metric-strip trait-strip">
+          <div class="metric-weight"><span>Weight</span><strong>${formatScore(drop.weight_score_abs)}</strong></div>
+          <div class="metric-shock"><span>Shock</span><strong>${formatScore(drop.shock_score_abs)}</strong></div>
+          <div class="metric-aggression"><span>Aggression</span><strong>${formatScore(drop.aggression_score_abs)}</strong></div>
+          <div class="metric-tension"><span>Tension</span><strong>${formatScore(drop.tension_score_abs)}</strong></div>
+          <div class="metric-brightness"><span>Brightness</span><strong>${formatScore(drop.brightness_score_abs)}</strong></div>
+        </div>
+      `;
 
         grid.appendChild(card);
       });
