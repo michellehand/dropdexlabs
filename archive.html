@@ -41,6 +41,35 @@
         </p>
       </div>
 
+      <div class="archive-controls">
+        <input id="archive-search" type="search" placeholder="Search artist or track..." />
+
+        <select id="rarity-filter">
+          <option value="">All Rarities</option>
+        </select>
+
+        <select id="class-filter">
+          <option value="">All Classes</option>
+        </select>
+
+        <select id="sort-select">
+          <option value="dropdex_rank_global">Global Rank</option>
+          <option value="battle_rank">Battle Rank</option>
+          <option value="dropdex_score_abs">DropDex Score</option>
+          <option value="battle_score_abs">Battle Score</option>
+          <option value="power_score_abs">Power</option>
+          <option value="build_score_abs">Build</option>
+          <option value="production_score_abs">Production</option>
+          <option value="musicality_score_abs">Musicality</option>
+          <option value="weight_score_abs">Weight</option>
+          <option value="shock_score_abs">Shock</option>
+          <option value="aggression_score_abs">Aggression</option>
+          <option value="tension_score_abs">Tension</option>
+          <option value="brightness_score_abs">Brightness</option>
+        </select>
+      </div>
+
+      <div id="archive-count" class="archive-count"></div>
       <div id="archive-grid" class="grid"></div>
     </section>
   </main>
@@ -50,18 +79,87 @@
     <div>The Statistical Archive of Bass Drops. The search continues.</div>
   </footer>
 
-<script>
-  fetch("data/archive.json")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Archive data not found");
-      }
-      return response.json();
-    })
-    .then(data => {
-      const grid = document.getElementById("archive-grid");
+  <script>
+    let archiveData = [];
 
-      data.forEach(drop => {
+    const searchInput = document.getElementById("archive-search");
+    const rarityFilter = document.getElementById("rarity-filter");
+    const classFilter = document.getElementById("class-filter");
+    const sortSelect = document.getElementById("sort-select");
+    const archiveCount = document.getElementById("archive-count");
+    const grid = document.getElementById("archive-grid");
+
+    const formatScore = value => {
+      const num = Number(value);
+      return Number.isFinite(num) ? num.toFixed(1) : "--";
+    };
+
+    const formatBadge = value =>
+      value && String(value).trim() !== "" ? value : "None";
+
+    function populateFilters(data) {
+      const rarities = [...new Set(data.map(d => d.rarity).filter(Boolean))].sort();
+      const classes = [...new Set(data.map(d => d.drop_class).filter(Boolean))].sort();
+
+      rarities.forEach(rarity => {
+        const option = document.createElement("option");
+        option.value = rarity;
+        option.textContent = rarity;
+        rarityFilter.appendChild(option);
+      });
+
+      classes.forEach(dropClass => {
+        const option = document.createElement("option");
+        option.value = dropClass;
+        option.textContent = dropClass;
+        classFilter.appendChild(option);
+      });
+    }
+
+    function renderArchive() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const selectedRarity = rarityFilter.value;
+      const selectedClass = classFilter.value;
+      const sortField = sortSelect.value;
+
+      let filtered = archiveData.filter(drop => {
+        const artist = (drop.artist ?? "").toLowerCase();
+        const track = (drop.track ?? "").toLowerCase();
+        const dropdexId = (drop.dropdex_id ?? "").toLowerCase();
+
+        const matchesSearch =
+          artist.includes(searchTerm) ||
+          track.includes(searchTerm) ||
+          dropdexId.includes(searchTerm);
+
+        const matchesRarity =
+          !selectedRarity || drop.rarity === selectedRarity;
+
+        const matchesClass =
+          !selectedClass || drop.drop_class === selectedClass;
+
+        return matchesSearch && matchesRarity && matchesClass;
+      });
+
+      filtered.sort((a, b) => {
+        const aVal = Number(a[sortField]);
+        const bVal = Number(b[sortField]);
+
+        if (!Number.isFinite(aVal)) return 1;
+        if (!Number.isFinite(bVal)) return -1;
+
+        if (sortField.includes("rank")) {
+          return aVal - bVal;
+        }
+
+        return bVal - aVal;
+      });
+
+      archiveCount.textContent = `${filtered.length} archive entries displayed`;
+
+      grid.innerHTML = "";
+
+      filtered.forEach(drop => {
         const rank = drop.dropdex_rank_global ?? "--";
         const battleRank = drop.battle_rank ?? "--";
 
@@ -74,25 +172,6 @@
         const rarity = drop.rarity ?? "Unclassified";
         const badges = drop.badges ?? "";
 
-        const dropdexScore = Number(drop.dropdex_score_abs);
-        const battleScore = Number(drop.battle_score_abs);
-        const power = Number(drop.power_score_abs);
-        const build = Number(drop.build_score_abs);
-        const production = Number(drop.production_score_abs);
-        const musicality = Number(drop.musicality_score_abs);
-
-        const weight = Number(drop.weight_score_abs);
-        const shock = Number(drop.shock_score_abs);
-        const aggression = Number(drop.aggression_score_abs);
-        const tension = Number(drop.tension_score_abs);
-        const brightness = Number(drop.brightness_score_abs);
-
-        const formatScore = value =>
-          Number.isFinite(value) ? value.toFixed(1) : "--";
-
-        const formatBadge = value =>
-          value && value.trim() !== "" ? value : "None";
-
         const card = document.createElement("article");
         card.className = "panel archive-card";
 
@@ -104,9 +183,9 @@
           <p><strong>${track}</strong> — Drop ${dropNo}</p>
 
           <div class="archive-meta">
-            <p><span class="meta-label">DropDex Score:</span> <strong>${formatScore(dropdexScore)}</strong></p>
+            <p><span class="meta-label">DropDex Score:</span> <strong>${formatScore(drop.dropdex_score_abs)}</strong></p>
             <p><span class="meta-label">Battle Rank:</span> <strong>#${battleRank}</strong></p>
-            <p><span class="meta-label">Battle Score:</span> <strong>${formatScore(battleScore)}</strong></p>
+            <p><span class="meta-label">Battle Score:</span> <strong>${formatScore(drop.battle_score_abs)}</strong></p>
             <p><span class="meta-label">Badges:</span> <strong>${formatBadge(badges)}</strong></p>
           </div>
 
@@ -116,33 +195,50 @@
           </div>
 
           <div class="metric-mini-grid">
-            <div class="metric-block metric-power"><span>Power</span><strong>${formatScore(power)}</strong></div>
-            <div class="metric-block metric-build"><span>Build</span><strong>${formatScore(build)}</strong></div>
-            <div class="metric-block metric-production"><span>Production</span><strong>${formatScore(production)}</strong></div>
-            <div class="metric-block metric-musicality"><span>Musicality</span><strong>${formatScore(musicality)}</strong></div>
-            <div class="metric-block metric-weight"><span>Weight</span><strong>${formatScore(weight)}</strong></div>
-            <div class="metric-block metric-shock"><span>Shock</span><strong>${formatScore(shock)}</strong></div>
-            <div class="metric-block metric-aggression"><span>Aggression</span><strong>${formatScore(aggression)}</strong></div>
-            <div class="metric-block metric-tension"><span>Tension</span><strong>${formatScore(tension)}</strong></div>
-            <div class="metric-block metric-brightness"><span>Brightness</span><strong>${formatScore(brightness)}</strong></div>
+            <div class="metric-block metric-power"><span>Power</span><strong>${formatScore(drop.power_score_abs)}</strong></div>
+            <div class="metric-block metric-build"><span>Build</span><strong>${formatScore(drop.build_score_abs)}</strong></div>
+            <div class="metric-block metric-production"><span>Production</span><strong>${formatScore(drop.production_score_abs)}</strong></div>
+            <div class="metric-block metric-musicality"><span>Musicality</span><strong>${formatScore(drop.musicality_score_abs)}</strong></div>
+            <div class="metric-block metric-weight"><span>Weight</span><strong>${formatScore(drop.weight_score_abs)}</strong></div>
+            <div class="metric-block metric-shock"><span>Shock</span><strong>${formatScore(drop.shock_score_abs)}</strong></div>
+            <div class="metric-block metric-aggression"><span>Aggression</span><strong>${formatScore(drop.aggression_score_abs)}</strong></div>
+            <div class="metric-block metric-tension"><span>Tension</span><strong>${formatScore(drop.tension_score_abs)}</strong></div>
+            <div class="metric-block metric-brightness"><span>Brightness</span><strong>${formatScore(drop.brightness_score_abs)}</strong></div>
           </div>
         `;
 
         grid.appendChild(card);
       });
-    })
-    .catch(error => {
-      const grid = document.getElementById("archive-grid");
+    }
 
-      grid.innerHTML = `
-        <article class="panel">
-          <h3>Archive Offline</h3>
-          <p>The archive data could not be loaded. Confirm that <code>data/archive.json</code> exists and has been pushed to GitHub.</p>
-        </article>
-      `;
+    fetch("data/archive.json")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Archive data not found");
+        }
+        return response.json();
+      })
+      .then(data => {
+        archiveData = data;
 
-      console.error(error);
-    });
-</script>
+        populateFilters(archiveData);
+        renderArchive();
+
+        searchInput.addEventListener("input", renderArchive);
+        rarityFilter.addEventListener("change", renderArchive);
+        classFilter.addEventListener("change", renderArchive);
+        sortSelect.addEventListener("change", renderArchive);
+      })
+      .catch(error => {
+        grid.innerHTML = `
+          <article class="panel">
+            <h3>Archive Offline</h3>
+            <p>The archive data could not be loaded. Confirm that <code>data/archive.json</code> exists and has been pushed to GitHub.</p>
+          </article>
+        `;
+
+        console.error(error);
+      });
+  </script>
 </body>
 </html>
