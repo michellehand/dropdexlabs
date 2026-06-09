@@ -61,10 +61,44 @@
       return text === "--" ? "None" : text;
     };
 
-    const formatSpectrogramPath = value => {
+    const formatAssetPath = value => {
       const text = formatText(value);
       if (text === "--") return "";
       return text.replaceAll("\\/", "/");
+    };
+
+    const formatFieldName = key => {
+      return key
+        .replaceAll("_", " ")
+        .replace(/\b\w/g, letter => letter.toUpperCase());
+    };
+
+    const formatFieldValue = value => {
+      if (value === null || value === undefined || value === "") return "--";
+
+      const num = Number(value);
+      if (Number.isFinite(num) && String(value).trim() !== "") {
+        return Number.isInteger(num) ? String(num) : num.toFixed(4);
+      }
+
+      return String(value);
+    };
+
+    const buildAllFieldsTable = drop => {
+      const hiddenFields = new Set([
+        "artwork_path",
+        "spectrogram_path"
+      ]);
+
+      return Object.entries(drop)
+        .filter(([key]) => !hiddenFields.has(key))
+        .map(([key, value]) => `
+          <tr>
+            <th>${formatFieldName(key)}</th>
+            <td>${formatFieldValue(value)}</td>
+          </tr>
+        `)
+        .join("");
     };
 
     if (!dropId) {
@@ -110,7 +144,9 @@
           const secondaryClass = formatText(drop.secondary_class);
           const classLine = secondaryClass !== "--" ? `${dropClass} / ${secondaryClass}` : dropClass;
           const badges = formatBadge(drop.badges);
-          const spectrogramPath = formatSpectrogramPath(drop.spectrogram_path);
+
+          const artworkPath = formatAssetPath(drop.artwork_path);
+          const spectrogramPath = formatAssetPath(drop.spectrogram_path);
 
           document.title = `${artist} - ${track} | DropDex`;
 
@@ -135,6 +171,17 @@
                     <p>${track} <span>// Drop ${dropNo} // ${releaseYear}</span></p>
                   </div>
                 </div>
+
+                ${artworkPath ? `
+                  <div class="artwork-wrap">
+                    <div class="spectrogram-label">Artwork</div>
+                    <img
+                      src="${artworkPath}"
+                      alt="${artist} - ${track} artwork"
+                      loading="lazy"
+                    >
+                  </div>
+                ` : ""}
 
                 ${spectrogramPath ? `
                   <div class="spectrogram-wrap detail-spectrogram">
@@ -170,6 +217,22 @@
                   <div class="metric-brightness"><span>Brightness</span><strong>${formatScore(drop.brightness_score_abs)}</strong></div>
                 </div>
               </article>
+
+              <section class="drop-all-fields">
+                <div class="section-head">
+                  <div class="kicker">Full Archive Record</div>
+                  <h2>All Available Metrics</h2>
+                  <p>Every field currently published in the DropDex archive JSON for this drop.</p>
+                </div>
+
+                <div class="all-fields-table-wrap">
+                  <table class="all-fields-table">
+                    <tbody>
+                      ${buildAllFieldsTable(drop)}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
 
               <div class="button-row">
                 <a class="button" href="archive.html">Back to Archive</a>
