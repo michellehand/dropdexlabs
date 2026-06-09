@@ -761,8 +761,16 @@ h1, h2, h3 {
 
 .spectrogram-wrap {
   margin: 10px 0;
-  overflow: hidden;
-  border: 1px solid rgba(0,255,102,0.15);
+}
+
+.spectrogram-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terminal-green);
+  margin-bottom: 4px;
+  opacity: 0.8;
 }
 
 .spectrogram-wrap img {
@@ -770,6 +778,7 @@ h1, h2, h3 {
   width: 100%;
   height: 48px;
   object-fit: cover;
+  border: 1px solid rgba(0,255,102,0.12);
 }
 
 .footer {

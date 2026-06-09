@@ -197,7 +197,16 @@
           </div>
         </div>
 
-        ${spectrogramHTML}
+        ${spectrogramPath ? `
+        <div class="spectrogram-wrap">
+          <div class="spectrogram-label">SPECTROGRAM</div>
+          <img
+            src="${spectrogramPath}"
+            alt="${artist} - ${track} spectrogram"
+            loading="lazy"
+          >
+        </div>
+      ` : ""}
 
         <div class="archive-stat-list">
           <div><span>DropDex</span><strong>${formatScore(drop.dropdex_score_abs)}</strong></div>
