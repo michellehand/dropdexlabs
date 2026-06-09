@@ -182,7 +182,10 @@
 
       const card = document.createElement("article");
       card.className = "archive-card";
-
+      card.addEventListener("click", () => {
+        window.location.href = `drop.html?id=${drop.dropdex_id}`;
+      });
+     
       card.innerHTML = `
         <div class="card-topline">
           <span>${rarity}</span>
@@ -229,6 +232,9 @@
           <div class="metric-aggression"><span>Aggression</span><strong>${formatScore(drop.aggression_score_abs)}</strong></div>
           <div class="metric-tension"><span>Tension</span><strong>${formatScore(drop.tension_score_abs)}</strong></div>
           <div class="metric-brightness"><span>Brightness</span><strong>${formatScore(drop.brightness_score_abs)}</strong></div>
+        </div>
+         <div class="card-footer-link">
+          View Full Record →
         </div>
       `;
 

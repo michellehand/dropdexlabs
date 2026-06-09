@@ -759,6 +759,17 @@ h1, h2, h3 {
 .metric-tension span { color: var(--dd-green); }
 .metric-brightness span { color: var(--laser-cyan); }
 
+.archive-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.archive-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--laser-cyan);
+  box-shadow: 0 0 20px rgba(0,229,255,0.15);
+}
+
 .spectrogram-wrap {
   margin: 14px 0 16px;
 }
