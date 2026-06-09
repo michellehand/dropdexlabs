@@ -36,6 +36,9 @@
 
   <div class="header-banner">
     <img src="assets/photos/dropdex-rave-lab.png" alt="DropDex Rave Lab" class="header-image" />
+    <a class="header-archive-button" href="archive.html">
+      Investigate the Archive
+    </a>
   </div>
 
   <main>
@@ -56,6 +59,7 @@
         <div class="kicker">Archive Status</div>
         <div id="home-archive-stats" class="home-stats-grid">
           <div class="home-stat"><strong>--</strong><span>Drops Analyzed</span></div>
+          <div class="home-stat"><strong>--</strong><span>Tracks</span></div>
           <div class="home-stat"><strong>--</strong><span>Artists</span></div>
           <div class="home-stat"><strong>001</strong><span>Edition</span></div>
         </div>
@@ -188,6 +192,7 @@
 
       stats.innerHTML = `
         <div class="home-stat"><strong>${drops}</strong><span>Drops Analyzed</span></div>
+        <div class="home-stat"><strong>${tracks}</strong><span>Artists</span></div>
         <div class="home-stat"><strong>${artists}</strong><span>Artists</span></div>
         <div class="home-stat"><strong>001</strong><span>Edition</span></div>
       `;
