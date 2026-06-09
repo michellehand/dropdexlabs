@@ -368,11 +368,12 @@ h1 span { color: var(--dd-green); text-shadow: 0 0 20px rgba(0, 255, 102, 0.28);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   opacity: 0.85;
+  margin-bottom: 0.45rem;
 }
 
 .metric-mini-grid strong {
   display: block;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   line-height: 1.1;
   color: var(--dd-light);
 }
