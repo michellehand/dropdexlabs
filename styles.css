@@ -770,6 +770,14 @@ h1, h2, h3 {
   box-shadow: 0 0 20px rgba(0,229,255,0.15);
 }
 
+.card-footer-link {
+  margin-top: 12px;
+  color: var(--laser-cyan);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .spectrogram-wrap {
   margin: 14px 0 16px;
 }
