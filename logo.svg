@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
-  <title>DropDex logo</title>
-  <desc>Green and white DropDex mark</desc>
-  <rect width="160" height="160" rx="28" ry="28" fill="#000"/>
-  <rect x="14" y="14" width="132" height="132" rx="24" ry="24" fill="none" stroke="#00ff66" stroke-width="12"/>
-  <path d="M42 42h28l20 38 20-38h28" fill="none" stroke="#00ff66" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M42 118h28l20-38 20 38h28" fill="none" stroke="#00ff66" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
