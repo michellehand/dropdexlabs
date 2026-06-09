@@ -760,13 +760,13 @@ h1, h2, h3 {
 .metric-brightness span { color: var(--laser-cyan); }
 
 .spectrogram-wrap {
-  margin: 12px 0 14px;
+  margin: 14px 0 16px;
 }
 
 .spectrogram-label {
   display: block;
   width: 100%;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   color: var(--terminal-green);
   font-family: 'Rajdhani', sans-serif;
   font-size: 0.7rem;
@@ -780,7 +780,7 @@ h1, h2, h3 {
 .spectrogram-wrap img {
   display: block;
   width: 100%;
-  height: 58px;
+  height: 130px;
   object-fit: cover;
   border: 1px solid rgba(0, 255, 102, 0.22);
 }
