@@ -185,6 +185,11 @@
     .then(response => response.json())
     .then(data => {
       const drops = data.length;
+      const tracks = new Set(
+        data
+          .map(d => `${d.artist ?? ""} - ${d.track ?? ""}`)
+          .filter(Boolean)
+      ).size;
       const artists = new Set(data.map(d => d.artist).filter(Boolean)).size;
       const stats = document.getElementById("home-archive-stats");
 
@@ -192,7 +197,7 @@
 
       stats.innerHTML = `
         <div class="home-stat"><strong>${drops}</strong><span>Drops Analyzed</span></div>
-        <div class="home-stat"><strong>${tracks}</strong><span>Artists</span></div>
+        <div class="home-stat"><strong>${tracks}</strong><span>Tracks</span></div>
         <div class="home-stat"><strong>${artists}</strong><span>Artists</span></div>
         <div class="home-stat"><strong>001</strong><span>Edition</span></div>
       `;
