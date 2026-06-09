@@ -76,6 +76,15 @@
     const archiveCount = document.getElementById("archive-count");
     const grid = document.getElementById("archive-grid");
 
+    ${drop.spectrogram_path ? `
+    <div class="spectrogram-wrap">
+      <img src="${drop.spectrogram_path}"
+          alt="${artist} spectrogram"
+          loading="lazy">
+    </div>
+    ` : ""}
+    <p><strong>${track}</strong> — Drop ${dropNo}</p>
+
     const formatScore = value => {
       const num = Number(value);
       return Number.isFinite(num) ? num.toFixed(1) : "--";
