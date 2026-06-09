@@ -318,14 +318,14 @@ h1 span { color: var(--dd-green); text-shadow: 0 0 20px rgba(0, 255, 102, 0.28);
 .archive-meta {
   margin-top: 1rem;
   display: grid;
-  gap: 0.25rem;
+  gap: 0.1rem;
 }
 
 .archive-meta p {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.1rem;
   align-items: baseline;
   line-height: 1.15;
 }
@@ -342,7 +342,7 @@ h1 span { color: var(--dd-green); text-shadow: 0 0 20px rgba(0, 255, 102, 0.28);
 
 .archive-meta strong {
   color: var(--dd-light);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .metric-mini-grid {
