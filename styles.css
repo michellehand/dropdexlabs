@@ -1,23 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap');
 
+/* =========================================================
+   DROPDEX SITE STYLES
+   =========================================================
+
+   Suggested hierarchy:
+   01. Design tokens
+   02. Base reset + global page background
+   03. Typography + shared text utilities
+   04. Header + navigation
+   05. Shared layout sections
+   06. Buttons + CTAs
+   07. Homepage / Lab
+   08. Archive page
+   09. Archive cards
+   10. Drop detail pages
+   11. Tables / full record views
+   12. Footer
+   13. Responsive rules
+
+   Notes:
+   - Keep broad/shared styles near the top.
+   - Keep page-specific styles grouped by page.
+   - Put responsive overrides at the bottom so they are easy to find.
+   - Avoid duplicate selectors unless the later block is intentionally overriding.
+========================================================= */
+
+
+/* =========================================================
+   01. DESIGN TOKENS
+   Colors, fonts, and reusable site variables.
+========================================================= */
+
 :root {
   --dd-green: #00FF66;
   --dd-black: #000000;
   --dd-dark: #1A1A1A;
   --dd-light: #E6E6E6;
+
   --terminal-green: #39FF14;
   --terminal-dim: #22CC55;
+
   --laser-purple: #8A2BE2;
   --laser-pink: #FF2095;
   --laser-cyan: #00E5FF;
   --laser-yellow: #F7FF00;
   --laser-orange: #FF6A00;
+
   --muted: rgba(230, 230, 230, 0.72);
   --line: rgba(230, 230, 230, 0.14);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+
+/* =========================================================
+   02. BASE RESET + GLOBAL BACKGROUND
+   Browser normalization and the DropDex dark grid atmosphere.
+========================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-height: 100vh;
@@ -44,7 +92,51 @@ body::before {
   mask-image: linear-gradient(to bottom, black 0%, transparent 78%);
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   03. TYPOGRAPHY + SHARED TEXT UTILITIES
+   Global heading behavior, kicker labels, and content copy.
+========================================================= */
+
+h1,
+h2,
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.kicker {
+  color: var(--dd-green);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.hero-copy {
+  margin-top: 18px;
+  max-width: 780px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+}
+
+.mobile-break {
+  display: none;
+}
+
+
+/* =========================================================
+   04. HEADER + NAVIGATION
+   Shared top navigation used across every page.
+========================================================= */
 
 .site-header {
   position: sticky;
@@ -60,79 +152,24 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--line);
 }
 
-.header-banner {
-  position: relative;
-  width: 100%;
+.logo-lockup {
   display: flex;
-  justify-content: center;
-  background: var(--dd-black);
-  overflow: hidden;
+  align-items: center;
 }
 
-.header-archive-button {
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  transform: translateX(-50%);
-
-  border: 1px solid var(--terminal-green);
-  background: rgba(0, 0, 0, 0.68);
-  color: var(--terminal-green);
-
-  padding: 14px 22px;
-
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-
-  box-shadow:
-    0 0 18px rgba(0, 255, 102, 0.25),
-    inset 0 0 14px rgba(0, 255, 102, 0.08);
-
-  transition:
-    transform 0.22s ease,
-    box-shadow 0.22s ease,
-    border-color 0.22s ease,
-    color 0.22s ease;
+.logo-image {
+  height: 92px;
+  width: auto;
+  max-width: 320px;
+  display: block;
 }
 
-.header-archive-button:hover {
-  transform: translateX(-50%) translateY(-3px);
-  color: var(--laser-cyan);
-  border-color: var(--laser-cyan);
-
-  box-shadow:
-    0 0 24px rgba(0, 229, 255, 0.45),
-    0 0 48px rgba(0, 255, 102, 0.18),
-    inset 0 0 18px rgba(0, 229, 255, 0.12);
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
 }
-
-.mobile-break {
-  display: none;
-}
-
-@media (max-width: 720px) {
-  .mobile-break {
-    display: block;
-  }
-}
-
-@media (max-width: 720px) {
-  .header-archive-button {
-    bottom: 8%;
-    padding: 11px 16px;
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-    white-space: nowrap;
-  }
-}
-
-.logo-lockup { display: flex; align-items: center; }
-.logo-image { height: 92px; width: auto; max-width: 320px; display: block; }
-
-.nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
 
 .nav a {
   border: 1px solid rgba(138, 43, 226, 0.45);
@@ -151,26 +188,22 @@ a { color: inherit; text-decoration: none; }
 .nav a.active {
   color: var(--laser-pink);
   border-color: var(--laser-cyan);
-  background: linear-gradient(135deg, rgba(138, 43, 226, 0.22), rgba(255, 32, 149, 0.14), rgba(0, 229, 255, 0.12));
+  background:
+    linear-gradient(
+      135deg,
+      rgba(138, 43, 226, 0.22),
+      rgba(255, 32, 149, 0.14),
+      rgba(0, 229, 255, 0.12)
+    );
   box-shadow: 0 0 18px rgba(0, 229, 255, 0.16);
   transform: translateY(-1px);
 }
 
-.kicker {
-  color: var(--dd-green);
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  margin-bottom: 12px;
-}
 
-h1, h2, h3 {
-  font-family: 'Orbitron', sans-serif;
-  line-height: 1.08;
-  text-transform: uppercase;
-}
+/* =========================================================
+   05. SHARED PAGE LAYOUT
+   Standard hero, content sections, panels, and grids.
+========================================================= */
 
 .page-hero {
   padding: 82px clamp(18px, 5vw, 72px) 44px;
@@ -180,92 +213,15 @@ h1, h2, h3 {
 .page-hero h1 {
   font-size: clamp(42px, 7vw, 92px);
   letter-spacing: 0.07em;
-  text-shadow: 0 0 22px rgba(0, 255, 102, 0.2), 0 0 42px rgba(138, 43, 226, 0.16);
+  text-shadow:
+    0 0 22px rgba(0, 255, 102, 0.2),
+    0 0 42px rgba(138, 43, 226, 0.16);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-.hero-copy {
-  margin-top: 18px;
-  max-width: 780px;
-  color: var(--muted);
-  font-size: clamp(1rem, 1.5vw, 1.16rem);
-}
-
-.page-content { padding: 48px clamp(18px, 5vw, 72px) 90px; }
-.section-head { max-width: 920px; margin-bottom: 28px; }
-.section-head h2 { font-size: clamp(28px, 4.6vw, 52px); margin-bottom: 12px; }
-.section-head p { color: var(--muted); max-width: 850px; }
-
-.header-banner {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: var(--dd-black);
-  overflow: hidden;
-}
-
-.header-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 100%;
-}
-
-.hero {
-  min-height: 78vh;
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
-  align-items: center;
-  gap: clamp(28px, 5vw, 72px);
-  padding: clamp(60px, 8vw, 120px) clamp(18px, 5vw, 72px);
-}
-
-.hero h1 {
-  font-size: clamp(48px, 9vw, 118px);
-  letter-spacing: 0.08em;
-  text-shadow: 0 0 28px rgba(0,255,102,0.2);
-}
-
-.hero h1 span {
-  color: var(--dd-green);
-}
-
-.hero-subhead {
-  margin-top: 18px;
-  max-width: 760px;
-  font-size: clamp(18px, 2vw, 26px);
-  color: var(--dd-light);
-}
-
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--laser-cyan);
-  padding: 13px 18px;
-  color: var(--laser-cyan);
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  background: rgba(26, 26, 26, 0.72);
-}
-
-.button.primary {
-  background: linear-gradient(135deg, rgba(138, 43, 226, 0.92), rgba(255, 32, 149, 0.92));
-  color: var(--dd-black);
-  box-shadow: 0 0 26px rgba(138, 43, 226, 0.25);
-}
-
-.button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.22);
+.page-content {
+  padding: 48px clamp(18px, 5vw, 72px) 90px;
 }
 
 .section {
@@ -281,6 +237,21 @@ h1, h2, h3 {
 .section p {
   color: var(--muted);
   max-width: 900px;
+}
+
+.section-head {
+  max-width: 920px;
+  margin-bottom: 28px;
+}
+
+.section-head h2 {
+  font-size: clamp(28px, 4.6vw, 52px);
+  margin-bottom: 12px;
+}
+
+.section-head p {
+  color: var(--muted);
+  max-width: 850px;
 }
 
 .grid {
@@ -306,40 +277,65 @@ h1, h2, h3 {
   color: var(--muted);
 }
 
-.metric-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
+
+/* =========================================================
+   06. BUTTONS + CTA STRIPS
+   Shared buttons and call-to-action strips.
+========================================================= */
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
+  margin-top: 32px;
 }
 
-.metric {
-  padding: 18px;
-  border-left: 3px solid var(--laser-purple);
-  background: rgba(138, 43, 226, 0.08);
-}
-
-.metric strong {
-  color: var(--dd-light);
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--laser-cyan);
+  padding: 13px 18px;
+  color: var(--laser-cyan);
   font-family: 'Rajdhani', sans-serif;
-  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  background: rgba(26, 26, 26, 0.72);
+  transition: 0.2s ease;
 }
 
-.metric p {
-  margin-top: 4px;
-  font-size: 14px;
+.button.primary {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(138, 43, 226, 0.92),
+      rgba(255, 32, 149, 0.92)
+    );
+  color: var(--dd-black);
+  box-shadow: 0 0 26px rgba(138, 43, 226, 0.25);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.22);
 }
 
 .cta-strip {
   margin-top: 34px;
-  border: 1px solid rgba(138, 43, 226, 0.26);
+  border: 1px solid rgba(138,43,226,0.26);
   padding: 22px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  background: linear-gradient(90deg, rgba(138,43,226,0.18), rgba(0,229,255,0.12));
+  background:
+    linear-gradient(
+      90deg,
+      rgba(138,43,226,0.18),
+      rgba(0,229,255,0.12)
+    );
 }
 
 .cta-strip strong {
@@ -348,27 +344,15 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
+/* =========================================================
+   07. HOMEPAGE / LAB
+   Homepage banner, hero split, archive status stats.
+========================================================= */
 
-  .metric-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* ======================================
-   INDEX PAGE STYLES (RESTORED)
-   These restore homepage components without changing archive-specific classes.
-====================================== */
-
+/* Top visual banner */
 .header-banner {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -383,6 +367,41 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
+.header-archive-button {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  border: 1px solid var(--terminal-green);
+  background: rgba(0, 0, 0, 0.68);
+  color: var(--terminal-green);
+  padding: 14px 22px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow:
+    0 0 18px rgba(0, 255, 102, 0.25),
+    inset 0 0 14px rgba(0, 255, 102, 0.08);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease;
+}
+
+.header-archive-button:hover {
+  transform: translateX(-50%) translateY(-3px);
+  color: var(--laser-cyan);
+  border-color: var(--laser-cyan);
+  box-shadow:
+    0 0 24px rgba(0, 229, 255, 0.45),
+    0 0 48px rgba(0, 255, 102, 0.18),
+    inset 0 0 18px rgba(0, 229, 255, 0.12);
+}
+
+/* Homepage hero */
 .hero {
   min-height: 78vh;
   display: grid;
@@ -410,44 +429,35 @@ h1, h2, h3 {
   color: var(--dd-light);
 }
 
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
+/* Optional split layout: hero text left, archive stats right */
+.hero-split {
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
 }
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--laser-cyan);
-  padding: 13px 18px;
-  color: var(--laser-cyan);
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  background: rgba(26,26,26,0.72);
+.hero-copy-block {
+  min-width: 0;
 }
 
-.button.primary {
-  background: linear-gradient(135deg, rgba(138,43,226,0.92), rgba(255,32,149,0.92));
-  color: var(--dd-black);
-  box-shadow: 0 0 26px rgba(138, 43, 226, 0.25);
-}
-
-.button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.22);
-}
-
+/* Homepage archive status block */
 .home-archive-stats-wrap {
   margin-top: 28px;
   max-width: 760px;
   border: 1px solid rgba(0, 255, 102, 0.18);
   background: rgba(0, 0, 0, 0.28);
   padding: 16px;
+}
+
+.hero-split .home-archive-stats-wrap {
+  margin-top: 0;
+  align-self: center;
+  max-width: none;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(0, 255, 102, 0.07), transparent 42%),
+    rgba(0, 0, 0, 0.32);
+  box-shadow:
+    0 0 24px rgba(0, 255, 102, 0.06),
+    inset 0 0 24px rgba(0, 0, 0, 0.35);
 }
 
 .home-archive-stats-wrap h2 {
@@ -460,6 +470,11 @@ h1, h2, h3 {
   gap: 12px;
 }
 
+.hero-split .home-stats-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
 .home-stat {
   min-width: 0;
   border-left: 2px solid var(--terminal-green);
@@ -467,10 +482,32 @@ h1, h2, h3 {
   background: rgba(255, 255, 255, 0.025);
 }
 
+.hero-split .home-stat {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
+  border-left: 2px solid var(--terminal-green);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.12);
+  background: transparent;
+}
+
+.hero-split .home-stat:last-child {
+  border-bottom: none;
+}
+
 .home-stat strong {
-  font-size: 2rem;
+  display: block;
   color: var(--terminal-green);
   font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.hero-split .home-stat strong {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  text-shadow: 0 0 18px rgba(0, 255, 102, 0.22);
 }
 
 .home-stat span {
@@ -484,15 +521,21 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
-  .home-stats-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.hero-split .home-stat span {
+  margin-top: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
 }
 
+/* Legacy / optional homepage scan-card elements */
 .scan-panel {
   border: 1px solid var(--terminal-dim);
-  background: linear-gradient(180deg, rgba(0,229,255,0.12), rgba(17,17,22,0.88));
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,229,255,0.12),
+      rgba(17,17,22,0.88)
+    );
   box-shadow: 0 0 32px rgba(0, 229, 255, 0.12);
   padding: 22px;
   position: relative;
@@ -585,43 +628,11 @@ h1, h2, h3 {
   box-shadow: 0 0 16px rgba(57, 255, 20, 0.32);
 }
 
-.section {
-  padding: clamp(58px, 8vw, 100px) clamp(18px, 5vw, 72px);
-  border-top: 1px solid var(--line);
-}
 
-.section h2 {
-  font-size: clamp(30px, 5vw, 56px);
-  margin-bottom: 14px;
-}
-
-.section p {
-  color: var(--muted);
-  max-width: 900px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 18px;
-}
-
-.panel {
-  border: 1px solid var(--line);
-  background: rgba(17,17,22,0.74);
-  padding: 24px;
-}
-
-.panel h3 {
-  color: var(--dd-green);
-  font-size: 19px;
-  margin-bottom: 12px;
-}
-
-.panel p {
-  font-size: 15px;
-  color: var(--muted);
-}
+/* =========================================================
+   08. RESEARCH / METRIC LISTS
+   Used on Model/Metrics/Research pages.
+========================================================= */
 
 .metric-list {
   display: grid;
@@ -647,29 +658,11 @@ h1, h2, h3 {
   font-size: 14px;
 }
 
-.cta-strip {
-  margin-top: 34px;
-  border: 1px solid rgba(138,43,226,0.26);
-  padding: 22px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  background: linear-gradient(90deg, rgba(138,43,226,0.18), rgba(0,229,255,0.12));
-}
 
-.cta-strip strong {
-  font-family: 'Orbitron', sans-serif;
-  color: var(--dd-green);
-  text-transform: uppercase;
-}
-
-@media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
-  .grid { grid-template-columns: 1fr; }
-  .metric-list { grid-template-columns: 1fr; }
-}
+/* =========================================================
+   09. ARCHIVE PAGE
+   Search filters, archive count, and archive grid.
+========================================================= */
 
 .archive-controls {
   display: grid;
@@ -682,7 +675,10 @@ h1, h2, h3 {
   box-shadow: inset 0 0 28px rgba(0, 255, 102, 0.035);
 }
 
-.archive-controls label { display: grid; gap: 6px; }
+.archive-controls label {
+  display: grid;
+  gap: 6px;
+}
 
 .archive-controls label span {
   color: var(--terminal-green);
@@ -707,13 +703,17 @@ h1, h2, h3 {
   transition: 0.2s ease;
 }
 
-.archive-controls input::placeholder { color: rgba(230, 230, 230, 0.45); }
+.archive-controls input::placeholder {
+  color: rgba(230, 230, 230, 0.45);
+}
 
 .archive-controls input:focus,
 .archive-controls select:focus {
   outline: none;
   border-color: var(--terminal-green);
-  box-shadow: 0 0 0 1px rgba(0, 255, 102, 0.18), 0 0 24px rgba(0, 255, 102, 0.12);
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 102, 0.18),
+    0 0 24px rgba(0, 255, 102, 0.12);
 }
 
 .archive-count {
@@ -731,16 +731,30 @@ h1, h2, h3 {
   gap: 18px;
 }
 
+
+/* =========================================================
+   10. ARCHIVE CARDS
+   Card styling used by archive.html and drop.html.
+========================================================= */
+
 .archive-card {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   border: 1px solid rgba(0, 255, 102, 0.22);
   background:
     linear-gradient(135deg, rgba(138, 43, 226, 0.14), transparent 34%),
     linear-gradient(315deg, rgba(0, 229, 255, 0.10), transparent 34%),
     rgba(12, 12, 16, 0.88);
   padding: 18px;
-  box-shadow: 0 0 22px rgba(0, 255, 102, 0.045), inset 0 0 24px rgba(0, 0, 0, 0.35);
+  box-shadow:
+    0 0 22px rgba(0,255,102,0.045),
+    inset 0 0 24px rgba(0,0,0,0.35);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 .archive-card::before {
@@ -748,8 +762,21 @@ h1, h2, h3 {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  border-top: 2px solid rgba(0, 255, 102, 0.35);
+  border-top: 2px solid rgba(0,255,102,0.35);
   opacity: 0.75;
+}
+
+.archive-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--laser-cyan);
+  box-shadow:
+    0 0 30px rgba(0,229,255,0.25),
+    0 0 60px rgba(0,229,255,0.10),
+    inset 0 0 24px rgba(0,0,0,0.35);
+}
+
+.archive-card:active {
+  transform: translateY(-4px);
 }
 
 .card-topline {
@@ -765,7 +792,10 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-.card-topline span:last-child { color: var(--laser-cyan); opacity: 0.85; }
+.card-topline span:last-child {
+  color: var(--laser-cyan);
+  opacity: 0.85;
+}
 
 .card-rank-row {
   display: grid;
@@ -797,7 +827,9 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-.card-rank-row p span { color: var(--laser-cyan); }
+.card-rank-row p span {
+  color: var(--laser-cyan);
+}
 
 .archive-stat-list {
   margin-top: 12px;
@@ -831,14 +863,35 @@ h1, h2, h3 {
   line-height: 1.05;
 }
 
+.card-footer-link {
+  margin-top: 14px;
+  color: var(--laser-cyan);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.archive-card:hover .card-footer-link {
+  color: var(--terminal-green);
+}
+
+/* Metric strips inside cards */
 .metric-strip {
   margin-top: 12px;
   display: grid;
   gap: 8px;
 }
 
-.core-strip { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.trait-strip { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.core-strip {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.trait-strip {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 
 .metric-strip div {
   min-width: 0;
@@ -866,6 +919,7 @@ h1, h2, h3 {
   line-height: 1;
 }
 
+/* Trait color coding */
 .metric-power span { color: var(--laser-cyan); }
 .metric-build span { color: var(--laser-purple); }
 .metric-production span { color: var(--laser-pink); }
@@ -876,93 +930,11 @@ h1, h2, h3 {
 .metric-tension span { color: var(--dd-green); }
 .metric-brightness span { color: var(--laser-cyan); }
 
-/* ======================================
-   ARCHIVE CARD INTERACTION
-   ====================================== */
 
-.archive-card {
-  position: relative;
-  overflow: hidden;
-
-  cursor: pointer;
-
-  border: 1px solid rgba(0, 255, 102, 0.22);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(138, 43, 226, 0.14),
-      transparent 34%
-    ),
-    linear-gradient(
-      315deg,
-      rgba(0, 229, 255, 0.10),
-      transparent 34%
-    ),
-    rgba(12, 12, 16, 0.88);
-
-  padding: 18px;
-
-  box-shadow:
-    0 0 22px rgba(0,255,102,0.045),
-    inset 0 0 24px rgba(0,0,0,0.35);
-
-  transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
-}
-
-.archive-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  border-top: 2px solid rgba(0,255,102,0.35);
-  opacity: 0.75;
-}
-
-.archive-card:hover {
-  transform: translateY(-8px);
-
-  border-color: var(--laser-cyan);
-
-  box-shadow:
-    0 0 30px rgba(0,229,255,0.25),
-    0 0 60px rgba(0,229,255,0.10),
-    inset 0 0 24px rgba(0,0,0,0.35);
-}
-
-.archive-card:active {
-  transform: translateY(-4px);
-}
-
-/* ======================================
-   CLICKABLE LINK FOOTER
-   ====================================== */
-
-.card-footer-link {
-  margin-top: 14px;
-
-  color: var(--laser-cyan);
-
-  font-family: 'Rajdhani', sans-serif;
-
-  font-size: 0.75rem;
-
-  font-weight: 700;
-
-  letter-spacing: 0.12em;
-
-  text-transform: uppercase;
-
-  transition: color 0.2s ease;
-}
-
-.archive-card:hover .card-footer-link {
-  color: var(--terminal-green);
-}
+/* =========================================================
+   11. SPECTROGRAMS + DROP DETAIL PAGES
+   Spectrogram strips, artwork blocks, and individual drop records.
+========================================================= */
 
 .spectrogram-wrap {
   margin: 14px 0 16px;
@@ -1008,12 +980,6 @@ h1, h2, h3 {
   height: 220px;
 }
 
-@media (max-width: 720px) {
-  .detail-spectrogram img {
-    height: 140px;
-  }
-}
-
 .artwork-wrap {
   margin: 18px 0;
 }
@@ -1025,11 +991,19 @@ h1, h2, h3 {
   object-fit: cover;
   border: 1px solid rgba(0, 255, 102, 0.22);
 }
+
 .asset-error {
   color: var(--laser-pink);
   font-size: 0.8rem;
   margin-top: 8px;
 }
+
+
+/* =========================================================
+   12. FULL RECORD TABLES
+   Used on individual drop pages for the full JSON field dump.
+========================================================= */
+
 .drop-all-fields {
   margin-top: 36px;
 }
@@ -1073,6 +1047,12 @@ h1, h2, h3 {
   border-bottom: none;
 }
 
+
+/* =========================================================
+   13. FOOTER
+   Shared footer across pages.
+========================================================= */
+
 .footer {
   border-top: 1px solid var(--line);
   padding: 34px clamp(18px, 5vw, 72px);
@@ -1088,17 +1068,105 @@ h1, h2, h3 {
   font-family: 'Orbitron', sans-serif;
 }
 
+
+/* =========================================================
+   14. RESPONSIVE RULES
+   Keep all mobile/tablet overrides together.
+========================================================= */
+
 @media (max-width: 1050px) {
-  .archive-grid { grid-template-columns: 1fr; }
-  .archive-controls { grid-template-columns: 1fr 1fr; }
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .hero-split {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-split .home-archive-stats-wrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-split .home-stats-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
-  .site-header { align-items: flex-start; flex-direction: column; }
-  .logo-image { height: 70px; }
-  .nav { justify-content: flex-start; }
-  .archive-controls { grid-template-columns: 1fr; }
-  .card-rank-row { grid-template-columns: 1fr; gap: 8px; }
-  .archive-stat-list div { grid-template-columns: 92px 1fr; }
-  .core-strip, .trait-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .logo-image {
+    height: 70px;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .header-archive-button {
+    bottom: 8%;
+    padding: 11px 16px;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .page-hero h1 {
+    font-size: 3.5rem;
+    line-height: 0.95;
+  }
+
+  .archive-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .card-rank-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .archive-stat-list div {
+    grid-template-columns: 92px 1fr;
+  }
+
+  .core-strip,
+  .trait-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .detail-spectrogram img {
+    height: 140px;
+  }
+
+  .hero-split .home-stat {
+    grid-template-columns: 96px 1fr;
+  }
 }
