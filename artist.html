@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropDex | Artist Profiles</title>
+  <link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo-lockup" href="index.html" aria-label="DropDex home">
+      <img class="logo-image" src="assets/logos/dropdex-logo-cropped.jpg" alt="DropDex logo" />
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Lab</a>
+      <a href="investigation.html">Investigation</a>
+      <a class="active" href="archive.html">Archive</a>
+      <a href="research.html">Research</a>
+      <a href="shop.html">Specimens</a>
+    </nav>
+  </header>
+    <main id="artist-detail">
+    <section class="page-hero">
+      <div class="kicker">Artist Archive</div>
+      <h1>Loading Artist</h1>
+      <p class="hero-copy">Searching the DropDex archive.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>DROPDEX</strong> // Document. Analyze. Archive.</div>
+    <div>The Statistical Archive of Bass Drops. The search continues.</div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const artistName = params.get("artist");
+    const detail = document.getElementById("artist-detail");
+
+    const formatScore = value => {
+      const num = Number(value);
+      return Number.isFinite(num) ? num.toFixed(1) : "--";
+    };
+
+    const formatRank = value => {
+      const num = Number(value);
+      return Number.isFinite(num) ? `#${num}` : "#--";
+    };
+
+    const formatText = value => {
+      if (value === null || value === undefined) return "--";
+      const text = String(value).trim();
+      return text.length ? text : "--";
+    };
+
+    const average = (rows, field) => {
+      const values = rows
+        .map(row => Number(row[field]))
+        .filter(value => Number.isFinite(value));
+
+      if (!values.length) return null;
+
+      return values.reduce((sum, value) => sum + value, 0) / values.length;
+    };
+
+    const findBestByRank = rows => {
+      return [...rows]
+        .filter(row => Number.isFinite(Number(row.dropdex_rank_global)))
+        .sort((a, b) => Number(a.dropdex_rank_global) - Number(b.dropdex_rank_global))[0];
+    };
+
+    const findBestByScore = (rows, field) => {
+      return [...rows]
+        .filter(row => Number.isFinite(Number(row[field])))
+        .sort((a, b) => Number(b[field]) - Number(a[field]))[0];
+    };
+
+    const getMostCommon = (rows, field) => {
+      const counts = {};
+
+      rows.forEach(row => {
+        const value = formatText(row[field]);
+        if (value === "--") return;
+        counts[value] = (counts[value] || 0) + 1;
+      });
+
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      return sorted.length ? sorted[0][0] : "--";
+    };
+
+    const renderDropCard = drop => {
+      const rank = drop.dropdex_rank_global ?? "--";
+      const battleRank = drop.battle_rank ?? "--";
+      const track = formatText(drop.track);
+      const dropNo = formatText(drop.drop_no);
+      const releaseYear = formatText(drop.release_year);
+      const dropdexId = formatText(drop.dropdex_id);
+      const dropClass = formatText(drop.drop_class);
+      const rarity = formatText(drop.rarity);
+
+      return `
+        <article class="archive-card" onclick="window.location.href='drop.html?id=${drop.dropdex_id}'">
+          <div class="card-topline">
+            <span>${rarity}</span>
+            <span>${dropdexId}</span>
+          </div>
+
+          <div class="card-rank-row">
+            <div class="global-rank">#${rank}</div>
+            <div>
+              <h3>${track}</h3>
+              <p>Drop ${dropNo} <span>// ${releaseYear}</span></p>
+            </div>
+          </div>
+
+          <div class="archive-stat-list">
+            <div><span>DropDex</span><strong>${formatScore(drop.dropdex_score_abs)}</strong></div>
+            <div><span>Battle Rank</span><strong>${formatRank(battleRank)}</strong></div>
+            <div><span>Class</span><strong>${dropClass}</strong></div>
+          </div>
+
+          <div class="metric-strip core-strip">
+            <div class="metric-power"><span>Power</span><strong>${formatScore(drop.power_score_abs)}</strong></div>
+            <div class="metric-build"><span>Build</span><strong>${formatScore(drop.build_score_abs)}</strong></div>
+            <div class="metric-production"><span>Production</span><strong>${formatScore(drop.production_score_abs)}</strong></div>
+            <div class="metric-musicality"><span>Musicality</span><strong>${formatScore(drop.musicality_score_abs)}</strong></div>
+          </div>
+
+          <div class="card-footer-link">View Drop Record →</div>
+        </article>
+      `;
+    };
+
+    if (!artistName) {
+      detail.innerHTML = `
+        <section class="page-hero">
+          <div class="kicker">Artist Archive Error</div>
+          <h1>Artist Not Found</h1>
+          <p class="hero-copy">No artist name was provided.</p>
+          <div class="button-row">
+            <a class="button primary" href="archive.html">Return to Archive</a>
+          </div>
+        </section>
+      `;
+    } else {
+      fetch("data/archive.json")
+        .then(response => {
+          if (!response.ok) throw new Error("Archive data not found");
+          return response.json();
+        })
+        .then(data => {
+          const decodedArtist = decodeURIComponent(artistName);
+
+          const artistDrops = data.filter(drop =>
+            String(drop.artist).trim().toLowerCase() === decodedArtist.trim().toLowerCase()
+          );
+
+          if (!artistDrops.length) {
+            detail.innerHTML = `
+              <section class="page-hero">
+                <div class="kicker">Artist Archive Error</div>
+                <h1>Artist Not Found</h1>
+                <p class="hero-copy">No archive records exist for ${decodedArtist}.</p>
+                <div class="button-row">
+                  <a class="button primary" href="archive.html">Return to Archive</a>
+                </div>
+              </section>
+            `;
+            return;
+          }
+
+          const displayArtist = formatText(artistDrops[0].artist);
+          const dropsAnalyzed = artistDrops.length;
+          const tracks = new Set(artistDrops.map(d => d.track).filter(Boolean)).size;
+
+          const bestDrop = findBestByRank(artistDrops);
+          const bestPower = findBestByScore(artistDrops, "power_score_abs");
+          const bestProduction = findBestByScore(artistDrops, "production_score_abs");
+          const bestBuild = findBestByScore(artistDrops, "build_score_abs");
+
+          const avgDropDex = average(artistDrops, "dropdex_score_abs");
+          const avgPower = average(artistDrops, "power_score_abs");
+          const avgBuild = average(artistDrops, "build_score_abs");
+          const avgProduction = average(artistDrops, "production_score_abs");
+          const avgMusicality = average(artistDrops, "musicality_score_abs");
+
+          const mostCommonClass = getMostCommon(artistDrops, "drop_class");
+          const mostCommonRarity = getMostCommon(artistDrops, "rarity");
+
+          const sortedDrops = [...artistDrops].sort((a, b) => {
+            const aRank = Number(a.dropdex_rank_global);
+            const bRank = Number(b.dropdex_rank_global);
+            if (!Number.isFinite(aRank)) return 1;
+            if (!Number.isFinite(bRank)) return -1;
+            return aRank - bRank;
+          });
+
+          document.title = `${displayArtist} | DropDex Artist Archive`;
+
+          detail.innerHTML = `
+            <section class="page-hero">
+              <div class="kicker">Artist Archive // DropDex Profile</div>
+              <h1>${displayArtist}</h1>
+              <p class="hero-copy">
+                ${dropsAnalyzed} drops analyzed across ${tracks} track${tracks === 1 ? "" : "s"}.
+                Highest ranked specimen: ${bestDrop ? `${bestDrop.track} (${formatRank(bestDrop.dropdex_rank_global)})` : "--"}.
+              </p>
+            </section>
+
+            <section class="page-content">
+              <div class="home-archive-stats-wrap">
+                <div class="kicker">Artist Fingerprint</div>
+
+                <div class="home-stats-grid">
+                  <div class="home-stat"><strong>${dropsAnalyzed}</strong><span>Drops</span></div>
+                  <div class="home-stat"><strong>${tracks}</strong><span>Tracks</span></div>
+                  <div class="home-stat"><strong>${formatScore(avgDropDex)}</strong><span>Avg DropDex</span></div>
+                  <div class="home-stat"><strong>${bestDrop ? formatRank(bestDrop.dropdex_rank_global) : "#--"}</strong><span>Best Rank</span></div>
+                </div>
+              </div>
+
+              <section class="section">
+                <div class="section-head">
+                  <div class="kicker">Profile Metrics</div>
+                  <h2>Measured behavior across the archive.</h2>
+                  <p>
+                    These values summarize how ${displayArtist}'s analyzed drops currently behave inside the Edition 001 dataset.
+                  </p>
+                </div>
+
+                <div class="metric-strip core-strip">
+                  <div class="metric-power"><span>Avg Power</span><strong>${formatScore(avgPower)}</strong></div>
+                  <div class="metric-build"><span>Avg Build</span><strong>${formatScore(avgBuild)}</strong></div>
+                  <div class="metric-production"><span>Avg Production</span><strong>${formatScore(avgProduction)}</strong></div>
+                  <div class="metric-musicality"><span>Avg Musicality</span><strong>${formatScore(avgMusicality)}</strong></div>
+                </div>
+
+                <div class="archive-stat-list" style="margin-top: 24px;">
+                  <div><span>Most Common Class</span><strong>${mostCommonClass}</strong></div>
+                  <div><span>Most Common Rarity</span><strong>${mostCommonRarity}</strong></div>
+                  <div><span>Highest Power</span><strong>${bestPower ? `${bestPower.track} // ${formatScore(bestPower.power_score_abs)}` : "--"}</strong></div>
+                  <div><span>Highest Production</span><strong>${bestProduction ? `${bestProduction.track} // ${formatScore(bestProduction.production_score_abs)}` : "--"}</strong></div>
+                  <div><span>Best Build</span><strong>${bestBuild ? `${bestBuild.track} // ${formatScore(bestBuild.build_score_abs)}` : "--"}</strong></div>
+                </div>
+              </section>
+
+              <section class="section">
+                <div class="section-head">
+                  <div class="kicker">Artist Specimens</div>
+                  <h2>Archived drops.</h2>
+                  <p>
+                    Every DropDex record currently linked to ${displayArtist}.
+                  </p>
+                </div>
+
+                <div class="archive-grid">
+                  ${sortedDrops.map(renderDropCard).join("")}
+                </div>
+              </section>
+
+              <div class="button-row">
+                <a class="button" href="archive.html">Back to Archive</a>
+                <a class="button primary" href="research.html">Review Research</a>
+              </div>
+            </section>
+          `;
+        })
+        .catch(error => {
+          detail.innerHTML = `
+            <section class="page-hero">
+              <div class="kicker">Archive Offline</div>
+              <h1>Artist Profile Unavailable</h1>
+              <p class="hero-copy">The DropDex archive could not be loaded.</p>
+              <div class="button-row">
+                <a class="button primary" href="archive.html">Return to Archive</a>
+              </div>
+            </section>
+          `;
+          console.error(error);
+        });
+    }
+  </script>
+</body>
+</html>

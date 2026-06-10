@@ -203,7 +203,11 @@
         <div class="card-rank-row">
           <div class="global-rank">#${rank}</div>
           <div>
-            <h3>${artist}</h3>
+            <h3>
+              <a href="artist.html?artist=${encodeURIComponent(artist)}">
+                ${artist}
+              </a>
+            </h3>
             <p>${track} <span>// Drop ${dropNo} // ${releaseYear}</span></p>
           </div>
         </div>
