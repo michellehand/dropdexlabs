@@ -199,6 +199,70 @@ h3 {
   transform: translateY(-1px);
 }
 
+/* =========================
+   Archive Navigation
+========================= */
+
+.archive-subnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+
+  width: fit-content;
+  margin: 0 auto 40px;
+
+  border: 1px solid rgba(0, 255, 100, 0.25);
+  background: rgba(0, 15, 10, 0.85);
+
+  box-shadow:
+    0 0 12px rgba(0,255,100,.15),
+    inset 0 0 20px rgba(0,255,100,.03);
+
+  overflow: hidden;
+}
+
+.archive-subnav a {
+  display: block;
+
+  padding: 14px 28px;
+
+  color: var(--text-muted);
+  text-decoration: none;
+
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .78rem;
+  font-weight: 700;
+
+  border-right: 1px solid rgba(0,255,100,.12);
+
+  transition: all .25s ease;
+}
+
+.archive-subnav a:last-child {
+  border-right: none;
+}
+
+.archive-subnav a:hover {
+  color: var(--accent);
+  background: rgba(0,255,100,.08);
+}
+
+.archive-subnav a.active {
+  color: #000;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0,255,100,.95),
+    rgba(0,210,80,.85)
+  );
+
+  text-shadow: none;
+
+  box-shadow:
+    0 0 20px rgba(0,255,100,.35);
+}
 
 /* =========================================================
    05. SHARED PAGE LAYOUT
