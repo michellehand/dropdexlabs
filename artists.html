@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXBHQZ4CBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-ZXBHQZ4CBF");
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DropDex | Artists</title>
+
+  <link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo-lockup" href="index.html" aria-label="DropDex home">
+      <img class="logo-image" src="assets/logos/dropdex-logo-cropped.jpg" alt="DropDex logo" />
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Lab</a>
+      <a href="investigation.html">Investigation</a>
+      <a class="active" href="archive.html">Archive</a>
+      <a href="research.html">Research</a>
+      <a href="shop.html">Specimens</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="archive-subnav">
+      <a href="archive.html">Drops</a>
+      <a class="active" href="artists.html">Artists</a>
+      <a href="rankings.html">Rankings</a>
+    </div>
+
+    <section class="page-hero">
+      <div class="kicker">Archive Directory</div>
+      <h1>Artists</h1>
+      <p class="hero-copy">
+        Browse all artists currently represented in Edition 001.
+      </p>
+    </section>
+
+    <section class="page-content">
+      <div id="artist-grid" class="archive-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>DROPDEX</strong> // Document. Analyze. Archive.</div>
+    <div>The Statistical Archive of Bass Drops. The search continues.</div>
+  </footer>
+
+  <script>
+    const artistGrid = document.getElementById("artist-grid");
+
+    const formatScore = value => {
+      const num = Number(value);
+      return Number.isFinite(num) ? num.toFixed(1) : "--";
+    };
+
+    const formatRank = value => {
+      const num = Number(value);
+      return Number.isFinite(num) ? `#${num}` : "#--";
+    };
+
+    fetch("data/archive.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Archive data not found");
+        return response.json();
+      })
+      .then(data => {
+        const artists = {};
+
+        data.forEach(drop => {
+          const artist = String(drop.artist ?? "").trim();
+          if (!artist) return;
+
+          if (!artists[artist]) {
+            artists[artist] = [];
+          }
+
+          artists[artist].push(drop);
+        });
+
+        const artistCards = Object.entries(artists)
+          .map(([artist, drops]) => {
+            const validScores = drops
+              .map(d => Number(d.dropdex_score_abs))
+              .filter(Number.isFinite);
+
+            const validRanks = drops
+              .map(d => Number(d.dropdex_rank_global))
+              .filter(Number.isFinite);
+
+            const avgScore = validScores.length
+              ? validScores.reduce((sum, value) => sum + value, 0) / validScores.length
+              : null;
+
+            const bestRank = validRanks.length
+              ? Math.min(...validRanks)
+              : null;
+
+            return {
+              artist,
+              dropCount: drops.length,
+              trackCount: new Set(drops.map(d => d.track).filter(Boolean)).size,
+              avgScore,
+              bestRank
+            };
+          })
+          .sort((a, b) => {
+            if (a.bestRank === null) return 1;
+            if (b.bestRank === null) return -1;
+            return a.bestRank - b.bestRank;
+          });
+
+        artistGrid.innerHTML = artistCards.map(card => `
+          <article
+            class="archive-card"
+            onclick="window.location.href='artist.html?artist=${encodeURIComponent(card.artist)}'"
+          >
+            <div class="card-topline">
+              <span>Artist Profile</span>
+              <span>${card.dropCount} Drops</span>
+            </div>
+
+            <div class="card-rank-row">
+              <div class="global-rank">${formatRank(card.bestRank)}</div>
+
+              <div>
+                <h3>${card.artist}</h3>
+                <p>${card.trackCount} track${card.trackCount === 1 ? "" : "s"} <span>// ${card.dropCount} archived drop${card.dropCount === 1 ? "" : "s"}</span></p>
+              </div>
+            </div>
+
+            <div class="archive-stat-list">
+              <div>
+                <span>Avg Score</span>
+                <strong>${formatScore(card.avgScore)}</strong>
+              </div>
+
+              <div>
+                <span>Best Rank</span>
+                <strong>${formatRank(card.bestRank)}</strong>
+              </div>
+            </div>
+
+            <div class="card-footer-link">
+              View Artist Profile →
+            </div>
+          </article>
+        `).join("");
+      })
+      .catch(error => {
+        artistGrid.innerHTML = `
+          <article class="archive-card">
+            <h3>Artists Offline</h3>
+            <p>The artist directory could not be loaded. Confirm that <code>data/archive.json</code> exists.</p>
+          </article>
+        `;
+
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
