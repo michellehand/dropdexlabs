@@ -30,40 +30,117 @@
       <a href="shop.html">Specimens</a>
     </nav>
   </header>
-  
-  <section class="page-hero">
-  <div class="kicker">Research Division</div>
-  <h1>Research</h1>
-  <p class="hero-copy">
-    Documentation for the systems used to measure,
-    classify, and rank drops within the archive.
-  </p>
-</section>
+  <main>
+    <section class="page-hero">
+    <div class="kicker">Research Division</div>
+    <h1>Research</h1>
+    <p class="hero-copy">
+      Documentation for the systems used to measure,
+      classify, and rank drops within the archive.
+    </p>
+  </section>
 
-<section class="section">
-  <div class="grid">
+  <section class="section">
+    <div class="grid">
 
-    <article class="panel">
-      <h3>Model</h3>
+      <article class="panel">
+        <h3>Model</h3>
+        <p>
+          How DropDex converts audio measurements into
+          rankings, classes, rarity tiers, and scores.
+        </p>
+        <a class="button" href="model.html">
+          Open Model
+        </a>
+      </article>
+
+      <article class="panel">
+        <h3>Metrics</h3>
+        <p>
+          Definitions and explanations for every metric
+          used throughout the archive.
+        </p>
+        <a class="button" href="metrics.html">
+          View Metrics
+        </a>
+      </article>
+
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <div class="kicker">Methodology</div>
+      <h2>How a Drop Becomes an Archive Record</h2>
       <p>
-        How DropDex converts audio measurements into
-        rankings, classes, rarity tiers, and scores.
+        Every entry in the archive begins as an audio file and moves through a standardized analysis pipeline before receiving scores, classifications, and rankings.
       </p>
-      <a class="button" href="model.html">
-        Open Model
-      </a>
-    </article>
+    </div>
 
-    <article class="panel">
-      <h3>Metrics</h3>
-      <p>
-        Definitions and explanations for every metric
-        used throughout the archive.
-      </p>
-      <a class="button" href="metrics.html">
-        View Metrics
-      </a>
-    </article>
+    <div class="pipeline-flow">
 
-  </div>
-</section>
+      <div class="pipeline-step">
+        <div class="pipeline-number">01</div>
+        <h3>Source Audio</h3>
+        <p>
+          A track is acquired and cataloged for analysis.
+        </p>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">02</div>
+        <h3>Drop Detection</h3>
+        <p>
+          Individual drops are isolated and timestamped.
+        </p>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">03</div>
+        <h3>Audio Analysis</h3>
+        <p>
+          Spectrograms and audio features are extracted from the drop window.
+        </p>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">04</div>
+        <h3>Metric Generation</h3>
+        <p>
+          Weight, Shock, Aggression, Tension, Brightness, Production, and Musicality are calculated.
+        </p>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">05</div>
+        <h3>Classification</h3>
+        <p>
+          Drops receive classes, rarity tiers, rankings, and archive identifiers.
+        </p>
+      </div>
+
+      <div class="pipeline-arrow">→</div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">06</div>
+        <h3>Archive Record</h3>
+        <p>
+          Results are published as searchable records and future card specimens.
+        </p>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div><strong>DROPDEX</strong> // Document. Analyze. Archive.</div>
+    <div>The Statistical Archive of Bass Drops. The search continues.</div>
+  </footer>
+</body>
+</html>
