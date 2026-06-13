@@ -1172,6 +1172,75 @@ h3 {
   border-bottom: none;
 }
 
+/* =========================================================
+  RANKINGS
+  CSS FOR RANKING BOARDS, USED ON ARCHIVE AND DROP PAGES
+========================================================= */
+
+.ranking-board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.ranking-panel {
+  border: 1px solid rgba(0, 255, 102, 0.2);
+  background: rgba(0, 0, 0, 0.32);
+  padding: 22px;
+}
+
+.ranking-panel h2 {
+  margin-bottom: 18px;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.ranking-row {
+  display: grid;
+  grid-template-columns: 56px 1fr 70px;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.12);
+}
+
+.ranking-row:last-child {
+  border-bottom: none;
+}
+
+.ranking-position {
+  color: var(--terminal-green);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+}
+
+.ranking-title {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.25;
+}
+
+.ranking-title strong {
+  display: block;
+  color: var(--dd-light);
+}
+
+.ranking-score {
+  color: var(--laser-cyan);
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+}
+
+.ranking-row:hover .ranking-title strong,
+.ranking-row:hover .ranking-score {
+  color: var(--terminal-green);
+}
+
+@media (max-width: 900px) {
+  .ranking-board {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* =========================================================
    13. FOOTER
