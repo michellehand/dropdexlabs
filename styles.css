@@ -1364,3 +1364,71 @@ h3 {
     grid-template-columns: 96px 1fr;
   }
 }
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  margin-top: 80px;
+  padding: 48px 24px;
+
+  border-top: 1px solid rgba(0,255,100,.12);
+
+  text-align: center;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  margin-bottom: 12px;
+
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.footer-brand strong {
+  color: var(--accent);
+}
+
+.footer-copy {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  margin-bottom: 24px;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: var(--text-muted);
+
+  transition: all .2s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--accent);
+}
+
+.footer-socials i {
+  font-size: 1.1rem;
+}
+
+.footer-meta {
+  color: var(--text-dim);
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
