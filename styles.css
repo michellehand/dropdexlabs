@@ -1373,8 +1373,8 @@ h3 {
 ========================= */
 
 .footer {
-  margin-top: 80px;
-  padding: 40px 24px;
+  margin-top: 50px;
+  padding: 20px 14px;
 
   border-top: 1px solid rgba(0,255,100,.12);
 
@@ -1388,9 +1388,9 @@ h3 {
 .footer-brand {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .footer-brand strong {
@@ -1413,16 +1413,16 @@ h3 {
 
   color: var(--text-muted);
 
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .footer-socials {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 16px;
 
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .footer-socials a {
