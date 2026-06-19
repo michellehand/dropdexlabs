@@ -1369,6 +1369,43 @@ h3 {
 }
 
 /* =========================
+   Battle Arena
+========================= */
+.battle-panel,
+.battle-result {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(10,10,18,0.82);
+  border-radius: 18px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.select-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.round-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 12px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* =========================
    Footer
 ========================= */
 
