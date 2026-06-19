@@ -1595,3 +1595,35 @@ h3 {
   letter-spacing: .12em;
   text-transform: uppercase;
 }
+
+.drop-detail-shell {
+  max-width: 1500px;
+}
+
+.drop-record-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: 28px;
+  align-items: start;
+}
+
+.drop-record-right {
+  position: sticky;
+  top: 130px;
+}
+
+.trading-card-panel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1050px) {
+  .drop-record-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .drop-record-right {
+    position: static;
+  }
+}
