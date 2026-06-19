@@ -1371,33 +1371,141 @@ h3 {
 /* =========================
    Battle Arena
 ========================= */
+
 .battle-panel,
 .battle-result {
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(10,10,18,0.82);
+  background: rgba(6, 8, 16, 0.92);
+  border: 1px solid rgba(0, 255, 255, 0.15);
   border-radius: 18px;
-  padding: 24px;
-  margin: 24px 0;
+  padding: 28px;
+  margin: 32px 0;
+  box-shadow:
+    0 0 30px rgba(0,255,255,0.04),
+    inset 0 0 30px rgba(255,255,255,0.02);
 }
 
 .select-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 24px;
 }
 
-select,
-button {
+.select-grid::before {
+  content: "VS";
+  grid-column: 2;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0,255,255,0.75);
+  text-align: center;
+  align-self: center;
+}
+
+.select-grid > div:first-child {
+  grid-column: 1;
+}
+
+.select-grid > div:last-child {
+  grid-column: 3;
+}
+
+.battle-panel label {
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.battle-panel select {
   width: 100%;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: white;
+  font-size: 0.95rem;
+}
+
+.battle-panel select:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 12px rgba(0,255,255,0.3);
+}
+
+#battleBtn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    90deg,
+    #6420ff,
+    #00d5ff
+  );
+
+  color: white;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+#battleBtn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 24px rgba(0,213,255,0.35);
+}
+
+/* =========================
+   Results
+========================= */
+
+.battle-result h2 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.battle-score {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00ffff;
+  margin-bottom: 24px;
+}
+
+.round-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .round-row {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding: 12px 0;
+  align-items: center;
+
+  padding: 14px 18px;
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+}
+
+.round-row span {
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.round-row strong {
+  color: #00ffff;
 }
 
 .hidden {
