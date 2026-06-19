@@ -187,6 +187,7 @@
 
           const artworkPath = formatAssetPath(drop.artwork_path);
           const spectrogramPath = formatAssetPath(drop.spectrogram_path);
+          const cardPath = `assets/cards/${drop.dropdex_id}_${track}.png`;
           console.log("Artwork path:", artworkPath);
 
           document.title = `${artist} - ${track} | DropDex`;
@@ -199,7 +200,10 @@
             </section>
 
             <section class="page-content drop-detail-shell">
-              <article class="archive-card drop-detail-card">
+            <div class="drop-record-layout">
+
+              <div class="drop-record-left">
+                <article class="archive-card drop-detail-card">
                 <div class="card-topline">
                   <span>${rarity}</span>
                   <span>${drop.dropdex_id}</span>
@@ -259,6 +263,21 @@
                   <div class="metric-brightness"><span>Brightness</span><strong>${formatScore(drop.brightness_score_abs)}</strong></div>
                 </div>
               </article>
+
+              </div>
+                <aside class="drop-record-right">
+                  <div class="trading-card-panel">
+                    <div class="kicker">Physical Specimen</div>
+                    <h2>Trading Card</h2>
+                    <img
+                      src="${cardPath}"
+                      alt="${drop.dropdex_id} trading card"
+                      loading="lazy"
+                      onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('beforeend', '<p class=&quot;asset-error&quot;>Trading card image not available.</p>')"
+                    >
+                  </div>
+                </aside>
+              </div>
 
               <section class="drop-all-fields">
                 <div class="section-head">
