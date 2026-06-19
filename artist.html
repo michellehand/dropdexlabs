@@ -165,7 +165,7 @@
             <div class="metric-power"><span>Power</span><strong>${formatScore(drop.power_score_abs)}</strong></div>
             <div class="metric-build"><span>Build</span><strong>${formatScore(drop.build_score_abs)}</strong></div>
             <div class="metric-production"><span>Production</span><strong>${formatScore(drop.production_score_abs)}</strong></div>
-            <div class="metric-musicality"><span>Tonality</span><strong>${formatScore(drop.musicality_score_abs)}</strong></div>
+            <div class="metric-tonality"><span>Tonality</span><strong>${formatScore(drop.tonality_score_abs)}</strong></div>
           </div>
 
           <div class="card-footer-link">View Drop Record →</div>
@@ -224,7 +224,7 @@
           const avgPower = average(artistDrops, "power_score_abs");
           const avgBuild = average(artistDrops, "build_score_abs");
           const avgProduction = average(artistDrops, "production_score_abs");
-          const avgMusicality = average(artistDrops, "musicality_score_abs");
+          const avgTonality = average(artistDrops, "tonality_score_abs");
 
           const mostCommonClass = getMostCommon(artistDrops, "drop_class");
           const mostCommonRarity = getMostCommon(artistDrops, "rarity");
@@ -274,7 +274,7 @@
                   <div class="metric-power"><span>Avg Power</span><strong>${formatScore(avgPower)}</strong></div>
                   <div class="metric-build"><span>Avg Build</span><strong>${formatScore(avgBuild)}</strong></div>
                   <div class="metric-production"><span>Avg Production</span><strong>${formatScore(avgProduction)}</strong></div>
-                  <div class="metric-musicality"><span>Avg Musicality</span><strong>${formatScore(avgMusicality)}</strong></div>
+                  <div class="metric-tonality"><span>Avg Tonality</span><strong>${formatScore(avgtonality)}</strong></div>
                 </div>
 
                 <div class="archive-stat-list" style="margin-top: 24px;">
