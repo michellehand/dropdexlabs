@@ -131,12 +131,16 @@
     }
 
     function cardLabel(card) {
-    return `${card.artist} — ${card.track} Drop ${card.drop_no} (${card.drop_class})`;
+        return `#${card.dropdex_rank_global} // ${card.artist} — ${card.track} Drop ${card.drop_no} (${card.drop_class})`;
     }
 
     function populateDropdowns() {
-    const cardA = document.getElementById("cardA");
-    const cardB = document.getElementById("cardB");
+    cardA.innerHTML = `<option value="">Select Card A by rank, artist, or track...</option>`;
+    cardB.innerHTML = `<option value="">Select Card B by rank, artist, or track...</option>`;
+
+    winRates.sort((a, b) =>
+        Number(a.dropdex_rank_global) - Number(b.dropdex_rank_global)
+    );
 
     winRates.forEach(card => {
         const optionA = new Option(cardLabel(card), card.dropdex_id);
@@ -167,7 +171,7 @@
     const aId = document.getElementById("cardA").value;
     const bId = document.getElementById("cardB").value;
 
-    if (aId === bId) return;
+    if (!aId || !bId || aId === bId) return;
 
     const matchup = findMatchup(aId, bId);
     const rounds = getRounds(aId, bId);
