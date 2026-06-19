@@ -1627,3 +1627,43 @@ h3 {
     position: static;
   }
 }
+
+.arena-cta {
+  display: block;
+  width: 100%;
+
+  margin-bottom: 18px;
+  padding: 18px 20px;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  border: 1px solid rgba(0,255,255,0.35);
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(117, 36, 255, 0.95),
+      rgba(0, 204, 255, 0.85)
+    );
+
+  box-shadow:
+    0 0 20px rgba(0,255,255,0.18),
+    0 0 40px rgba(117,36,255,0.18);
+
+  transition: all 0.2s ease;
+}
+
+.arena-cta:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 30px rgba(0,255,255,0.30),
+    0 0 60px rgba(117,36,255,0.30);
+}
