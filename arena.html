@@ -124,7 +124,7 @@
 
     async function initArena() {
     winRates = await loadCSV("data/dropdex_battle_win_rates.csv");
-    matchups = await loadCSV("data/dropdex_matchups.csv");
+    matchups = await loadCSV("data/dropdex_battle_matchups.csv");
     matchupRounds = await loadCSV("data/dropdex_matchup_rounds.csv");
 
     populateDropdowns();
