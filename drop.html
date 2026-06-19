@@ -187,7 +187,7 @@
 
           const artworkPath = formatAssetPath(drop.artwork_path);
           const spectrogramPath = formatAssetPath(drop.spectrogram_path);
-          const cardPath = `assets/cards/${drop.dropdex_id}_${track}.png`;
+          const cardPath = formatAssetPath(drop.card_path);
           console.log("Artwork path:", artworkPath);
 
           document.title = `${artist} - ${track} | DropDex`;
