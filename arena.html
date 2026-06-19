@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXBHQZ4CBF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-ZXBHQZ4CBF');
   </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DropDex | The Statistical Archive of Bass Drops</title>
+
+  <title>DropDex Arena | Warehouse Battle Simulator</title>
+
   <link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" />
   <link rel="icon" href="/favicon.ico" />
   <link rel="stylesheet" href="styles.css" />
-    <!-- Open Graph -->
-  <meta property="og:title" content="DropDex Labs" />
-  <meta property="og:description" content="The Statistical Archive of Bass Drops. Ranked, classified, scored, and preserved as audio evidence." />
+
+  <meta property="og:title" content="DropDex Arena" />
+  <meta property="og:description" content="Warehouse battle simulations for classified bass-drop specimens." />
   <meta property="og:image" content="https://dropdexlabs.com/assets/socials/archive-link-header-vibrant.png" />
-  <meta property="og:url" content="https://dropdexlabs.com/" />
+  <meta property="og:url" content="https://dropdexlabs.com/arena.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="DropDex Labs" />
 
-  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DropDex Labs" />
-  <meta name="twitter:description" content="The Statistical Archive of Bass Drops." />
+  <meta name="twitter:title" content="DropDex Arena" />
+  <meta name="twitter:description" content="Warehouse battle simulations for classified bass-drop specimens." />
   <meta name="twitter:image" content="https://dropdexlabs.com/assets/socials/archive-link-header-vibrant.png" />
 
   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
 </head>
 
@@ -41,8 +42,9 @@
     <a class="logo-lockup" href="index.html" aria-label="DropDex home">
       <img class="logo-image" src="assets/logos/dropdex-logo-cropped.jpg" alt="DropDex logo" />
     </a>
+
     <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Lab</a>
+      <a href="index.html">Lab</a>
       <a href="investigation.html">Investigation</a>
       <a href="archive.html">Archive</a>
       <a href="research.html">Research</a>
@@ -50,185 +52,213 @@
       <a href="shop.html">Specimens</a>
     </nav>
   </header>
+
   <main>
     <section class="arena-hero">
-    <p class="eyebrow">DropDex Arena</p>
-    <h1>Warehouse Battle Simulator</h1>
-    <p>
-        Select two classified drop specimens. The Arena will run them through five warehouse combat rounds.
-    </p>
+      <p class="arena-kicker">DropDex Arena</p>
+      <h1>Warehouse Battle Simulator</h1>
+      <p class="arena-description">
+        Archived specimens enter the Arena. Five combat rounds. One survivor.
+      </p>
+
+      <div class="arena-champion-card">
+        <span class="champion-label">Current Arena Champion</span>
+        <strong>#13 // Crankdat — Movement // Drop 3</strong>
+        <span class="champion-record">302 Wins · 10 Losses</span>
+      </div>
     </section>
 
     <section class="battle-panel">
-    <div class="select-grid">
+      <div class="select-grid">
         <div>
-        <label for="cardA">Card A</label>
-        <select id="cardA"></select>
+          <label for="cardA">Card A</label>
+          <select id="cardA"></select>
         </div>
 
         <div>
-        <label for="cardB">Card B</label>
-        <select id="cardB"></select>
+          <label for="cardB">Card B</label>
+          <select id="cardB"></select>
         </div>
-    </div>
+      </div>
 
-    <button id="battleBtn">Run Warehouse Match</button>
+      <button id="battleBtn">Run Warehouse Match</button>
     </section>
 
-<section id="battleResult" class="battle-result hidden"></section>
+    <section id="battleResult" class="battle-result hidden"></section>
   </main>
+
   <footer class="footer">
-  <div class="footer-brand">
-    <strong>DROPDEX</strong>
-    <div class="footer-tagline">
-      Document. Analyze. Archive.
+    <div class="footer-brand">
+      <strong>DROPDEX</strong>
+      <div class="footer-tagline">
+        Document. Analyze. Archive.
+      </div>
     </div>
-  </div>
-  <div class="footer-copy">
-    The Statistical Archive of Bass Drops. The search continues.
-  </div>
-  <div class="footer-socials">
-    <a href="#">
-      <i class="fab fa-youtube"></i>
-      <span>YouTube</span>
-    </a>
-    <a href="https://discord.gg/3kxqnrJZy3">
-      <i class="fab fa-discord"></i>
-      <span>Discord</span>
-    </a>
-    <a href="contact.html">
-      <i class="fas fa-envelope"></i>
-      <span>Submit Evidence</span>
-    </a>
-  </div>
-  <div class="footer-meta">
-    Edition 001 // DropDex Labs // 2026
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-<script>
+
+    <div class="footer-copy">
+      The Statistical Archive of Bass Drops. The search continues.
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.youtube.com/@dropdexlabs" target="_blank">
+        <i class="fab fa-youtube"></i>
+        <span>YouTube</span>
+      </a>
+
+      <a href="https://discord.gg/3kxqnrJZy3" target="_blank">
+        <i class="fab fa-discord"></i>
+        <span>Discord</span>
+      </a>
+
+      <a href="submit-evidence.html">
+        <i class="fas fa-envelope"></i>
+        <span>Submit Evidence</span>
+      </a>
+    </div>
+
+    <div class="footer-meta">
+      Edition 001 // DropDex Labs // 2026
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <script>
     let winRates = [];
     let matchups = [];
     let matchupRounds = [];
 
+    function getQueryParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
     function loadCSV(path) {
-    return new Promise(resolve => {
+      return new Promise(resolve => {
         Papa.parse(path, {
-        download: true,
-        header: true,
-        skipEmptyLines: true,
-        complete: results => resolve(results.data)
+          download: true,
+          header: true,
+          skipEmptyLines: true,
+          complete: results => resolve(results.data)
         });
-    });
+      });
     }
 
     async function initArena() {
-    winRates = await loadCSV("data/dropdex_battle_win_rates.csv");
-    matchups = await loadCSV("data/dropdex_battle_matchups.csv");
-    matchupRounds = await loadCSV("data/dropdex_matchup_rounds.csv");
+      winRates = await loadCSV("data/dropdex_battle_win_rates.csv");
+      matchups = await loadCSV("data/dropdex_battle_matchups.csv");
+      matchupRounds = await loadCSV("data/dropdex_matchup_rounds.csv");
 
-    function getQueryParam(name) {
-    const params = new URLSearchParams(window.location.search);
-    return params.get(name);
-    }
-
-    populateDropdowns();
+      populateDropdowns();
     }
 
     function cardLabel(card) {
-        return `#${card.dropdex_rank_global} // ${card.artist} — ${card.track} Drop ${card.drop_no} (${card.drop_class})`;
+      return `#${card.dropdex_rank_global} // ${card.artist} — ${card.track} Drop ${card.drop_no} (${card.drop_class})`;
     }
 
     function populateDropdowns() {
-        const preselectedCard = getQueryParam("cardA");
+      const cardA = document.getElementById("cardA");
+      const cardB = document.getElementById("cardB");
 
-        if (preselectedCard) {
-        const cardA = document.getElementById("cardA");
+      cardA.innerHTML = `<option value="">Select Card A by rank, artist, or track...</option>`;
+      cardB.innerHTML = `<option value="">Select Card B by rank, artist, or track...</option>`;
 
-        cardA.value = preselectedCard;
-
-        if (cardA.value === preselectedCard) {
-            document.getElementById("cardB").focus();
-        }
-        }
-    cardA.innerHTML = `<option value="">Select Card A by rank, artist, or track...</option>`;
-    cardB.innerHTML = `<option value="">Select Card B by rank, artist, or track...</option>`;
-
-    winRates.sort((a, b) =>
+      winRates.sort((a, b) =>
         Number(a.dropdex_rank_global) - Number(b.dropdex_rank_global)
-    );
+      );
 
-    winRates.forEach(card => {
+      winRates.forEach(card => {
         const optionA = new Option(cardLabel(card), card.dropdex_id);
         const optionB = new Option(cardLabel(card), card.dropdex_id);
 
         cardA.add(optionA);
         cardB.add(optionB);
-    });
+      });
 
-    cardB.selectedIndex = 1;
+      const preselectedCard = getQueryParam("cardA");
+
+      if (preselectedCard) {
+        cardA.value = preselectedCard;
+
+        if (cardA.value === preselectedCard) {
+          cardB.focus();
+        }
+      }
+
+      if (!cardB.value && cardB.options.length > 1) {
+        cardB.selectedIndex = 1;
+      }
     }
 
     function findMatchup(aId, bId) {
-    return matchups.find(m =>
+      return matchups.find(m =>
         (m.card_a_id === aId && m.card_b_id === bId) ||
         (m.card_a_id === bId && m.card_b_id === aId)
-    );
+      );
     }
 
     function getRounds(aId, bId) {
-    return matchupRounds.filter(r =>
+      return matchupRounds.filter(r =>
         (r.card_a_id === aId && r.card_b_id === bId) ||
         (r.card_a_id === bId && r.card_b_id === aId)
-    );
+      );
     }
 
     function renderBattle() {
-    const aId = document.getElementById("cardA").value;
-    const bId = document.getElementById("cardB").value;
+      const aId = document.getElementById("cardA").value;
+      const bId = document.getElementById("cardB").value;
 
-    if (!aId || !bId || aId === bId) return;
+      if (!aId || !bId || aId === bId) return;
 
-    const matchup = findMatchup(aId, bId);
-    const rounds = getRounds(aId, bId);
+      const matchup = findMatchup(aId, bId);
+      const rounds = getRounds(aId, bId);
+      const result = document.getElementById("battleResult");
 
-    const result = document.getElementById("battleResult");
+      if (!matchup) {
+        result.innerHTML = `
+          <p class="eyebrow">Warehouse Match Failed</p>
+          <h2>No matchup found</h2>
+          <p>Try selecting a different opponent.</p>
+        `;
+        result.classList.remove("hidden");
+        return;
+      }
 
-    const roundHTML = rounds.map(r => {
+      const roundHTML = rounds.map(r => {
         let winnerName;
 
         if (r.round_winner === "A") {
-        winnerName = matchup.card_a;
+          winnerName = matchup.card_a;
         } else if (r.round_winner === "B") {
-        winnerName = matchup.card_b;
+          winnerName = matchup.card_b;
         } else {
-        winnerName = "Tie";
+          winnerName = "Tie";
         }
 
         return `
-        <div class="round-row">
+          <div class="round-row">
             <span>${r.round}</span>
             <strong>${winnerName}</strong>
-        </div>
+          </div>
         `;
-    }).join("");
+      }).join("");
 
-    result.innerHTML = `
+      result.innerHTML = `
         <p class="eyebrow">Warehouse Match Complete</p>
         <h2>${matchup.winner}</h2>
         <p class="battle-score">${matchup.a_rounds}–${matchup.b_rounds}</p>
 
         <div class="round-list">
-        ${roundHTML}
+          ${roundHTML}
         </div>
-    `;
+      `;
 
-    result.classList.remove("hidden");
+      result.classList.remove("hidden");
     }
 
     document.getElementById("battleBtn").addEventListener("click", renderBattle);
 
     initArena();
-</script>
+  </script>
 </body>
 </html>

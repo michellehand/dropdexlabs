@@ -1372,34 +1372,104 @@ h3 {
    Battle Arena
 ========================= */
 
+.arena-hero {
+  text-align: center;
+  padding: 70px 20px 42px;
+}
+
+.arena-kicker {
+  color: var(--laser-cyan);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.arena-hero h1 {
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 0.9;
+  margin: 0;
+  text-shadow:
+    0 0 24px rgba(0, 229, 255, 0.22),
+    0 0 46px rgba(138, 43, 226, 0.2);
+}
+
+.arena-description {
+  max-width: 760px;
+  margin: 24px auto 0;
+  color: rgba(255,255,255,0.78);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.arena-champion-card {
+  max-width: 720px;
+  margin: 34px auto 0;
+  padding: 18px 22px;
+  border: 1px solid rgba(0, 229, 255, 0.28);
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(138, 43, 226, 0.18), transparent 45%),
+    rgba(0, 0, 0, 0.44);
+  box-shadow:
+    0 0 28px rgba(0, 229, 255, 0.08),
+    inset 0 0 24px rgba(0, 0, 0, 0.35);
+}
+
+.champion-label,
+.champion-record {
+  display: block;
+  color: var(--laser-cyan);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.arena-champion-card strong {
+  display: block;
+  margin: 8px 0;
+  color: var(--dd-light);
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.25;
+}
+
 .battle-panel,
 .battle-result {
+  max-width: 1500px;
+  margin: 32px auto;
   background: rgba(6, 8, 16, 0.92);
-  border: 1px solid rgba(0, 255, 255, 0.15);
-  border-radius: 18px;
-  padding: 28px;
-  margin: 32px 0;
+  border: 1px solid rgba(0, 255, 255, 0.18);
+  border-radius: 22px;
+  padding: clamp(24px, 4vw, 44px);
   box-shadow:
-    0 0 30px rgba(0,255,255,0.04),
-    inset 0 0 30px rgba(255,255,255,0.02);
+    0 0 34px rgba(0,255,255,0.06),
+    inset 0 0 34px rgba(255,255,255,0.025);
 }
 
 .select-grid {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 24px;
-  align-items: end;
-  margin-bottom: 24px;
+  grid-template-columns: minmax(0, 1fr) 120px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 28px;
 }
 
 .select-grid::before {
   content: "VS";
   grid-column: 2;
-  font-size: 2rem;
-  font-weight: 700;
-  color: rgba(0,255,255,0.75);
+  grid-row: 1;
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 900;
+  color: var(--laser-cyan);
   text-align: center;
-  align-self: center;
+  text-shadow:
+    0 0 20px rgba(0,229,255,.6),
+    0 0 44px rgba(0,229,255,.25);
 }
 
 .select-grid > div:first-child {
@@ -1412,55 +1482,141 @@ h3 {
 
 .battle-panel label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.16em;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.72);
 }
 
 .battle-panel select {
   width: 100%;
-  padding: 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.04);
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.045);
   color: white;
-  font-size: 0.95rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
 }
 
 .battle-panel select:focus {
   outline: none;
-  border-color: #00ffff;
-  box-shadow: 0 0 12px rgba(0,255,255,0.3);
+  border-color: var(--laser-cyan);
+  box-shadow: 0 0 18px rgba(0,255,255,0.28);
 }
 
 #battleBtn {
   width: 100%;
-  padding: 16px;
+  padding: 20px;
   border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  border-radius: 16px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-
-  background: linear-gradient(
-    90deg,
-    #6420ff,
-    #00d5ff
-  );
-
+  background: linear-gradient(90deg, #6420ff, #00d5ff);
   color: white;
   cursor: pointer;
-
+  box-shadow: 0 0 28px rgba(0,213,255,0.20);
   transition: all 0.2s ease;
 }
 
 #battleBtn:hover {
   transform: translateY(-2px);
   box-shadow:
-    0 0 24px rgba(0,213,255,0.35);
+    0 0 28px rgba(0,213,255,0.38),
+    0 0 58px rgba(100,32,255,0.25);
+}
+
+/* Results */
+
+.battle-result {
+  border-color: rgba(0, 255, 102, 0.24);
+}
+
+.battle-result h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom: 8px;
+}
+
+.battle-score {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 900;
+  color: var(--laser-cyan);
+  margin-bottom: 28px;
+  text-shadow: 0 0 22px rgba(0,229,255,0.35);
+}
+
+.round-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.round-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 18px;
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.075);
+  border-radius: 14px;
+}
+
+.round-row span {
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+}
+
+.round-row strong {
+  color: var(--laser-cyan);
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .select-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .select-grid::before {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 3rem;
+    margin: 6px 0;
+  }
+
+  .select-grid > div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .select-grid > div:last-child {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .round-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .round-row strong {
+    text-align: left;
+  }
 }
 
 /* =========================
