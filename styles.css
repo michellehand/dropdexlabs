@@ -1533,7 +1533,9 @@ h3 {
     0 0 58px rgba(100,32,255,0.25);
 }
 
-/* Results */
+/* =========================
+   Results
+========================= */
 
 .battle-result {
   border-color: rgba(0, 255, 102, 0.24);
@@ -1618,56 +1620,6 @@ h3 {
     text-align: left;
   }
 }
-
-/* =========================
-   Results
-========================= */
-
-.battle-result h2 {
-  font-size: 2.5rem;
-  margin-bottom: 8px;
-}
-
-.battle-score {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #00ffff;
-  margin-bottom: 24px;
-}
-
-.round-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.round-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 14px 18px;
-
-  background: rgba(255,255,255,0.03);
-
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 12px;
-}
-
-.round-row span {
-  color: rgba(255,255,255,0.65);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.round-row strong {
-  color: #00ffff;
-}
-
-.hidden {
-  display: none;
-}
-
 
 /* =========================
    Footer
