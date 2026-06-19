@@ -127,6 +127,11 @@
     matchups = await loadCSV("data/dropdex_battle_matchups.csv");
     matchupRounds = await loadCSV("data/dropdex_matchup_rounds.csv");
 
+    function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+    }
+
     populateDropdowns();
     }
 
@@ -135,6 +140,17 @@
     }
 
     function populateDropdowns() {
+        const preselectedCard = getQueryParam("cardA");
+
+        if (preselectedCard) {
+        const cardA = document.getElementById("cardA");
+
+        cardA.value = preselectedCard;
+
+        if (cardA.value === preselectedCard) {
+            document.getElementById("cardB").focus();
+        }
+        }
     cardA.innerHTML = `<option value="">Select Card A by rank, artist, or track...</option>`;
     cardB.innerHTML = `<option value="">Select Card B by rank, artist, or track...</option>`;
 
