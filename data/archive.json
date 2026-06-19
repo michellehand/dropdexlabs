@@ -118,7 +118,7 @@
     "rarity_rank":5,
     "badges":"Battle Crown, Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0139_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi - ILL.png",
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi - ILL.png",
     "card_path":"assets\/cards\/DROP0139_ILL.png"
   },
   {
@@ -179,8 +179,8 @@
     "rarity_rank":5,
     "badges":"Battle Crown, Power Crown, Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0009_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, Wooli - Lock In.png",
-    "card_path":"assets\/cards\/DROP0009_Lock In.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_Wooli - Lock_In.png",
+    "card_path":"assets\/cards\/DROP0009_Lock_In.png"
   },
   {
     "edition_id":"001",
@@ -240,7 +240,7 @@
     "rarity_rank":5,
     "badges":"Battle Crown, Power Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0323_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Subtronics, Wooli - Dingus.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Subtronics,_Wooli - Dingus.png",
     "card_path":"assets\/cards\/DROP0323_Dingus.png"
   },
   {
@@ -362,7 +362,7 @@
     "rarity_rank":4,
     "badges":"Battle Crown, Power Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0195_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Kai Wachi, Sullivan King - Bonebreaker.png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Kai_Wachi,_Sullivan_King - Bonebreaker.png",
     "card_path":"assets\/cards\/DROP0195_Bonebreaker.png"
   },
   {
@@ -423,8 +423,8 @@
     "rarity_rank":4,
     "badges":"Battle Crown, Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0158_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity - Can_t Get Enough.png",
-    "card_path":"assets\/cards\/DROP0158_Can_t Get Enough.png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity - Can_t_Get_Enough.png",
+    "card_path":"assets\/cards\/DROP0158_Can_t_Get_Enough.png"
   },
   {
     "edition_id":"001",
@@ -606,7 +606,7 @@
     "rarity_rank":4,
     "badges":"Battle Crown, Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0228_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Tape B, VKTM - Nocturnal.png",
+    "artwork_path":"assets\/visuals\/artwork\/Tape_B,_VKTM - Nocturnal.png",
     "card_path":"assets\/cards\/DROP0228_Nocturnal.png"
   },
   {
@@ -728,8 +728,8 @@
     "rarity_rank":4,
     "badges":"Battle Crown, Power Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0182_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi, RUNN - Better Off Alone.png",
-    "card_path":"assets\/cards\/DROP0182_Better Off Alone.png"
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi,_RUNN - Better_Off_Alone.png",
+    "card_path":"assets\/cards\/DROP0182_Better_Off_Alone.png"
   },
   {
     "edition_id":"001",
@@ -850,8 +850,8 @@
     "rarity_rank":4,
     "badges":"Production Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0013_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Scream Saver.png",
-    "card_path":"assets\/cards\/DROP0013_Scream Saver.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Scream_Saver.png",
+    "card_path":"assets\/cards\/DROP0013_Scream_Saver.png"
   },
   {
     "edition_id":"001",
@@ -972,8 +972,8 @@
     "rarity_rank":4,
     "badges":"Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0212_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Noisia, Skrillex, josh pan, Dylan Brady - Supersonic (My Existence).png",
-    "card_path":"assets\/cards\/DROP0212_Supersonic (My Existence).png"
+    "artwork_path":"assets\/visuals\/artwork\/Noisia,_Skrillex,_josh_pan,_Dylan_Brady - Supersonic_(My_Existence).png",
+    "card_path":"assets\/cards\/DROP0212_Supersonic_(My_Existence).png"
   },
   {
     "edition_id":"001",
@@ -1033,8 +1033,8 @@
     "rarity_rank":3,
     "badges":"Power Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0092_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/HOL! - COUNTRY RIDDIM.png",
-    "card_path":"assets\/cards\/DROP0092_COUNTRY RIDDIM.png"
+    "artwork_path":"assets\/visuals\/artwork\/HOL! - COUNTRY_RIDDIM.png",
+    "card_path":"assets\/cards\/DROP0092_COUNTRY_RIDDIM.png"
   },
   {
     "edition_id":"001",
@@ -1094,8 +1094,8 @@
     "rarity_rank":3,
     "badges":"Power Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0002_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Jem Cooke, Subtronics - By A Thread (feat. Jem Cooke).png",
-    "card_path":"assets\/cards\/DROP0002_By A Thread (feat. Jem Cooke).png"
+    "artwork_path":"assets\/visuals\/artwork\/Jem_Cooke,_Subtronics - By_A_Thread_(feat._Jem_Cooke).png",
+    "card_path":"assets\/cards\/DROP0002_By_A_Thread_(feat._Jem_Cooke).png"
   },
   {
     "edition_id":"001",
@@ -1155,7 +1155,7 @@
     "rarity_rank":3,
     "badges":"Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0227_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Tape B, VKTM - Nocturnal.png",
+    "artwork_path":"assets\/visuals\/artwork\/Tape_B,_VKTM - Nocturnal.png",
     "card_path":"assets\/cards\/DROP0227_Nocturnal.png"
   },
   {
@@ -1216,8 +1216,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0349_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - Dark Side.png",
-    "card_path":"assets\/cards\/DROP0349_Dark Side.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - Dark_Side.png",
+    "card_path":"assets\/cards\/DROP0349_Dark_Side.png"
   },
   {
     "edition_id":"001",
@@ -1277,7 +1277,7 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0123_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Creator.png",
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Creator.png",
     "card_path":"assets\/cards\/DROP0123_Creator.png"
   },
   {
@@ -1338,8 +1338,8 @@
     "rarity_rank":3,
     "badges":"Power Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0090_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/HOL! - COUNTRY RIDDIM.png",
-    "card_path":"assets\/cards\/DROP0090_COUNTRY RIDDIM.png"
+    "artwork_path":"assets\/visuals\/artwork\/HOL! - COUNTRY_RIDDIM.png",
+    "card_path":"assets\/cards\/DROP0090_COUNTRY_RIDDIM.png"
   },
   {
     "edition_id":"001",
@@ -1399,7 +1399,7 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0143_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi - LOADED.png",
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi - LOADED.png",
     "card_path":"assets\/cards\/DROP0143_LOADED.png"
   },
   {
@@ -1460,8 +1460,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0125_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Forgotten Name.png",
-    "card_path":"assets\/cards\/DROP0125_Forgotten Name.png"
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Forgotten_Name.png",
+    "card_path":"assets\/cards\/DROP0125_Forgotten_Name.png"
   },
   {
     "edition_id":"001",
@@ -1521,7 +1521,7 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0122_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Creator.png",
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Creator.png",
     "card_path":"assets\/cards\/DROP0122_Creator.png"
   },
   {
@@ -1582,8 +1582,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0030_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Fuck Up.png",
-    "card_path":"assets\/cards\/DROP0030_Fuck Up.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Fuck_Up.png",
+    "card_path":"assets\/cards\/DROP0030_Fuck_Up.png"
   },
   {
     "edition_id":"001",
@@ -1643,8 +1643,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0338_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/YDG - Lose Control.png",
-    "card_path":"assets\/cards\/DROP0338_Lose Control.png"
+    "artwork_path":"assets\/visuals\/artwork\/YDG - Lose_Control.png",
+    "card_path":"assets\/cards\/DROP0338_Lose_Control.png"
   },
   {
     "edition_id":"001",
@@ -1704,8 +1704,8 @@
     "rarity_rank":3,
     "badges":"Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0105_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity - Can_t Get Enough.png",
-    "card_path":"assets\/cards\/DROP0105_Can_t Get Enough.png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity - Can_t_Get_Enough.png",
+    "card_path":"assets\/cards\/DROP0105_Can_t_Get_Enough.png"
   },
   {
     "edition_id":"001",
@@ -1765,7 +1765,7 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0324_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Subtronics, Wooli - Dingus.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Subtronics,_Wooli - Dingus.png",
     "card_path":"assets\/cards\/DROP0324_Dingus.png"
   },
   {
@@ -1826,8 +1826,8 @@
     "rarity_rank":3,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0184_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi, RUNN - Better Off Alone.png",
-    "card_path":"assets\/cards\/DROP0184_Better Off Alone.png"
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi,_RUNN - Better_Off_Alone.png",
+    "card_path":"assets\/cards\/DROP0184_Better_Off_Alone.png"
   },
   {
     "edition_id":"001",
@@ -1948,7 +1948,7 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0148_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/TYNAN, maddietiedt - wubmart.png",
+    "artwork_path":"assets\/visuals\/artwork\/TYNAN,_maddietiedt - wubmart.png",
     "card_path":"assets\/cards\/DROP0148_wubmart.png"
   },
   {
@@ -2009,7 +2009,7 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0142_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi - LOADED.png",
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi - LOADED.png",
     "card_path":"assets\/cards\/DROP0142_LOADED.png"
   },
   {
@@ -2070,8 +2070,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0056_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - In The Place.png",
-    "card_path":"assets\/cards\/DROP0056_In The Place.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - In_The_Place.png",
+    "card_path":"assets\/cards\/DROP0056_In_The_Place.png"
   },
   {
     "edition_id":"001",
@@ -2131,8 +2131,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0124_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Forgotten Name.png",
-    "card_path":"assets\/cards\/DROP0124_Forgotten Name.png"
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Forgotten_Name.png",
+    "card_path":"assets\/cards\/DROP0124_Forgotten_Name.png"
   },
   {
     "edition_id":"001",
@@ -2192,8 +2192,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0019_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/TYNAN - His Name Is.png",
-    "card_path":"assets\/cards\/DROP0019_His Name Is.png"
+    "artwork_path":"assets\/visuals\/artwork\/TYNAN - His_Name_Is.png",
+    "card_path":"assets\/cards\/DROP0019_His_Name_Is.png"
   },
   {
     "edition_id":"001",
@@ -2253,8 +2253,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0201_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Wooli - Chaos Theory.png",
-    "card_path":"assets\/cards\/DROP0201_Chaos Theory.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Wooli - Chaos_Theory.png",
+    "card_path":"assets\/cards\/DROP0201_Chaos_Theory.png"
   },
   {
     "edition_id":"001",
@@ -2314,8 +2314,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0023_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Fuck Up.png",
-    "card_path":"assets\/cards\/DROP0023_Fuck Up.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Fuck_Up.png",
+    "card_path":"assets\/cards\/DROP0023_Fuck_Up.png"
   },
   {
     "edition_id":"001",
@@ -2436,8 +2436,8 @@
     "rarity_rank":3,
     "badges":"Production Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0063_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - The Other Side.png",
-    "card_path":"assets\/cards\/DROP0063_The Other Side.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - The_Other_Side.png",
+    "card_path":"assets\/cards\/DROP0063_The_Other_Side.png"
   },
   {
     "edition_id":"001",
@@ -2497,8 +2497,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0235_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Virtual Riot - Sh_t_s On F_re.png",
-    "card_path":"assets\/cards\/DROP0235_Sh_t_s On F_re.png"
+    "artwork_path":"assets\/visuals\/artwork\/Virtual_Riot - Sh_t_s_On_F_re.png",
+    "card_path":"assets\/cards\/DROP0235_Sh_t_s_On_F_re.png"
   },
   {
     "edition_id":"001",
@@ -2558,7 +2558,7 @@
     "rarity_rank":3,
     "badges":"Production Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0346_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - Alive.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - Alive.png",
     "card_path":"assets\/cards\/DROP0346_Alive.png"
   },
   {
@@ -2619,8 +2619,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0065_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - That One Dubstep Song.png",
-    "card_path":"assets\/cards\/DROP0065_That One Dubstep Song.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - That_One_Dubstep_Song.png",
+    "card_path":"assets\/cards\/DROP0065_That_One_Dubstep_Song.png"
   },
   {
     "edition_id":"001",
@@ -2680,8 +2680,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0118_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Itchy Scratchy.png",
-    "card_path":"assets\/cards\/DROP0118_Itchy Scratchy.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Itchy_Scratchy.png",
+    "card_path":"assets\/cards\/DROP0118_Itchy_Scratchy.png"
   },
   {
     "edition_id":"001",
@@ -2802,8 +2802,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0339_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/YDG - Lose Control.png",
-    "card_path":"assets\/cards\/DROP0339_Lose Control.png"
+    "artwork_path":"assets\/visuals\/artwork\/YDG - Lose_Control.png",
+    "card_path":"assets\/cards\/DROP0339_Lose_Control.png"
   },
   {
     "edition_id":"001",
@@ -2863,8 +2863,8 @@
     "rarity_rank":3,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0350_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - Dark Side.png",
-    "card_path":"assets\/cards\/DROP0350_Dark Side.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - Dark_Side.png",
+    "card_path":"assets\/cards\/DROP0350_Dark_Side.png"
   },
   {
     "edition_id":"001",
@@ -2924,8 +2924,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0119_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Itchy Scratchy.png",
-    "card_path":"assets\/cards\/DROP0119_Itchy Scratchy.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Itchy_Scratchy.png",
+    "card_path":"assets\/cards\/DROP0119_Itchy_Scratchy.png"
   },
   {
     "edition_id":"001",
@@ -2985,8 +2985,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0029_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Scream Saver.png",
-    "card_path":"assets\/cards\/DROP0029_Scream Saver.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Scream_Saver.png",
+    "card_path":"assets\/cards\/DROP0029_Scream_Saver.png"
   },
   {
     "edition_id":"001",
@@ -3046,8 +3046,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0062_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - That One Dubstep Song.png",
-    "card_path":"assets\/cards\/DROP0062_That One Dubstep Song.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - That_One_Dubstep_Song.png",
+    "card_path":"assets\/cards\/DROP0062_That_One_Dubstep_Song.png"
   },
   {
     "edition_id":"001",
@@ -3107,8 +3107,8 @@
     "rarity_rank":2,
     "badges":"Production Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0181_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Wooli - Name Drop.png",
-    "card_path":"assets\/cards\/DROP0181_Name Drop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Wooli - Name_Drop.png",
+    "card_path":"assets\/cards\/DROP0181_Name_Drop.png"
   },
   {
     "edition_id":"001",
@@ -3168,8 +3168,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0159_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Funk You Up!.png",
-    "card_path":"assets\/cards\/DROP0159_Funk You Up!.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Funk_You_Up!.png",
+    "card_path":"assets\/cards\/DROP0159_Funk_You_Up!.png"
   },
   {
     "edition_id":"001",
@@ -3229,7 +3229,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0230_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Tape B, Wooli - Dopamine.png",
+    "artwork_path":"assets\/visuals\/artwork\/Tape_B,_Wooli - Dopamine.png",
     "card_path":"assets\/cards\/DROP0230_Dopamine.png"
   },
   {
@@ -3290,8 +3290,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0020_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/TYNAN - His Name Is.png",
-    "card_path":"assets\/cards\/DROP0020_His Name Is.png"
+    "artwork_path":"assets\/visuals\/artwork\/TYNAN - His_Name_Is.png",
+    "card_path":"assets\/cards\/DROP0020_His_Name_Is.png"
   },
   {
     "edition_id":"001",
@@ -3351,7 +3351,7 @@
     "rarity_rank":2,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0135_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Subtronics - Griztronics.png",
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Subtronics - Griztronics.png",
     "card_path":"assets\/cards\/DROP0135_Griztronics.png"
   },
   {
@@ -3473,8 +3473,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0162_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, Creg - Antidote (Midnight Coffee) (feat. CREG).png",
-    "card_path":"assets\/cards\/DROP0162_Antidote (Midnight Coffee) (feat. CREG).png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_Creg - Antidote_(Midnight_Coffee)_(feat._CREG).png",
+    "card_path":"assets\/cards\/DROP0162_Antidote_(Midnight_Coffee)_(feat._CREG).png"
   },
   {
     "edition_id":"001",
@@ -3534,8 +3534,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0010_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, Wooli - Lock In.png",
-    "card_path":"assets\/cards\/DROP0010_Lock In.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_Wooli - Lock_In.png",
+    "card_path":"assets\/cards\/DROP0010_Lock_In.png"
   },
   {
     "edition_id":"001",
@@ -3595,8 +3595,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0134_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Flux Pavilion - I Cant Stop.png",
-    "card_path":"assets\/cards\/DROP0134_I Cant Stop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Flux_Pavilion - I_Cant_Stop.png",
+    "card_path":"assets\/cards\/DROP0134_I_Cant_Stop.png"
   },
   {
     "edition_id":"001",
@@ -3656,8 +3656,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0128_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Prelude I.png",
-    "card_path":"assets\/cards\/DROP0128_Prelude I.png"
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Prelude_I.png",
+    "card_path":"assets\/cards\/DROP0128_Prelude_I.png"
   },
   {
     "edition_id":"001",
@@ -3717,8 +3717,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0014_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, Creg - Antidote (Midnight Coffee) (feat. CREG).png",
-    "card_path":"assets\/cards\/DROP0014_Antidote (Midnight Coffee) (feat. CREG).png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_Creg - Antidote_(Midnight_Coffee)_(feat._CREG).png",
+    "card_path":"assets\/cards\/DROP0014_Antidote_(Midnight_Coffee)_(feat._CREG).png"
   },
   {
     "edition_id":"001",
@@ -3778,8 +3778,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0082_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Flux Pavilion - I Cant Stop.png",
-    "card_path":"assets\/cards\/DROP0082_I Cant Stop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Flux_Pavilion - I_Cant_Stop.png",
+    "card_path":"assets\/cards\/DROP0082_I_Cant_Stop.png"
   },
   {
     "edition_id":"001",
@@ -4083,8 +4083,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0007_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Fuck Up.png",
-    "card_path":"assets\/cards\/DROP0007_Fuck Up.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Fuck_Up.png",
+    "card_path":"assets\/cards\/DROP0007_Fuck_Up.png"
   },
   {
     "edition_id":"001",
@@ -4144,8 +4144,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0293_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Waka Flocka Flame, HOL! - HARD IN DA PAINT.png",
-    "card_path":"assets\/cards\/DROP0293_HARD IN DA PAINT.png"
+    "artwork_path":"assets\/visuals\/artwork\/Waka_Flocka_Flame,_HOL! - HARD_IN_DA_PAINT.png",
+    "card_path":"assets\/cards\/DROP0293_HARD_IN_DA_PAINT.png"
   },
   {
     "edition_id":"001",
@@ -4205,7 +4205,7 @@
     "rarity_rank":2,
     "badges":"Production Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0137_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Subtronics - A.F.B.1..png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Subtronics - A.F.B.1..png",
     "card_path":"assets\/cards\/DROP0137_A.F.B.1..png"
   },
   {
@@ -4266,8 +4266,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0015_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, Grabbitz - Infinity (feat. Grabbitz).png",
-    "card_path":"assets\/cards\/DROP0015_Infinity (feat. Grabbitz).png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_Grabbitz - Infinity_(feat._Grabbitz).png",
+    "card_path":"assets\/cards\/DROP0015_Infinity_(feat._Grabbitz).png"
   },
   {
     "edition_id":"001",
@@ -4327,7 +4327,7 @@
     "rarity_rank":2,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0186_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - Survive.png",
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - Survive.png",
     "card_path":"assets\/cards\/DROP0186_Survive.png"
   },
   {
@@ -4388,7 +4388,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0355_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Vastive - Awaken.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Vastive - Awaken.png",
     "card_path":"assets\/cards\/DROP0355_Awaken.png"
   },
   {
@@ -4449,7 +4449,7 @@
     "rarity_rank":2,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0089_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Subtronics - Griztronics.png",
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Subtronics - Griztronics.png",
     "card_path":"assets\/cards\/DROP0089_Griztronics.png"
   },
   {
@@ -4510,7 +4510,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0055_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - Dominate.png",
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - Dominate.png",
     "card_path":"assets\/cards\/DROP0055_Dominate.png"
   },
   {
@@ -4632,8 +4632,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0370_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Crankdat - Ding Dong.png",
-    "card_path":"assets\/cards\/DROP0370_Ding Dong.png"
+    "artwork_path":"assets\/visuals\/artwork\/Crankdat - Ding_Dong.png",
+    "card_path":"assets\/cards\/DROP0370_Ding_Dong.png"
   },
   {
     "edition_id":"001",
@@ -4693,8 +4693,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0183_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi, RUNN - Better Off Alone.png",
-    "card_path":"assets\/cards\/DROP0183_Better Off Alone.png"
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi,_RUNN - Better_Off_Alone.png",
+    "card_path":"assets\/cards\/DROP0183_Better_Off_Alone.png"
   },
   {
     "edition_id":"001",
@@ -4754,8 +4754,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0311_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zeds Dead, GRiZ - Ecstasy Of Soul.png",
-    "card_path":"assets\/cards\/DROP0311_Ecstasy Of Soul.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zeds_Dead,_GRiZ - Ecstasy_Of_Soul.png",
+    "card_path":"assets\/cards\/DROP0311_Ecstasy_Of_Soul.png"
   },
   {
     "edition_id":"001",
@@ -4815,8 +4815,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0371_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Crankdat - Ding Dong.png",
-    "card_path":"assets\/cards\/DROP0371_Ding Dong.png"
+    "artwork_path":"assets\/visuals\/artwork\/Crankdat - Ding_Dong.png",
+    "card_path":"assets\/cards\/DROP0371_Ding_Dong.png"
   },
   {
     "edition_id":"001",
@@ -4876,8 +4876,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0295_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Waka Flocka Flame, HOL! - HARD IN DA PAINT.png",
-    "card_path":"assets\/cards\/DROP0295_HARD IN DA PAINT.png"
+    "artwork_path":"assets\/visuals\/artwork\/Waka_Flocka_Flame,_HOL! - HARD_IN_DA_PAINT.png",
+    "card_path":"assets\/cards\/DROP0295_HARD_IN_DA_PAINT.png"
   },
   {
     "edition_id":"001",
@@ -4937,8 +4937,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0076_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Flux Pavilion - Bass Cannon (Flux_s Version).png",
-    "card_path":"assets\/cards\/DROP0076_Bass Cannon (Flux_s Version).png"
+    "artwork_path":"assets\/visuals\/artwork\/Flux_Pavilion - Bass_Cannon_(Flux_s_Version).png",
+    "card_path":"assets\/cards\/DROP0076_Bass_Cannon_(Flux_s_Version).png"
   },
   {
     "edition_id":"001",
@@ -4998,7 +4998,7 @@
     "rarity_rank":2,
     "badges":"Build Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0299_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/MUST DIE! - CHAOS.png",
+    "artwork_path":"assets\/visuals\/artwork\/MUST_DIE! - CHAOS.png",
     "card_path":"assets\/cards\/DROP0299_CHAOS.png"
   },
   {
@@ -5059,7 +5059,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0225_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Behemoth.png",
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Behemoth.png",
     "card_path":"assets\/cards\/DROP0225_Behemoth.png"
   },
   {
@@ -5120,8 +5120,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0215_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - HAPPY SONG.png",
-    "card_path":"assets\/cards\/DROP0215_HAPPY SONG.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - HAPPY_SONG.png",
+    "card_path":"assets\/cards\/DROP0215_HAPPY_SONG.png"
   },
   {
     "edition_id":"001",
@@ -5181,8 +5181,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0180_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Wooli - Name Drop.png",
-    "card_path":"assets\/cards\/DROP0180_Name Drop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Wooli - Name_Drop.png",
+    "card_path":"assets\/cards\/DROP0180_Name_Drop.png"
   },
   {
     "edition_id":"001",
@@ -5242,7 +5242,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0149_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/TYNAN, maddietiedt - wubmart.png",
+    "artwork_path":"assets\/visuals\/artwork\/TYNAN,_maddietiedt - wubmart.png",
     "card_path":"assets\/cards\/DROP0149_wubmart.png"
   },
   {
@@ -5303,8 +5303,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0279_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ganja White Night, Mr. Bill, Wasiu - Ego Death.png",
-    "card_path":"assets\/cards\/DROP0279_Ego Death.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ganja_White_Night,_Mr._Bill,_Wasiu - Ego_Death.png",
+    "card_path":"assets\/cards\/DROP0279_Ego_Death.png"
   },
   {
     "edition_id":"001",
@@ -5364,8 +5364,8 @@
     "rarity_rank":2,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0213_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Noisia, Skrillex, josh pan, Dylan Brady - Supersonic (My Existence).png",
-    "card_path":"assets\/cards\/DROP0213_Supersonic (My Existence).png"
+    "artwork_path":"assets\/visuals\/artwork\/Noisia,_Skrillex,_josh_pan,_Dylan_Brady - Supersonic_(My_Existence).png",
+    "card_path":"assets\/cards\/DROP0213_Supersonic_(My_Existence).png"
   },
   {
     "edition_id":"001",
@@ -5425,8 +5425,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0160_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Jem Cooke, Subtronics - By A Thread (feat. Jem Cooke).png",
-    "card_path":"assets\/cards\/DROP0160_By A Thread (feat. Jem Cooke).png"
+    "artwork_path":"assets\/visuals\/artwork\/Jem_Cooke,_Subtronics - By_A_Thread_(feat._Jem_Cooke).png",
+    "card_path":"assets\/cards\/DROP0160_By_A_Thread_(feat._Jem_Cooke).png"
   },
   {
     "edition_id":"001",
@@ -5486,7 +5486,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0356_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Vastive - Awaken.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Vastive - Awaken.png",
     "card_path":"assets\/cards\/DROP0356_Awaken.png"
   },
   {
@@ -5547,8 +5547,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0359_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Zingara - The Medium.png",
-    "card_path":"assets\/cards\/DROP0359_The Medium.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Zingara - The_Medium.png",
+    "card_path":"assets\/cards\/DROP0359_The_Medium.png"
   },
   {
     "edition_id":"001",
@@ -5608,8 +5608,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0133_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Flux Pavilion - Bass Cannon (Flux_s Version).png",
-    "card_path":"assets\/cards\/DROP0133_Bass Cannon (Flux_s Version).png"
+    "artwork_path":"assets\/visuals\/artwork\/Flux_Pavilion - Bass_Cannon_(Flux_s_Version).png",
+    "card_path":"assets\/cards\/DROP0133_Bass_Cannon_(Flux_s_Version).png"
   },
   {
     "edition_id":"001",
@@ -5669,7 +5669,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0121_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Creator.png",
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Creator.png",
     "card_path":"assets\/cards\/DROP0121_Creator.png"
   },
   {
@@ -5730,8 +5730,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0409_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, NGHTMRE, Boogie T - Nuclear Bass Face feat. Boogie T.png",
-    "card_path":"assets\/cards\/DROP0409_Nuclear Bass Face feat. Boogie T.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_NGHTMRE,_Boogie_T - Nuclear_Bass_Face_feat._Boogie_T.png",
+    "card_path":"assets\/cards\/DROP0409_Nuclear_Bass_Face_feat._Boogie_T.png"
   },
   {
     "edition_id":"001",
@@ -5791,7 +5791,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0343_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Wooli - Titans.png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Wooli - Titans.png",
     "card_path":"assets\/cards\/DROP0343_Titans.png"
   },
   {
@@ -5974,8 +5974,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0294_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Waka Flocka Flame, HOL! - HARD IN DA PAINT.png",
-    "card_path":"assets\/cards\/DROP0294_HARD IN DA PAINT.png"
+    "artwork_path":"assets\/visuals\/artwork\/Waka_Flocka_Flame,_HOL! - HARD_IN_DA_PAINT.png",
+    "card_path":"assets\/cards\/DROP0294_HARD_IN_DA_PAINT.png"
   },
   {
     "edition_id":"001",
@@ -6096,8 +6096,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0379_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Crankdat, Bandlez - Ground Shake.png",
-    "card_path":"assets\/cards\/DROP0379_Ground Shake.png"
+    "artwork_path":"assets\/visuals\/artwork\/Crankdat,_Bandlez - Ground_Shake.png",
+    "card_path":"assets\/cards\/DROP0379_Ground_Shake.png"
   },
   {
     "edition_id":"001",
@@ -6157,8 +6157,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0064_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - The Other Side.png",
-    "card_path":"assets\/cards\/DROP0064_The Other Side.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - The_Other_Side.png",
+    "card_path":"assets\/cards\/DROP0064_The_Other_Side.png"
   },
   {
     "edition_id":"001",
@@ -6218,8 +6218,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0400_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - CRASH OUT.png",
-    "card_path":"assets\/cards\/DROP0400_CRASH OUT.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - CRASH_OUT.png",
+    "card_path":"assets\/cards\/DROP0400_CRASH_OUT.png"
   },
   {
     "edition_id":"001",
@@ -6279,8 +6279,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0037_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - In The Place.png",
-    "card_path":"assets\/cards\/DROP0037_In The Place.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - In_The_Place.png",
+    "card_path":"assets\/cards\/DROP0037_In_The_Place.png"
   },
   {
     "edition_id":"001",
@@ -6340,8 +6340,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0384_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Sullivan King - Bass To The Dome.png",
-    "card_path":"assets\/cards\/DROP0384_Bass To The Dome.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Sullivan_King - Bass_To_The_Dome.png",
+    "card_path":"assets\/cards\/DROP0384_Bass_To_The_Dome.png"
   },
   {
     "edition_id":"001",
@@ -6462,8 +6462,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0403_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/SLANDER, Asking Alexandria, Crankdat - Kneel Before Me feat. Asking Alexandria.png",
-    "card_path":"assets\/cards\/DROP0403_Kneel Before Me feat. Asking Alexandria.png"
+    "artwork_path":"assets\/visuals\/artwork\/SLANDER,_Asking_Alexandria,_Crankdat - Kneel_Before_Me_feat._Asking_Alexandria.png",
+    "card_path":"assets\/cards\/DROP0403_Kneel_Before_Me_feat._Asking_Alexandria.png"
   },
   {
     "edition_id":"001",
@@ -6584,7 +6584,7 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0325_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Subtronics, Wooli - Dingus.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Subtronics,_Wooli - Dingus.png",
     "card_path":"assets\/cards\/DROP0325_Dingus.png"
   },
   {
@@ -6645,8 +6645,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0290_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces, Eptic - Crash Out.png",
-    "card_path":"assets\/cards\/DROP0290_Crash Out.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces,_Eptic - Crash_Out.png",
+    "card_path":"assets\/cards\/DROP0290_Crash_Out.png"
   },
   {
     "edition_id":"001",
@@ -6706,8 +6706,8 @@
     "rarity_rank":2,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0255_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Peekaboo - Evil Lair.png",
-    "card_path":"assets\/cards\/DROP0255_Evil Lair.png"
+    "artwork_path":"assets\/visuals\/artwork\/Peekaboo - Evil_Lair.png",
+    "card_path":"assets\/cards\/DROP0255_Evil_Lair.png"
   },
   {
     "edition_id":"001",
@@ -6767,8 +6767,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0100_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Knife Party - Rage Valley.png",
-    "card_path":"assets\/cards\/DROP0100_Rage Valley.png"
+    "artwork_path":"assets\/visuals\/artwork\/Knife_Party - Rage_Valley.png",
+    "card_path":"assets\/cards\/DROP0100_Rage_Valley.png"
   },
   {
     "edition_id":"001",
@@ -6828,8 +6828,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0369_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Crankdat - Ding Dong.png",
-    "card_path":"assets\/cards\/DROP0369_Ding Dong.png"
+    "artwork_path":"assets\/visuals\/artwork\/Crankdat - Ding_Dong.png",
+    "card_path":"assets\/cards\/DROP0369_Ding_Dong.png"
   },
   {
     "edition_id":"001",
@@ -6889,8 +6889,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0378_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Crankdat, Bandlez - Ground Shake.png",
-    "card_path":"assets\/cards\/DROP0378_Ground Shake.png"
+    "artwork_path":"assets\/visuals\/artwork\/Crankdat,_Bandlez - Ground_Shake.png",
+    "card_path":"assets\/cards\/DROP0378_Ground_Shake.png"
   },
   {
     "edition_id":"001",
@@ -6950,7 +6950,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0207_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Knife Party - Centipede.png",
+    "artwork_path":"assets\/visuals\/artwork\/Knife_Party - Centipede.png",
     "card_path":"assets\/cards\/DROP0207_Centipede.png"
   },
   {
@@ -7011,8 +7011,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0217_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - HAPPY SONG.png",
-    "card_path":"assets\/cards\/DROP0217_HAPPY SONG.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - HAPPY_SONG.png",
+    "card_path":"assets\/cards\/DROP0217_HAPPY_SONG.png"
   },
   {
     "edition_id":"001",
@@ -7072,8 +7072,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0253_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE, Crankdat, Duke Deuce - TYPE SH_T.png",
-    "card_path":"assets\/cards\/DROP0253_TYPE SH_T.png"
+    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE,_Crankdat,_Duke_Deuce - TYPE_SH_T.png",
+    "card_path":"assets\/cards\/DROP0253_TYPE_SH_T.png"
   },
   {
     "edition_id":"001",
@@ -7133,7 +7133,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0185_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - Survive.png",
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - Survive.png",
     "card_path":"assets\/cards\/DROP0185_Survive.png"
   },
   {
@@ -7194,7 +7194,7 @@
     "rarity_rank":1,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0222_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex, Flowdan, Fred again.. - Rumble.png",
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex,_Flowdan,_Fred_again.. - Rumble.png",
     "card_path":"assets\/cards\/DROP0222_Rumble.png"
   },
   {
@@ -7255,8 +7255,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0273_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Conrank, Mersiv - Lights Go Down.png",
-    "card_path":"assets\/cards\/DROP0273_Lights Go Down.png"
+    "artwork_path":"assets\/visuals\/artwork\/Conrank,_Mersiv - Lights_Go_Down.png",
+    "card_path":"assets\/cards\/DROP0273_Lights_Go_Down.png"
   },
   {
     "edition_id":"001",
@@ -7316,8 +7316,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0317_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/BARELY ALIVE - don_t stop.png",
-    "card_path":"assets\/cards\/DROP0317_don_t stop.png"
+    "artwork_path":"assets\/visuals\/artwork\/BARELY_ALIVE - don_t_stop.png",
+    "card_path":"assets\/cards\/DROP0317_don_t_stop.png"
   },
   {
     "edition_id":"001",
@@ -7377,8 +7377,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0027_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Nothing Between.png",
-    "card_path":"assets\/cards\/DROP0027_Nothing Between.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Nothing_Between.png",
+    "card_path":"assets\/cards\/DROP0027_Nothing_Between.png"
   },
   {
     "edition_id":"001",
@@ -7438,8 +7438,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0267_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Black Tiger Sex Machine, Kai Wachi - Save Me.png",
-    "card_path":"assets\/cards\/DROP0267_Save Me.png"
+    "artwork_path":"assets\/visuals\/artwork\/Black_Tiger_Sex_Machine,_Kai_Wachi - Save_Me.png",
+    "card_path":"assets\/cards\/DROP0267_Save_Me.png"
   },
   {
     "edition_id":"001",
@@ -7499,7 +7499,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0357_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Vastive - Awaken.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Vastive - Awaken.png",
     "card_path":"assets\/cards\/DROP0357_Awaken.png"
   },
   {
@@ -7560,8 +7560,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0251_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE, Crankdat, Duke Deuce - TYPE SH_T.png",
-    "card_path":"assets\/cards\/DROP0251_TYPE SH_T.png"
+    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE,_Crankdat,_Duke_Deuce - TYPE_SH_T.png",
+    "card_path":"assets\/cards\/DROP0251_TYPE_SH_T.png"
   },
   {
     "edition_id":"001",
@@ -7682,8 +7682,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0380_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Crankdat, Bandlez - Ground Shake.png",
-    "card_path":"assets\/cards\/DROP0380_Ground Shake.png"
+    "artwork_path":"assets\/visuals\/artwork\/Crankdat,_Bandlez - Ground_Shake.png",
+    "card_path":"assets\/cards\/DROP0380_Ground_Shake.png"
   },
   {
     "edition_id":"001",
@@ -7743,7 +7743,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0140_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi - ILL.png",
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi - ILL.png",
     "card_path":"assets\/cards\/DROP0140_ILL.png"
   },
   {
@@ -7804,8 +7804,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0312_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zeds Dead, GRiZ - Ecstasy Of Soul.png",
-    "card_path":"assets\/cards\/DROP0312_Ecstasy Of Soul.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zeds_Dead,_GRiZ - Ecstasy_Of_Soul.png",
+    "card_path":"assets\/cards\/DROP0312_Ecstasy_Of_Soul.png"
   },
   {
     "edition_id":"001",
@@ -7987,8 +7987,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0011_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, Wooli - Lock In.png",
-    "card_path":"assets\/cards\/DROP0011_Lock In.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_Wooli - Lock_In.png",
+    "card_path":"assets\/cards\/DROP0011_Lock_In.png"
   },
   {
     "edition_id":"001",
@@ -8048,8 +8048,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0272_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Conrank, Mersiv - Lights Go Down.png",
-    "card_path":"assets\/cards\/DROP0272_Lights Go Down.png"
+    "artwork_path":"assets\/visuals\/artwork\/Conrank,_Mersiv - Lights_Go_Down.png",
+    "card_path":"assets\/cards\/DROP0272_Lights_Go_Down.png"
   },
   {
     "edition_id":"001",
@@ -8109,7 +8109,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0193_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Kai Wachi, Sullivan King - Bonebreaker.png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Kai_Wachi,_Sullivan_King - Bonebreaker.png",
     "card_path":"assets\/cards\/DROP0193_Bonebreaker.png"
   },
   {
@@ -8292,8 +8292,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0050_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Funk You Up!.png",
-    "card_path":"assets\/cards\/DROP0050_Funk You Up!.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Funk_You_Up!.png",
+    "card_path":"assets\/cards\/DROP0050_Funk_You_Up!.png"
   },
   {
     "edition_id":"001",
@@ -8353,7 +8353,7 @@
     "rarity_rank":1,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0088_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Subtronics - Griztronics.png",
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Subtronics - Griztronics.png",
     "card_path":"assets\/cards\/DROP0088_Griztronics.png"
   },
   {
@@ -8414,8 +8414,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0408_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics, NGHTMRE, Boogie T - Nuclear Bass Face feat. Boogie T.png",
-    "card_path":"assets\/cards\/DROP0408_Nuclear Bass Face feat. Boogie T.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics,_NGHTMRE,_Boogie_T - Nuclear_Bass_Face_feat._Boogie_T.png",
+    "card_path":"assets\/cards\/DROP0408_Nuclear_Bass_Face_feat._Boogie_T.png"
   },
   {
     "edition_id":"001",
@@ -8536,7 +8536,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0220_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - Laserbeam.png",
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - Laserbeam.png",
     "card_path":"assets\/cards\/DROP0220_Laserbeam.png"
   },
   {
@@ -8597,8 +8597,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0352_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - Scared Of The Dark.png",
-    "card_path":"assets\/cards\/DROP0352_Scared Of The Dark.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - Scared_Of_The_Dark.png",
+    "card_path":"assets\/cards\/DROP0352_Scared_Of_The_Dark.png"
   },
   {
     "edition_id":"001",
@@ -8719,8 +8719,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0261_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Virtual Riot - One Two.png",
-    "card_path":"assets\/cards\/DROP0261_One Two.png"
+    "artwork_path":"assets\/visuals\/artwork\/Virtual_Riot - One_Two.png",
+    "card_path":"assets\/cards\/DROP0261_One_Two.png"
   },
   {
     "edition_id":"001",
@@ -8841,7 +8841,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0169_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, ALLEYCVT - BELIEVE.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_ALLEYCVT - BELIEVE.png",
     "card_path":"assets\/cards\/DROP0169_BELIEVE.png"
   },
   {
@@ -8902,7 +8902,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0170_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, ALLEYCVT - BELIEVE.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_ALLEYCVT - BELIEVE.png",
     "card_path":"assets\/cards\/DROP0170_BELIEVE.png"
   },
   {
@@ -9024,8 +9024,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0033_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision - The Paradox.png",
-    "card_path":"assets\/cards\/DROP0033_The Paradox.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision - The_Paradox.png",
+    "card_path":"assets\/cards\/DROP0033_The_Paradox.png"
   },
   {
     "edition_id":"001",
@@ -9207,7 +9207,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0301_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/MUST DIE! - CHAOS.png",
+    "artwork_path":"assets\/visuals\/artwork\/MUST_DIE! - CHAOS.png",
     "card_path":"assets\/cards\/DROP0301_CHAOS.png"
   },
   {
@@ -9329,8 +9329,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0084_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, CloZee - Color Of Your Soul.png",
-    "card_path":"assets\/cards\/DROP0084_Color Of Your Soul.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_CloZee - Color_Of_Your_Soul.png",
+    "card_path":"assets\/cards\/DROP0084_Color_Of_Your_Soul.png"
   },
   {
     "edition_id":"001",
@@ -9390,7 +9390,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0405_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex, Flowdan, Peekaboo - BADDERS.png",
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex,_Flowdan,_Peekaboo - BADDERS.png",
     "card_path":"assets\/cards\/DROP0405_BADDERS.png"
   },
   {
@@ -9512,8 +9512,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0028_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Scream Saver.png",
-    "card_path":"assets\/cards\/DROP0028_Scream Saver.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Scream_Saver.png",
+    "card_path":"assets\/cards\/DROP0028_Scream_Saver.png"
   },
   {
     "edition_id":"001",
@@ -9634,7 +9634,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0316_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/MUST DIE! - CHAOS.png",
+    "artwork_path":"assets\/visuals\/artwork\/MUST_DIE! - CHAOS.png",
     "card_path":"assets\/cards\/DROP0316_CHAOS.png"
   },
   {
@@ -9695,8 +9695,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0233_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Virtual Riot - Sh_t_s On F_re.png",
-    "card_path":"assets\/cards\/DROP0233_Sh_t_s On F_re.png"
+    "artwork_path":"assets\/visuals\/artwork\/Virtual_Riot - Sh_t_s_On_F_re.png",
+    "card_path":"assets\/cards\/DROP0233_Sh_t_s_On_F_re.png"
   },
   {
     "edition_id":"001",
@@ -9756,8 +9756,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0200_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Wooli - Chaos Theory.png",
-    "card_path":"assets\/cards\/DROP0200_Chaos Theory.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Wooli - Chaos_Theory.png",
+    "card_path":"assets\/cards\/DROP0200_Chaos_Theory.png"
   },
   {
     "edition_id":"001",
@@ -9817,8 +9817,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0291_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces, Eptic - Crash Out.png",
-    "card_path":"assets\/cards\/DROP0291_Crash Out.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces,_Eptic - Crash_Out.png",
+    "card_path":"assets\/cards\/DROP0291_Crash_Out.png"
   },
   {
     "edition_id":"001",
@@ -9878,8 +9878,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0306_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Nero - Promises (Skrillex & Nero Remix).png",
-    "card_path":"assets\/cards\/DROP0306_Promises (Skrillex & Nero Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/Nero - Promises_(Skrillex_&_Nero_Remix).png",
+    "card_path":"assets\/cards\/DROP0306_Promises_(Skrillex_&_Nero_Remix).png"
   },
   {
     "edition_id":"001",
@@ -9939,8 +9939,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0401_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - CRASH OUT.png",
-    "card_path":"assets\/cards\/DROP0401_CRASH OUT.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - CRASH_OUT.png",
+    "card_path":"assets\/cards\/DROP0401_CRASH_OUT.png"
   },
   {
     "edition_id":"001",
@@ -10000,8 +10000,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0265_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Alison Wonderland - Again_ Fuck..png",
-    "card_path":"assets\/cards\/DROP0265_Again_ Fuck..png"
+    "artwork_path":"assets\/visuals\/artwork\/Alison_Wonderland - Again_Fuck..png",
+    "card_path":"assets\/cards\/DROP0265_Again_Fuck..png"
   },
   {
     "edition_id":"001",
@@ -10061,8 +10061,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0264_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Alison Wonderland - Again_ Fuck..png",
-    "card_path":"assets\/cards\/DROP0264_Again_ Fuck..png"
+    "artwork_path":"assets\/visuals\/artwork\/Alison_Wonderland - Again_Fuck..png",
+    "card_path":"assets\/cards\/DROP0264_Again_Fuck..png"
   },
   {
     "edition_id":"001",
@@ -10122,8 +10122,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0260_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Virtual Riot - One Two.png",
-    "card_path":"assets\/cards\/DROP0260_One Two.png"
+    "artwork_path":"assets\/visuals\/artwork\/Virtual_Riot - One_Two.png",
+    "card_path":"assets\/cards\/DROP0260_One_Two.png"
   },
   {
     "edition_id":"001",
@@ -10244,7 +10244,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0224_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Behemoth.png",
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Behemoth.png",
     "card_path":"assets\/cards\/DROP0224_Behemoth.png"
   },
   {
@@ -10305,8 +10305,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0292_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces, Eptic - Crash Out.png",
-    "card_path":"assets\/cards\/DROP0292_Crash Out.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces,_Eptic - Crash_Out.png",
+    "card_path":"assets\/cards\/DROP0292_Crash_Out.png"
   },
   {
     "edition_id":"001",
@@ -10366,8 +10366,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0402_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/SLANDER, Asking Alexandria, Crankdat - Kneel Before Me feat. Asking Alexandria.png",
-    "card_path":"assets\/cards\/DROP0402_Kneel Before Me feat. Asking Alexandria.png"
+    "artwork_path":"assets\/visuals\/artwork\/SLANDER,_Asking_Alexandria,_Crankdat - Kneel_Before_Me_feat._Asking_Alexandria.png",
+    "card_path":"assets\/cards\/DROP0402_Kneel_Before_Me_feat._Asking_Alexandria.png"
   },
   {
     "edition_id":"001",
@@ -10488,8 +10488,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0278_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ganja White Night, Mr. Bill, Wasiu - Ego Death.png",
-    "card_path":"assets\/cards\/DROP0278_Ego Death.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ganja_White_Night,_Mr._Bill,_Wasiu - Ego_Death.png",
+    "card_path":"assets\/cards\/DROP0278_Ego_Death.png"
   },
   {
     "edition_id":"001",
@@ -10610,8 +10610,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0179_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Wooli - Name Drop.png",
-    "card_path":"assets\/cards\/DROP0179_Name Drop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Wooli - Name_Drop.png",
+    "card_path":"assets\/cards\/DROP0179_Name_Drop.png"
   },
   {
     "edition_id":"001",
@@ -10732,8 +10732,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0216_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - HAPPY SONG.png",
-    "card_path":"assets\/cards\/DROP0216_HAPPY SONG.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - HAPPY_SONG.png",
+    "card_path":"assets\/cards\/DROP0216_HAPPY_SONG.png"
   },
   {
     "edition_id":"001",
@@ -10793,7 +10793,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0194_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Kai Wachi, Sullivan King - Bonebreaker.png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Kai_Wachi,_Sullivan_King - Bonebreaker.png",
     "card_path":"assets\/cards\/DROP0194_Bonebreaker.png"
   },
   {
@@ -10854,8 +10854,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0073_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Space Laces - Throwin_ Elbows.png",
-    "card_path":"assets\/cards\/DROP0073_Throwin_ Elbows.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Space_Laces - Throwin_Elbows.png",
+    "card_path":"assets\/cards\/DROP0073_Throwin_Elbows.png"
   },
   {
     "edition_id":"001",
@@ -10976,7 +10976,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0136_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Subtronics - A.F.B.1..png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Subtronics - A.F.B.1..png",
     "card_path":"assets\/cards\/DROP0136_A.F.B.1..png"
   },
   {
@@ -11037,8 +11037,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0042_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision - The Paradox.png",
-    "card_path":"assets\/cards\/DROP0042_The Paradox.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision - The_Paradox.png",
+    "card_path":"assets\/cards\/DROP0042_The_Paradox.png"
   },
   {
     "edition_id":"001",
@@ -11159,8 +11159,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0085_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, CloZee - Color Of Your Soul.png",
-    "card_path":"assets\/cards\/DROP0085_Color Of Your Soul.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_CloZee - Color_Of_Your_Soul.png",
+    "card_path":"assets\/cards\/DROP0085_Color_Of_Your_Soul.png"
   },
   {
     "edition_id":"001",
@@ -11220,8 +11220,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0358_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP, Zingara - The Medium.png",
-    "card_path":"assets\/cards\/DROP0358_The Medium.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP,_Zingara - The_Medium.png",
+    "card_path":"assets\/cards\/DROP0358_The_Medium.png"
   },
   {
     "edition_id":"001",
@@ -11342,7 +11342,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0218_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - Laserbeam.png",
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - Laserbeam.png",
     "card_path":"assets\/cards\/DROP0218_Laserbeam.png"
   },
   {
@@ -11403,7 +11403,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0145_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi - PRECIOUS.png",
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi - PRECIOUS.png",
     "card_path":"assets\/cards\/DROP0145_PRECIOUS.png"
   },
   {
@@ -11464,8 +11464,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0077_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Flux Pavilion - Bass Cannon (Flux_s Version).png",
-    "card_path":"assets\/cards\/DROP0077_Bass Cannon (Flux_s Version).png"
+    "artwork_path":"assets\/visuals\/artwork\/Flux_Pavilion - Bass_Cannon_(Flux_s_Version).png",
+    "card_path":"assets\/cards\/DROP0077_Bass_Cannon_(Flux_s_Version).png"
   },
   {
     "edition_id":"001",
@@ -11525,7 +11525,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0362_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE, JT Roach, Viperactive - Cyanide.png",
+    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE,_JT_Roach,_Viperactive - Cyanide.png",
     "card_path":"assets\/cards\/DROP0362_Cyanide.png"
   },
   {
@@ -11647,8 +11647,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0340_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ahee - Bass Baddie.png",
-    "card_path":"assets\/cards\/DROP0340_Bass Baddie.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ahee - Bass_Baddie.png",
+    "card_path":"assets\/cards\/DROP0340_Bass_Baddie.png"
   },
   {
     "edition_id":"001",
@@ -11769,8 +11769,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0386_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Sullivan King - Bass To The Dome.png",
-    "card_path":"assets\/cards\/DROP0386_Bass To The Dome.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Sullivan_King - Bass_To_The_Dome.png",
+    "card_path":"assets\/cards\/DROP0386_Bass_To_The_Dome.png"
   },
   {
     "edition_id":"001",
@@ -11830,8 +11830,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0066_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Benny Benassi, Gary Go - Cinema feat. Gary Go (Skrillex Remix).png",
-    "card_path":"assets\/cards\/DROP0066_Cinema feat. Gary Go (Skrillex Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/Benny_Benassi,_Gary_Go - Cinema_feat._Gary_Go_(Skrillex_Remix).png",
+    "card_path":"assets\/cards\/DROP0066_Cinema_feat._Gary_Go_(Skrillex_Remix).png"
   },
   {
     "edition_id":"001",
@@ -11891,8 +11891,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0086_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, CloZee - Color Of Your Soul.png",
-    "card_path":"assets\/cards\/DROP0086_Color Of Your Soul.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_CloZee - Color_Of_Your_Soul.png",
+    "card_path":"assets\/cards\/DROP0086_Color_Of_Your_Soul.png"
   },
   {
     "edition_id":"001",
@@ -11952,8 +11952,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0257_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex, Sirah - Bangarang (feat. Sirah) (feat. Sirah).png",
-    "card_path":"assets\/cards\/DROP0257_Bangarang (feat. Sirah) (feat. Sirah).png"
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex,_Sirah - Bangarang_(feat._Sirah)_(feat._Sirah).png",
+    "card_path":"assets\/cards\/DROP0257_Bangarang_(feat._Sirah)_(feat._Sirah).png"
   },
   {
     "edition_id":"001",
@@ -12074,8 +12074,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0399_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - CRASH OUT.png",
-    "card_path":"assets\/cards\/DROP0399_CRASH OUT.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - CRASH_OUT.png",
+    "card_path":"assets\/cards\/DROP0399_CRASH_OUT.png"
   },
   {
     "edition_id":"001",
@@ -12135,7 +12135,7 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0206_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Knife Party - Centipede.png",
+    "artwork_path":"assets\/visuals\/artwork\/Knife_Party - Centipede.png",
     "card_path":"assets\/cards\/DROP0206_Centipede.png"
   },
   {
@@ -12196,8 +12196,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0320_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Effin, LSDREAM - DIZZY SPELL.png",
-    "card_path":"assets\/cards\/DROP0320_DIZZY SPELL.png"
+    "artwork_path":"assets\/visuals\/artwork\/Effin,_LSDREAM - DIZZY_SPELL.png",
+    "card_path":"assets\/cards\/DROP0320_DIZZY_SPELL.png"
   },
   {
     "edition_id":"001",
@@ -12257,8 +12257,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0305_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Nero - Promises (Skrillex & Nero Remix).png",
-    "card_path":"assets\/cards\/DROP0305_Promises (Skrillex & Nero Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/Nero - Promises_(Skrillex_&_Nero_Remix).png",
+    "card_path":"assets\/cards\/DROP0305_Promises_(Skrillex_&_Nero_Remix).png"
   },
   {
     "edition_id":"001",
@@ -12318,8 +12318,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0270_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Boogie T - Lotis Eater.png",
-    "card_path":"assets\/cards\/DROP0270_Lotis Eater.png"
+    "artwork_path":"assets\/visuals\/artwork\/Boogie_T - Lotis_Eater.png",
+    "card_path":"assets\/cards\/DROP0270_Lotis_Eater.png"
   },
   {
     "edition_id":"001",
@@ -12379,8 +12379,8 @@
     "rarity_rank":1,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0328_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Riot Ten - Bass Bop.png",
-    "card_path":"assets\/cards\/DROP0328_Bass Bop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Riot_Ten - Bass_Bop.png",
+    "card_path":"assets\/cards\/DROP0328_Bass_Bop.png"
   },
   {
     "edition_id":"001",
@@ -12501,7 +12501,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0146_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Kai Wachi - PRECIOUS.png",
+    "artwork_path":"assets\/visuals\/artwork\/Kai_Wachi - PRECIOUS.png",
     "card_path":"assets\/cards\/DROP0146_PRECIOUS.png"
   },
   {
@@ -12562,8 +12562,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0266_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Black Tiger Sex Machine, Kai Wachi - Save Me.png",
-    "card_path":"assets\/cards\/DROP0266_Save Me.png"
+    "artwork_path":"assets\/visuals\/artwork\/Black_Tiger_Sex_Machine,_Kai_Wachi - Save_Me.png",
+    "card_path":"assets\/cards\/DROP0266_Save_Me.png"
   },
   {
     "edition_id":"001",
@@ -12623,7 +12623,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0036_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - Dominate.png",
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - Dominate.png",
     "card_path":"assets\/cards\/DROP0036_Dominate.png"
   },
   {
@@ -12684,8 +12684,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0417_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zingara - The Crossroads.png",
-    "card_path":"assets\/cards\/DROP0417_The Crossroads.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zingara - The_Crossroads.png",
+    "card_path":"assets\/cards\/DROP0417_The_Crossroads.png"
   },
   {
     "edition_id":"001",
@@ -12745,8 +12745,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0385_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Sullivan King - Bass To The Dome.png",
-    "card_path":"assets\/cards\/DROP0385_Bass To The Dome.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Sullivan_King - Bass_To_The_Dome.png",
+    "card_path":"assets\/cards\/DROP0385_Bass_To_The_Dome.png"
   },
   {
     "edition_id":"001",
@@ -12867,8 +12867,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0353_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - Scared Of The Dark.png",
-    "card_path":"assets\/cards\/DROP0353_Scared Of The Dark.png"
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - Scared_Of_The_Dark.png",
+    "card_path":"assets\/cards\/DROP0353_Scared_Of_The_Dark.png"
   },
   {
     "edition_id":"001",
@@ -12928,8 +12928,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0072_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Space Laces - Throwin_ Elbows.png",
-    "card_path":"assets\/cards\/DROP0072_Throwin_ Elbows.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Space_Laces - Throwin_Elbows.png",
+    "card_path":"assets\/cards\/DROP0072_Throwin_Elbows.png"
   },
   {
     "edition_id":"001",
@@ -12989,8 +12989,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0252_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE, Crankdat, Duke Deuce - TYPE SH_T.png",
-    "card_path":"assets\/cards\/DROP0252_TYPE SH_T.png"
+    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE,_Crankdat,_Duke_Deuce - TYPE_SH_T.png",
+    "card_path":"assets\/cards\/DROP0252_TYPE_SH_T.png"
   },
   {
     "edition_id":"001",
@@ -13050,8 +13050,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0058_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - This Way.png",
-    "card_path":"assets\/cards\/DROP0058_This Way.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - This_Way.png",
+    "card_path":"assets\/cards\/DROP0058_This_Way.png"
   },
   {
     "edition_id":"001",
@@ -13111,8 +13111,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0394_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LYNY - Step 2 It.png",
-    "card_path":"assets\/cards\/DROP0394_Step 2 It.png"
+    "artwork_path":"assets\/visuals\/artwork\/LYNY - Step_2_It.png",
+    "card_path":"assets\/cards\/DROP0394_Step_2_It.png"
   },
   {
     "edition_id":"001",
@@ -13233,8 +13233,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0234_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Virtual Riot - Sh_t_s On F_re.png",
-    "card_path":"assets\/cards\/DROP0234_Sh_t_s On F_re.png"
+    "artwork_path":"assets\/visuals\/artwork\/Virtual_Riot - Sh_t_s_On_F_re.png",
+    "card_path":"assets\/cards\/DROP0234_Sh_t_s_On_F_re.png"
   },
   {
     "edition_id":"001",
@@ -13294,7 +13294,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0221_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex, Flowdan, Fred again.. - Rumble.png",
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex,_Flowdan,_Fred_again.. - Rumble.png",
     "card_path":"assets\/cards\/DROP0221_Rumble.png"
   },
   {
@@ -13355,8 +13355,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0308_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zeds Dead - Sweet Memories.png",
-    "card_path":"assets\/cards\/DROP0308_Sweet Memories.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zeds_Dead - Sweet_Memories.png",
+    "card_path":"assets\/cards\/DROP0308_Sweet_Memories.png"
   },
   {
     "edition_id":"001",
@@ -13416,8 +13416,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0210_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity, Dem Jointz - Flip It.png",
-    "card_path":"assets\/cards\/DROP0210_Flip It.png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity,_Dem_Jointz - Flip_It.png",
+    "card_path":"assets\/cards\/DROP0210_Flip_It.png"
   },
   {
     "edition_id":"001",
@@ -13477,8 +13477,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0115_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex - Scary Monsters and Nice Sprites.png",
-    "card_path":"assets\/cards\/DROP0115_Scary Monsters and Nice Sprites.png"
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex - Scary_Monsters_and_Nice_Sprites.png",
+    "card_path":"assets\/cards\/DROP0115_Scary_Monsters_and_Nice_Sprites.png"
   },
   {
     "edition_id":"001",
@@ -13538,8 +13538,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0326_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Riot Ten - Bass Bop.png",
-    "card_path":"assets\/cards\/DROP0326_Bass Bop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Riot_Ten - Bass_Bop.png",
+    "card_path":"assets\/cards\/DROP0326_Bass_Bop.png"
   },
   {
     "edition_id":"001",
@@ -13599,8 +13599,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0259_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex, Sirah - Bangarang (feat. Sirah) (feat. Sirah).png",
-    "card_path":"assets\/cards\/DROP0259_Bangarang (feat. Sirah) (feat. Sirah).png"
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex,_Sirah - Bangarang_(feat._Sirah)_(feat._Sirah).png",
+    "card_path":"assets\/cards\/DROP0259_Bangarang_(feat._Sirah)_(feat._Sirah).png"
   },
   {
     "edition_id":"001",
@@ -13660,7 +13660,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0345_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Wooli - Titans.png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Wooli - Titans.png",
     "card_path":"assets\/cards\/DROP0345_Titans.png"
   },
   {
@@ -13721,8 +13721,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0104_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity - Can_t Get Enough.png",
-    "card_path":"assets\/cards\/DROP0104_Can_t Get Enough.png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity - Can_t_Get_Enough.png",
+    "card_path":"assets\/cards\/DROP0104_Can_t_Get_Enough.png"
   },
   {
     "edition_id":"001",
@@ -13782,8 +13782,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0296_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Cojaxx, LSDREAM - PEACE LOVE & WUBZ.png",
-    "card_path":"assets\/cards\/DROP0296_PEACE LOVE & WUBZ.png"
+    "artwork_path":"assets\/visuals\/artwork\/Cojaxx,_LSDREAM - PEACE_LOVE_&_WUBZ.png",
+    "card_path":"assets\/cards\/DROP0296_PEACE_LOVE_&_WUBZ.png"
   },
   {
     "edition_id":"001",
@@ -13843,8 +13843,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0101_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Knife Party - Rage Valley.png",
-    "card_path":"assets\/cards\/DROP0101_Rage Valley.png"
+    "artwork_path":"assets\/visuals\/artwork\/Knife_Party - Rage_Valley.png",
+    "card_path":"assets\/cards\/DROP0101_Rage_Valley.png"
   },
   {
     "edition_id":"001",
@@ -13904,8 +13904,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0298_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Cojaxx, LSDREAM - PEACE LOVE & WUBZ.png",
-    "card_path":"assets\/cards\/DROP0298_PEACE LOVE & WUBZ.png"
+    "artwork_path":"assets\/visuals\/artwork\/Cojaxx,_LSDREAM - PEACE_LOVE_&_WUBZ.png",
+    "card_path":"assets\/cards\/DROP0298_PEACE_LOVE_&_WUBZ.png"
   },
   {
     "edition_id":"001",
@@ -13965,8 +13965,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0057_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - This Way.png",
-    "card_path":"assets\/cards\/DROP0057_This Way.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - This_Way.png",
+    "card_path":"assets\/cards\/DROP0057_This_Way.png"
   },
   {
     "edition_id":"001",
@@ -14026,8 +14026,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0327_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Riot Ten - Bass Bop.png",
-    "card_path":"assets\/cards\/DROP0327_Bass Bop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Riot_Ten - Bass_Bop.png",
+    "card_path":"assets\/cards\/DROP0327_Bass_Bop.png"
   },
   {
     "edition_id":"001",
@@ -14148,7 +14148,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0249_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Liquid Stranger, Space Jesus - Spaceboss.png",
+    "artwork_path":"assets\/visuals\/artwork\/Liquid_Stranger,_Space_Jesus - Spaceboss.png",
     "card_path":"assets\/cards\/DROP0249_Spaceboss.png"
   },
   {
@@ -14209,8 +14209,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0341_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ahee - Bass Baddie.png",
-    "card_path":"assets\/cards\/DROP0341_Bass Baddie.png"
+    "artwork_path":"assets\/visuals\/artwork\/Ahee - Bass_Baddie.png",
+    "card_path":"assets\/cards\/DROP0341_Bass_Baddie.png"
   },
   {
     "edition_id":"001",
@@ -14270,8 +14270,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0164_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/ALLEYCVT - SO DAMN GOOD.png",
-    "card_path":"assets\/cards\/DROP0164_SO DAMN GOOD.png"
+    "artwork_path":"assets\/visuals\/artwork\/ALLEYCVT - SO_DAMN_GOOD.png",
+    "card_path":"assets\/cards\/DROP0164_SO_DAMN_GOOD.png"
   },
   {
     "edition_id":"001",
@@ -14331,8 +14331,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0038_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Space Laces - This Way.png",
-    "card_path":"assets\/cards\/DROP0038_This Way.png"
+    "artwork_path":"assets\/visuals\/artwork\/Space_Laces - This_Way.png",
+    "card_path":"assets\/cards\/DROP0038_This_Way.png"
   },
   {
     "edition_id":"001",
@@ -14392,8 +14392,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0191_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/DJ Fresh - Gold Dust (Flux Pavillion Remix).png",
-    "card_path":"assets\/cards\/DROP0191_Gold Dust (Flux Pavillion Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/DJ_Fresh - Gold_Dust_(Flux_Pavillion_Remix).png",
+    "card_path":"assets\/cards\/DROP0191_Gold_Dust_(Flux_Pavillion_Remix).png"
   },
   {
     "edition_id":"001",
@@ -14453,7 +14453,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0223_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex, Flowdan, Fred again.. - Rumble.png",
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex,_Flowdan,_Fred_again.. - Rumble.png",
     "card_path":"assets\/cards\/DROP0223_Rumble.png"
   },
   {
@@ -14514,8 +14514,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0127_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Svdden Death - Prelude I.png",
-    "card_path":"assets\/cards\/DROP0127_Prelude I.png"
+    "artwork_path":"assets\/visuals\/artwork\/Svdden_Death - Prelude_I.png",
+    "card_path":"assets\/cards\/DROP0127_Prelude_I.png"
   },
   {
     "edition_id":"001",
@@ -14575,8 +14575,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0307_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Nero - Promises (Skrillex & Nero Remix).png",
-    "card_path":"assets\/cards\/DROP0307_Promises (Skrillex & Nero Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/Nero - Promises_(Skrillex_&_Nero_Remix).png",
+    "card_path":"assets\/cards\/DROP0307_Promises_(Skrillex_&_Nero_Remix).png"
   },
   {
     "edition_id":"001",
@@ -14636,8 +14636,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0165_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/ALLEYCVT - SO DAMN GOOD.png",
-    "card_path":"assets\/cards\/DROP0165_SO DAMN GOOD.png"
+    "artwork_path":"assets\/visuals\/artwork\/ALLEYCVT - SO_DAMN_GOOD.png",
+    "card_path":"assets\/cards\/DROP0165_SO_DAMN_GOOD.png"
   },
   {
     "edition_id":"001",
@@ -14697,8 +14697,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0368_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Wooli - The Core.png",
-    "card_path":"assets\/cards\/DROP0368_The Core.png"
+    "artwork_path":"assets\/visuals\/artwork\/Wooli - The_Core.png",
+    "card_path":"assets\/cards\/DROP0368_The_Core.png"
   },
   {
     "edition_id":"001",
@@ -14758,8 +14758,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0005_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex - First of the Year.png",
-    "card_path":"assets\/cards\/DROP0005_First of the Year.png"
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex - First_of_the_Year.png",
+    "card_path":"assets\/cards\/DROP0005_First_of_the_Year.png"
   },
   {
     "edition_id":"001",
@@ -14819,8 +14819,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0254_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Peekaboo - Evil Lair.png",
-    "card_path":"assets\/cards\/DROP0254_Evil Lair.png"
+    "artwork_path":"assets\/visuals\/artwork\/Peekaboo - Evil_Lair.png",
+    "card_path":"assets\/cards\/DROP0254_Evil_Lair.png"
   },
   {
     "edition_id":"001",
@@ -14880,8 +14880,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0190_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/DJ Fresh - Gold Dust (Flux Pavillion Remix).png",
-    "card_path":"assets\/cards\/DROP0190_Gold Dust (Flux Pavillion Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/DJ_Fresh - Gold_Dust_(Flux_Pavillion_Remix).png",
+    "card_path":"assets\/cards\/DROP0190_Gold_Dust_(Flux_Pavillion_Remix).png"
   },
   {
     "edition_id":"001",
@@ -14941,8 +14941,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0393_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LYNY - Step 2 It.png",
-    "card_path":"assets\/cards\/DROP0393_Step 2 It.png"
+    "artwork_path":"assets\/visuals\/artwork\/LYNY - Step_2_It.png",
+    "card_path":"assets\/cards\/DROP0393_Step_2_It.png"
   },
   {
     "edition_id":"001",
@@ -15002,8 +15002,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0130_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zomboy - Terror Squad.png",
-    "card_path":"assets\/cards\/DROP0130_Terror Squad.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zomboy - Terror_Squad.png",
+    "card_path":"assets\/cards\/DROP0130_Terror_Squad.png"
   },
   {
     "edition_id":"001",
@@ -15063,8 +15063,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0107_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Marauda, Eptic - Wall Of Death.png",
-    "card_path":"assets\/cards\/DROP0107_Wall Of Death.png"
+    "artwork_path":"assets\/visuals\/artwork\/Marauda,_Eptic - Wall_Of_Death.png",
+    "card_path":"assets\/cards\/DROP0107_Wall_Of_Death.png"
   },
   {
     "edition_id":"001",
@@ -15124,7 +15124,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0219_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ray Volpe - Laserbeam.png",
+    "artwork_path":"assets\/visuals\/artwork\/Ray_Volpe - Laserbeam.png",
     "card_path":"assets\/cards\/DROP0219_Laserbeam.png"
   },
   {
@@ -15185,8 +15185,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0116_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex - Scary Monsters and Nice Sprites.png",
-    "card_path":"assets\/cards\/DROP0116_Scary Monsters and Nice Sprites.png"
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex - Scary_Monsters_and_Nice_Sprites.png",
+    "card_path":"assets\/cards\/DROP0116_Scary_Monsters_and_Nice_Sprites.png"
   },
   {
     "edition_id":"001",
@@ -15246,8 +15246,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0106_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Marauda, Eptic - Wall Of Death.png",
-    "card_path":"assets\/cards\/DROP0106_Wall Of Death.png"
+    "artwork_path":"assets\/visuals\/artwork\/Marauda,_Eptic - Wall_Of_Death.png",
+    "card_path":"assets\/cards\/DROP0106_Wall_Of_Death.png"
   },
   {
     "edition_id":"001",
@@ -15307,8 +15307,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0367_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Wooli - The Core.png",
-    "card_path":"assets\/cards\/DROP0367_The Core.png"
+    "artwork_path":"assets\/visuals\/artwork\/Wooli - The_Core.png",
+    "card_path":"assets\/cards\/DROP0367_The_Core.png"
   },
   {
     "edition_id":"001",
@@ -15368,8 +15368,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0153_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Mystik Dub.png",
-    "card_path":"assets\/cards\/DROP0153_Mystik Dub.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Mystik_Dub.png",
+    "card_path":"assets\/cards\/DROP0153_Mystik_Dub.png"
   },
   {
     "edition_id":"001",
@@ -15429,8 +15429,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0155_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Jessica Audiffred - Goes Like.png",
-    "card_path":"assets\/cards\/DROP0155_Goes Like.png"
+    "artwork_path":"assets\/visuals\/artwork\/Jessica_Audiffred - Goes_Like.png",
+    "card_path":"assets\/cards\/DROP0155_Goes_Like.png"
   },
   {
     "edition_id":"001",
@@ -15490,8 +15490,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0263_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Alison Wonderland - Again_ Fuck..png",
-    "card_path":"assets\/cards\/DROP0263_Again_ Fuck..png"
+    "artwork_path":"assets\/visuals\/artwork\/Alison_Wonderland - Again_Fuck..png",
+    "card_path":"assets\/cards\/DROP0263_Again_Fuck..png"
   },
   {
     "edition_id":"001",
@@ -15551,8 +15551,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0192_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/DJ Fresh - Gold Dust (Flux Pavillion Remix).png",
-    "card_path":"assets\/cards\/DROP0192_Gold Dust (Flux Pavillion Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/DJ_Fresh - Gold_Dust_(Flux_Pavillion_Remix).png",
+    "card_path":"assets\/cards\/DROP0192_Gold_Dust_(Flux_Pavillion_Remix).png"
   },
   {
     "edition_id":"001",
@@ -15612,8 +15612,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0258_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex, Sirah - Bangarang (feat. Sirah) (feat. Sirah).png",
-    "card_path":"assets\/cards\/DROP0258_Bangarang (feat. Sirah) (feat. Sirah).png"
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex,_Sirah - Bangarang_(feat._Sirah)_(feat._Sirah).png",
+    "card_path":"assets\/cards\/DROP0258_Bangarang_(feat._Sirah)_(feat._Sirah).png"
   },
   {
     "edition_id":"001",
@@ -15673,8 +15673,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0287_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Mary Droppinz - Drop In.png",
-    "card_path":"assets\/cards\/DROP0287_Drop In.png"
+    "artwork_path":"assets\/visuals\/artwork\/Mary_Droppinz - Drop_In.png",
+    "card_path":"assets\/cards\/DROP0287_Drop_In.png"
   },
   {
     "edition_id":"001",
@@ -15734,8 +15734,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0131_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zomboy - Terror Squad.png",
-    "card_path":"assets\/cards\/DROP0131_Terror Squad.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zomboy - Terror_Squad.png",
+    "card_path":"assets\/cards\/DROP0131_Terror_Squad.png"
   },
   {
     "edition_id":"001",
@@ -15795,8 +15795,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0318_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/BARELY ALIVE - don_t stop.png",
-    "card_path":"assets\/cards\/DROP0318_don_t stop.png"
+    "artwork_path":"assets\/visuals\/artwork\/BARELY_ALIVE - don_t_stop.png",
+    "card_path":"assets\/cards\/DROP0318_don_t_stop.png"
   },
   {
     "edition_id":"001",
@@ -16039,8 +16039,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0269_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Boogie T - Lotis Eater.png",
-    "card_path":"assets\/cards\/DROP0269_Lotis Eater.png"
+    "artwork_path":"assets\/visuals\/artwork\/Boogie_T - Lotis_Eater.png",
+    "card_path":"assets\/cards\/DROP0269_Lotis_Eater.png"
   },
   {
     "edition_id":"001",
@@ -16100,7 +16100,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0069_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Doctor P - Tetris.png",
+    "artwork_path":"assets\/visuals\/artwork\/Doctor_P - Tetris.png",
     "card_path":"assets\/cards\/DROP0069_Tetris.png"
   },
   {
@@ -16161,8 +16161,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0289_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Mary Droppinz - Drop In.png",
-    "card_path":"assets\/cards\/DROP0289_Drop In.png"
+    "artwork_path":"assets\/visuals\/artwork\/Mary_Droppinz - Drop_In.png",
+    "card_path":"assets\/cards\/DROP0289_Drop_In.png"
   },
   {
     "edition_id":"001",
@@ -16222,7 +16222,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0098_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Jessica Audiffred - Mess.png",
+    "artwork_path":"assets\/visuals\/artwork\/Jessica_Audiffred - Mess.png",
     "card_path":"assets\/cards\/DROP0098_Mess.png"
   },
   {
@@ -16283,8 +16283,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0175_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Vibe Check.png",
-    "card_path":"assets\/cards\/DROP0175_Vibe Check.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Vibe_Check.png",
+    "card_path":"assets\/cards\/DROP0175_Vibe_Check.png"
   },
   {
     "edition_id":"001",
@@ -16344,8 +16344,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0156_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Jessica Audiffred - Goes Like.png",
-    "card_path":"assets\/cards\/DROP0156_Goes Like.png"
+    "artwork_path":"assets\/visuals\/artwork\/Jessica_Audiffred - Goes_Like.png",
+    "card_path":"assets\/cards\/DROP0156_Goes_Like.png"
   },
   {
     "edition_id":"001",
@@ -16405,8 +16405,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0388_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Boogie T - Supa Fly.png",
-    "card_path":"assets\/cards\/DROP0388_Supa Fly.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Boogie_T - Supa_Fly.png",
+    "card_path":"assets\/cards\/DROP0388_Supa_Fly.png"
   },
   {
     "edition_id":"001",
@@ -16466,7 +16466,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0344_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision, Wooli - Titans.png",
+    "artwork_path":"assets\/visuals\/artwork\/Excision,_Wooli - Titans.png",
     "card_path":"assets\/cards\/DROP0344_Titans.png"
   },
   {
@@ -16527,8 +16527,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0081_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Flux Pavilion - I Cant Stop.png",
-    "card_path":"assets\/cards\/DROP0081_I Cant Stop.png"
+    "artwork_path":"assets\/visuals\/artwork\/Flux_Pavilion - I_Cant_Stop.png",
+    "card_path":"assets\/cards\/DROP0081_I_Cant_Stop.png"
   },
   {
     "edition_id":"001",
@@ -16649,8 +16649,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0163_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/ALLEYCVT - SO DAMN GOOD.png",
-    "card_path":"assets\/cards\/DROP0163_SO DAMN GOOD.png"
+    "artwork_path":"assets\/visuals\/artwork\/ALLEYCVT - SO_DAMN_GOOD.png",
+    "card_path":"assets\/cards\/DROP0163_SO_DAMN_GOOD.png"
   },
   {
     "edition_id":"001",
@@ -16710,7 +16710,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0071_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Doctor P - Tetris.png",
+    "artwork_path":"assets\/visuals\/artwork\/Doctor_P - Tetris.png",
     "card_path":"assets\/cards\/DROP0071_Tetris.png"
   },
   {
@@ -16771,8 +16771,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0174_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Vibe Check.png",
-    "card_path":"assets\/cards\/DROP0174_Vibe Check.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Vibe_Check.png",
+    "card_path":"assets\/cards\/DROP0174_Vibe_Check.png"
   },
   {
     "edition_id":"001",
@@ -16832,8 +16832,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0321_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Effin, LSDREAM - DIZZY SPELL.png",
-    "card_path":"assets\/cards\/DROP0321_DIZZY SPELL.png"
+    "artwork_path":"assets\/visuals\/artwork\/Effin,_LSDREAM - DIZZY_SPELL.png",
+    "card_path":"assets\/cards\/DROP0321_DIZZY_SPELL.png"
   },
   {
     "edition_id":"001",
@@ -16893,7 +16893,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0061_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Jessica Audiffred - Mess.png",
+    "artwork_path":"assets\/visuals\/artwork\/Jessica_Audiffred - Mess.png",
     "card_path":"assets\/cards\/DROP0061_Mess.png"
   },
   {
@@ -16954,8 +16954,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0053_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Vibe Check.png",
-    "card_path":"assets\/cards\/DROP0053_Vibe Check.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Vibe_Check.png",
+    "card_path":"assets\/cards\/DROP0053_Vibe_Check.png"
   },
   {
     "edition_id":"001",
@@ -17015,8 +17015,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0387_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Boogie T - Supa Fly.png",
-    "card_path":"assets\/cards\/DROP0387_Supa Fly.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Boogie_T - Supa_Fly.png",
+    "card_path":"assets\/cards\/DROP0387_Supa_Fly.png"
   },
   {
     "edition_id":"001",
@@ -17076,8 +17076,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0004_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Skrillex - First of the Year.png",
-    "card_path":"assets\/cards\/DROP0004_First of the Year.png"
+    "artwork_path":"assets\/visuals\/artwork\/Skrillex - First_of_the_Year.png",
+    "card_path":"assets\/cards\/DROP0004_First_of_the_Year.png"
   },
   {
     "edition_id":"001",
@@ -17137,8 +17137,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0418_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zingara - The Crossroads.png",
-    "card_path":"assets\/cards\/DROP0418_The Crossroads.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zingara - The_Crossroads.png",
+    "card_path":"assets\/cards\/DROP0418_The_Crossroads.png"
   },
   {
     "edition_id":"001",
@@ -17198,7 +17198,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0097_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Jessica Audiffred - Mess.png",
+    "artwork_path":"assets\/visuals\/artwork\/Jessica_Audiffred - Mess.png",
     "card_path":"assets\/cards\/DROP0097_Mess.png"
   },
   {
@@ -17259,8 +17259,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0041_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Excision - The Paradox.png",
-    "card_path":"assets\/cards\/DROP0041_The Paradox.png"
+    "artwork_path":"assets\/visuals\/artwork\/Excision - The_Paradox.png",
+    "card_path":"assets\/cards\/DROP0041_The_Paradox.png"
   },
   {
     "edition_id":"001",
@@ -17320,8 +17320,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0209_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity, Dem Jointz - Flip It.png",
-    "card_path":"assets\/cards\/DROP0209_Flip It.png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity,_Dem_Jointz - Flip_It.png",
+    "card_path":"assets\/cards\/DROP0209_Flip_It.png"
   },
   {
     "edition_id":"001",
@@ -17381,8 +17381,8 @@
     "rarity_rank":0,
     "badges":"tonality Crown",
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0173_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity, ALLEYCVT - ONE FOR YOU.png",
-    "card_path":"assets\/cards\/DROP0173_ONE FOR YOU.png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity,_ALLEYCVT - ONE_FOR_YOU.png",
+    "card_path":"assets\/cards\/DROP0173_ONE_FOR_YOU.png"
   },
   {
     "edition_id":"001",
@@ -17442,7 +17442,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0231_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Tape B, Wooli - Dopamine.png",
+    "artwork_path":"assets\/visuals\/artwork\/Tape_B,_Wooli - Dopamine.png",
     "card_path":"assets\/cards\/DROP0231_Dopamine.png"
   },
   {
@@ -17564,7 +17564,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0361_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE, JT Roach, Viperactive - Cyanide.png",
+    "artwork_path":"assets\/visuals\/artwork\/NGHTMRE,_JT_Roach,_Viperactive - Cyanide.png",
     "card_path":"assets\/cards\/DROP0361_Cyanide.png"
   },
   {
@@ -17625,8 +17625,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0197_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Levity - Pop Off (Extended Mix).png",
-    "card_path":"assets\/cards\/DROP0197_Pop Off (Extended Mix).png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Levity - Pop_Off_(Extended_Mix).png",
+    "card_path":"assets\/cards\/DROP0197_Pop_Off_(Extended_Mix).png"
   },
   {
     "edition_id":"001",
@@ -17686,7 +17686,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0248_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Liquid Stranger, Space Jesus - Spaceboss.png",
+    "artwork_path":"assets\/visuals\/artwork\/Liquid_Stranger,_Space_Jesus - Spaceboss.png",
     "card_path":"assets\/cards\/DROP0248_Spaceboss.png"
   },
   {
@@ -17747,8 +17747,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0309_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zeds Dead - Sweet Memories.png",
-    "card_path":"assets\/cards\/DROP0309_Sweet Memories.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zeds_Dead - Sweet_Memories.png",
+    "card_path":"assets\/cards\/DROP0309_Sweet_Memories.png"
   },
   {
     "edition_id":"001",
@@ -17808,7 +17808,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0390_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ganja White Night, Boogie T. - Flava.png",
+    "artwork_path":"assets\/visuals\/artwork\/Ganja_White_Night,_Boogie_T. - Flava.png",
     "card_path":"assets\/cards\/DROP0390_Flava.png"
   },
   {
@@ -17869,8 +17869,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0012_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Nothing Between.png",
-    "card_path":"assets\/cards\/DROP0012_Nothing Between.png"
+    "artwork_path":"assets\/visuals\/artwork\/Subtronics - Nothing_Between.png",
+    "card_path":"assets\/cards\/DROP0012_Nothing_Between.png"
   },
   {
     "edition_id":"001",
@@ -17930,8 +17930,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0110_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Rezz - Blue People.png",
-    "card_path":"assets\/cards\/DROP0110_Blue People.png"
+    "artwork_path":"assets\/visuals\/artwork\/Rezz - Blue_People.png",
+    "card_path":"assets\/cards\/DROP0110_Blue_People.png"
   },
   {
     "edition_id":"001",
@@ -17991,7 +17991,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0314_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zeds Dead, Memorecks - Collapse.png",
+    "artwork_path":"assets\/visuals\/artwork\/Zeds_Dead,_Memorecks - Collapse.png",
     "card_path":"assets\/cards\/DROP0314_Collapse.png"
   },
   {
@@ -18052,8 +18052,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0198_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Levity - Pop Off (Extended Mix).png",
-    "card_path":"assets\/cards\/DROP0198_Pop Off (Extended Mix).png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Levity - Pop_Off_(Extended_Mix).png",
+    "card_path":"assets\/cards\/DROP0198_Pop_Off_(Extended_Mix).png"
   },
   {
     "edition_id":"001",
@@ -18174,7 +18174,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0391_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Ganja White Night, Boogie T. - Flava.png",
+    "artwork_path":"assets\/visuals\/artwork\/Ganja_White_Night,_Boogie_T. - Flava.png",
     "card_path":"assets\/cards\/DROP0391_Flava.png"
   },
   {
@@ -18235,7 +18235,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0347_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/LEVEL UP - Alive.png",
+    "artwork_path":"assets\/visuals\/artwork\/LEVEL_UP - Alive.png",
     "card_path":"assets\/cards\/DROP0347_Alive.png"
   },
   {
@@ -18296,8 +18296,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0199_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ, Levity - Pop Off (Extended Mix).png",
-    "card_path":"assets\/cards\/DROP0199_Pop Off (Extended Mix).png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ,_Levity - Pop_Off_(Extended_Mix).png",
+    "card_path":"assets\/cards\/DROP0199_Pop_Off_(Extended_Mix).png"
   },
   {
     "edition_id":"001",
@@ -18357,8 +18357,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0109_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Rezz - Blue People.png",
-    "card_path":"assets\/cards\/DROP0109_Blue People.png"
+    "artwork_path":"assets\/visuals\/artwork\/Rezz - Blue_People.png",
+    "card_path":"assets\/cards\/DROP0109_Blue_People.png"
   },
   {
     "edition_id":"001",
@@ -18418,8 +18418,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0297_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Cojaxx, LSDREAM - PEACE LOVE & WUBZ.png",
-    "card_path":"assets\/cards\/DROP0297_PEACE LOVE & WUBZ.png"
+    "artwork_path":"assets\/visuals\/artwork\/Cojaxx,_LSDREAM - PEACE_LOVE_&_WUBZ.png",
+    "card_path":"assets\/cards\/DROP0297_PEACE_LOVE_&_WUBZ.png"
   },
   {
     "edition_id":"001",
@@ -18479,7 +18479,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0315_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zeds Dead, Memorecks - Collapse.png",
+    "artwork_path":"assets\/visuals\/artwork\/Zeds_Dead,_Memorecks - Collapse.png",
     "card_path":"assets\/cards\/DROP0315_Collapse.png"
   },
   {
@@ -18540,8 +18540,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0246_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Darude - Sandstorm (Original Version).png",
-    "card_path":"assets\/cards\/DROP0246_Sandstorm (Original Version).png"
+    "artwork_path":"assets\/visuals\/artwork\/Darude - Sandstorm_(Original_Version).png",
+    "card_path":"assets\/cards\/DROP0246_Sandstorm_(Original_Version).png"
   },
   {
     "edition_id":"001",
@@ -18601,8 +18601,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0172_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity, ALLEYCVT - ONE FOR YOU.png",
-    "card_path":"assets\/cards\/DROP0172_ONE FOR YOU.png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity,_ALLEYCVT - ONE_FOR_YOU.png",
+    "card_path":"assets\/cards\/DROP0172_ONE_FOR_YOU.png"
   },
   {
     "edition_id":"001",
@@ -18662,8 +18662,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0236_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Zingara - Mind & Body.png",
-    "card_path":"assets\/cards\/DROP0236_Mind & Body.png"
+    "artwork_path":"assets\/visuals\/artwork\/Zingara - Mind_&_Body.png",
+    "card_path":"assets\/cards\/DROP0236_Mind_&_Body.png"
   },
   {
     "edition_id":"001",
@@ -18723,7 +18723,7 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0070_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Doctor P - Tetris.png",
+    "artwork_path":"assets\/visuals\/artwork\/Doctor_P - Tetris.png",
     "card_path":"assets\/cards\/DROP0070_Tetris.png"
   },
   {
@@ -18784,8 +18784,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0067_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Benny Benassi, Gary Go - Cinema feat. Gary Go (Skrillex Remix).png",
-    "card_path":"assets\/cards\/DROP0067_Cinema feat. Gary Go (Skrillex Remix).png"
+    "artwork_path":"assets\/visuals\/artwork\/Benny_Benassi,_Gary_Go - Cinema_feat._Gary_Go_(Skrillex_Remix).png",
+    "card_path":"assets\/cards\/DROP0067_Cinema_feat._Gary_Go_(Skrillex_Remix).png"
   },
   {
     "edition_id":"001",
@@ -18845,8 +18845,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0154_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Mystik Dub.png",
-    "card_path":"assets\/cards\/DROP0154_Mystik Dub.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Mystik_Dub.png",
+    "card_path":"assets\/cards\/DROP0154_Mystik_Dub.png"
   },
   {
     "edition_id":"001",
@@ -18906,8 +18906,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0285_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity - Postman (Extended Mix).png",
-    "card_path":"assets\/cards\/DROP0285_Postman (Extended Mix).png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity - Postman_(Extended_Mix).png",
+    "card_path":"assets\/cards\/DROP0285_Postman_(Extended_Mix).png"
   },
   {
     "edition_id":"001",
@@ -18967,8 +18967,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0284_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/Levity - Postman (Extended Mix).png",
-    "card_path":"assets\/cards\/DROP0284_Postman (Extended Mix).png"
+    "artwork_path":"assets\/visuals\/artwork\/Levity - Postman_(Extended_Mix).png",
+    "card_path":"assets\/cards\/DROP0284_Postman_(Extended_Mix).png"
   },
   {
     "edition_id":"001",
@@ -19028,8 +19028,8 @@
     "rarity_rank":0,
     "badges":null,
     "spectrogram_path":"assets\/visuals\/spectrograms\/DROP0052_spectrogram.png",
-    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Mystik Dub.png",
-    "card_path":"assets\/cards\/DROP0052_Mystik Dub.png"
+    "artwork_path":"assets\/visuals\/artwork\/GRiZ - Mystik_Dub.png",
+    "card_path":"assets\/cards\/DROP0052_Mystik_Dub.png"
   },
   {
     "edition_id":"001",
