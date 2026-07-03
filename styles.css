@@ -437,7 +437,7 @@ h3 {
 .header-archive-button {
   position: absolute;
   left: 50%;
-  bottom: 10%;
+  top: 10%;
   transform: translateX(-50%);
   border: 1px solid var(--terminal-green);
   background: rgba(0, 0, 0, 0.68);
