@@ -1379,6 +1379,27 @@ h3 {
   color: rgba(255,255,255,0.75);
   line-height: 1.6;
 }
+.product-image {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+
+  border-radius: 14px;
+
+  transition: 0.25s ease;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+}
+
+.shop-product:hover .product-image img {
+  transform: translateY(-4px) scale(1.02);
+}
 
 /* =========================
    CARD PLACEHOLDERS
