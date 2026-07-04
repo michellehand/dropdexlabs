@@ -1126,6 +1126,24 @@ h3 {
   margin-top: 8px;
 }
 
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.waitlist-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.04);
+  color: white;
+}
+
+.waitlist-button {
+  width: 100%;
+}
 
 /* =========================================================
    12. FULL RECORD TABLES
@@ -1451,6 +1469,8 @@ h3 {
   color: rgba(255,255,255,0.65);
   letter-spacing: 1px;
 }
+
+
 
 /* =========================
    BADGES

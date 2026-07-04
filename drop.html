@@ -283,6 +283,48 @@
                       loading="lazy"
                       onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('beforeend', '<p class=&quot;asset-error&quot;>Trading card image not available.</p>')"
                     >
+                      <form
+                        class="waitlist-form"
+                        action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST"
+                      >
+
+                        <input
+                          type="hidden"
+                          name="dropdex_id"
+                          value="${drop.dropdex_id}"
+                        >
+
+                        <input
+                          type="hidden"
+                          name="artist"
+                          value="${artist}"
+                        >
+
+                        <input
+                          type="hidden"
+                          name="track"
+                          value="${track}"
+                        >
+
+                        <label>
+                          Email
+                          <input
+                            type="email"
+                            name="email"
+                            required
+                            placeholder="archivist@dropdexlabs.com"
+                          >
+                        </label>
+
+                        <button
+                          class="button-primary waitlist-button"
+                          type="submit"
+                        >
+                          Notify Me When Available
+                        </button>
+
+                      </form>
                   </div>
                 </aside>
               </div>
