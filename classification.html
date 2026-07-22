@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXBHQZ4CBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZXBHQZ4CBF');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DropDex Classification | Scores, Classes & Traits</title>
+
+  <link rel="icon" type="image/png" href="assets/logos/dd-logo-lasers.png" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta
+    name="description"
+    content="Learn how DropDex classifies archived bass-drop specimens using core scores, acoustic classes, and signature traits."
+  />
+
+  <meta property="og:title" content="DropDex Classification System" />
+  <meta property="og:description" content="Core scores, acoustic classes, and signature traits used to classify archived bass-drop specimens." />
+  <meta property="og:image" content="https://dropdexlabs.com/assets/socials/archive-link-header-vibrant.png" />
+  <meta property="og:url" content="https://dropdexlabs.com/classes-traits.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DropDex Labs" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DropDex Classification System" />
+  <meta name="twitter:description" content="Core scores, acoustic classes, and signature traits used to classify archived bass-drop specimens." />
+  <meta name="twitter:image" content="https://dropdexlabs.com/assets/socials/archive-link-header-vibrant.png" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    .classification-hero {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 88px 24px 56px;
+      text-align: center;
+    }
+
+    .classification-kicker,
+    .classification-section-kicker {
+      margin: 0 0 14px;
+      color: #7cff2b;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .classification-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: clamp(2.7rem, 7vw, 5.7rem);
+      line-height: 0.98;
+      text-transform: uppercase;
+    }
+
+    .classification-description {
+      max-width: 760px;
+      margin: 24px auto 0;
+      color: #b8b8b8;
+      font-size: 1.06rem;
+      line-height: 1.75;
+    }
+
+    .classification-summary {
+      max-width: 900px;
+      margin: 36px auto 0;
+      padding: 18px 22px;
+      border: 1px solid rgba(124, 255, 43, 0.3);
+      background: rgba(124, 255, 43, 0.06);
+      color: #d7d7d7;
+      line-height: 1.7;
+    }
+
+    .classification-summary strong {
+      color: #7cff2b;
+      text-transform: uppercase;
+    }
+
+    .classification-section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+
+    .classification-section + .classification-section {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .classification-section-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 460px);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .classification-section-header h2 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      text-transform: uppercase;
+    }
+
+    .classification-section-header > p {
+      margin: 0;
+      color: #a8a8a8;
+      line-height: 1.7;
+    }
+
+    .classification-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .classification-card {
+      position: relative;
+      min-height: 220px;
+      padding: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background:
+        linear-gradient(145deg, rgba(124, 255, 43, 0.05), transparent 48%),
+        rgba(10, 10, 10, 0.92);
+    }
+
+    .classification-card:hover {
+      border-color: rgba(124, 255, 43, 0.4);
+    }
+
+    .classification-code {
+      display: inline-block;
+      color: #7cff2b;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .classification-card h3 {
+      margin: 24px 0 12px;
+      font-size: 1.65rem;
+      text-transform: uppercase;
+    }
+
+    .classification-card p {
+      margin: 0;
+      color: #b5b5b5;
+      line-height: 1.7;
+    }
+
+    .classification-signals {
+      margin-top: 22px;
+      color: #7cff2b;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      line-height: 1.7;
+      text-transform: uppercase;
+    }
+
+    .score-wide {
+      grid-column: 1 / -1;
+    }
+
+    .trait-category {
+      margin-top: 44px;
+    }
+
+    .trait-category:first-of-type {
+      margin-top: 0;
+    }
+
+    .trait-category h3 {
+      margin: 0 0 18px;
+      font-size: 1.35rem;
+      text-transform: uppercase;
+    }
+
+    .trait-category h3 span {
+      margin-right: 10px;
+      color: #7cff2b;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+    }
+
+    .trait-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .trait-card {
+      min-height: 145px;
+      padding: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(10, 10, 10, 0.82);
+    }
+
+    .trait-card h4 {
+      margin: 0 0 10px;
+      color: #f3f3f3;
+      font-size: 0.94rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .trait-card p {
+      margin: 0;
+      color: #999;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .classification-note {
+      max-width: 1180px;
+      margin: 0 auto 80px;
+      padding: 0 24px;
+    }
+
+    .classification-note-inner {
+      padding: 34px;
+      border: 1px solid rgba(124, 255, 43, 0.28);
+      background: rgba(124, 255, 43, 0.05);
+    }
+
+    .classification-note h2 {
+      margin: 0 0 14px;
+      text-transform: uppercase;
+    }
+
+    .classification-note p {
+      max-width: 820px;
+      margin: 0;
+      color: #b8b8b8;
+      line-height: 1.75;
+    }
+
+    @media (max-width: 850px) {
+      .classification-section-header {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .trait-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .classification-hero {
+        padding-top: 58px;
+      }
+
+      .classification-grid,
+      .trait-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .score-wide {
+        grid-column: auto;
+      }
+
+      .classification-card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo-lockup" href="index.html" aria-label="DropDex home">
+      <img class="logo-image" src="assets/logos/dropdex-logo-cropped.jpg" alt="DropDex logo" />
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="investigation.html">Investigation</a>
+      <a href="archive.html">Archive</a>
+      <a class="active" href="classification.html">Classification</a>
+      <a href="arena.html">Arena</a>
+      <a href="shop.html">Specimens</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="classification-hero">
+      <p class="classification-kicker">DropDex Classification System</p>
+      <h1>Scores, Classes & Signature Traits</h1>
+
+      <p class="classification-description">
+        Every archived drop is translated into five core scores, an acoustic
+        fingerprint, and a primary and secondary class. Together, they describe
+        how the specimen builds, strikes, moves, and holds pressure.
+      </p>
+
+      <div class="classification-summary">
+        <strong>Scores</strong> summarize the major dimensions.
+        <strong>Classes</strong> identify the dominant acoustic archetype.
+        <strong>Traits</strong> reveal the measurable behaviors underneath both.
+      </div>
+    </section>
+
+    <section class="classification-section" id="scores">
+      <div class="classification-section-header">
+        <div>
+          <p class="classification-section-kicker">01 // Core Score System</p>
+          <h2>Card Scores</h2>
+        </div>
+
+        <p>
+          Each score condenses several measured acoustic behaviors into a
+          readable card-level dimension. No single score fully defines a drop.
+        </p>
+      </div>
+
+      <div class="classification-grid">
+        <article class="classification-card">
+          <span class="classification-code">PWR</span>
+          <h3>Power</h3>
+          <p>
+            The drop's raw physical force. Power describes how hard the specimen
+            arrives through its low-end weight, impact shock, brightness, and aggression.
+          </p>
+          <div class="classification-signals">Weight · Shock · Brightness · Aggression</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">BLD</span>
+          <h3>Build</h3>
+          <p>
+            The strength of the approach into the drop. Build measures how
+            effectively tension and charge-up create anticipation before impact.
+          </p>
+          <div class="classification-signals">Tension · Charge-Up</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">PRD</span>
+          <h3>Production</h3>
+          <p>
+            The execution and sound-design behavior of the drop, including its
+            spatial scale, sharpness, complexity, continuity, and control.
+          </p>
+          <div class="classification-signals">Width · Attack · Density · Texture · Sustain · Flow</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">TON</span>
+          <h3>Tonality</h3>
+          <p>
+            The strength and movement of pitched musical information, from
+            melodic presence and harmonic richness to tonal motion and payoff.
+          </p>
+          <div class="classification-signals">Melodic Presence · Harmonic Richness · Tonal Motion · Melodic Payoff</div>
+        </article>
+
+        <article class="classification-card score-wide">
+          <span class="classification-code">STY</span>
+          <h3>Style</h3>
+          <p>
+            The strength of the specimen's expressive identity. Style reflects
+            how clearly the drop develops recognizable behavioral patterns such
+            as groove, filth, fluidity, technical complexity, cinematic scale,
+            instability, and mass.
+          </p>
+          <div class="classification-signals">Groove · Nasty · Melt · Technical · Cinematic · Wonk · Mass</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="classification-section" id="classes">
+      <div class="classification-section-header">
+        <div>
+          <p class="classification-section-kicker">02 // Acoustic Archetypes</p>
+          <h2>Drop Classes</h2>
+        </div>
+
+        <p>
+          Each specimen receives a primary and secondary class based on the
+          strongest archetypal identities detected in the analysis.
+        </p>
+      </div>
+
+      <div class="classification-grid">
+        <article class="classification-card">
+          <span class="classification-code">01</span>
+          <h3>Impact Cannon</h3>
+          <p>A direct, force-heavy drop defined by sudden sub impact, physical weight, and aggressive arrival.</p>
+          <div class="classification-signals">Shock · Weight · Aggression</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">02</span>
+          <h3>Pressure Engine</h3>
+          <p>A sustained low-end system that accumulates pressure and maintains mass after the drop lands.</p>
+          <div class="classification-signals">Pressure Tension · Mass · Sustain</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">03</span>
+          <h3>Vacuum Striker</h3>
+          <p>A tension-driven specimen that withdraws energy before releasing a sudden, high-contrast strike.</p>
+          <div class="classification-signals">Vacuum Tension · Charge-Up · Shock</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">04</span>
+          <h3>Filth Monster</h3>
+          <p>A distorted and hostile drop built around abrasive texture, aggression, and deliberately nasty sound design.</p>
+          <div class="classification-signals">Nasty · Texture · Aggression</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">05</span>
+          <h3>Technical Weapon</h3>
+          <p>A precise, information-dense specimen marked by sharp attacks, complex movement, and controlled detail.</p>
+          <div class="classification-signals">Technical · Attack · Density</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">06</span>
+          <h3>Groove Driver</h3>
+          <p>A rhythm-led drop whose movement, pacing, and sustained pulse create a strong sense of forward motion.</p>
+          <div class="classification-signals">Groove · Flow · Sustain</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">07</span>
+          <h3>Cinematic</h3>
+          <p>A wide, dramatic specimen that uses scale, tension, atmosphere, and sustained energy to create a larger-than-life payoff.</p>
+          <div class="classification-signals">Cinematic · Melt · Width</div>
+        </article>
+
+        <article class="classification-card">
+          <span class="classification-code">08</span>
+          <h3>Melodic Weapon</h3>
+          <p>A rare tonal archetype where melody and harmony remain dominant against the drop's strongest physical characteristics.</p>
+          <div class="classification-signals">Tonality · Melodic Presence · Harmonic Richness</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="classification-section" id="traits">
+      <div class="classification-section-header">
+        <div>
+          <p class="classification-section-kicker">03 // Acoustic Fingerprint</p>
+          <h2>Signature Traits</h2>
+        </div>
+
+        <p>
+          Traits are normalized measurements derived from the build, pre-drop,
+          impact, and post-drop windows of each archived specimen.
+        </p>
+      </div>
+
+      <div class="trait-category">
+        <h3><span>FORCE</span> Impact & Physicality</h3>
+        <div class="trait-grid">
+          <article class="trait-card"><h4>Weight</h4><p>The physical heaviness and low-end body carried by the drop.</p></article>
+          <article class="trait-card"><h4>Shock</h4><p>The sudden jump in sub energy and loudness when the drop lands.</p></article>
+          <article class="trait-card"><h4>Brightness</h4><p>The amount of high-frequency energy introduced at impact.</p></article>
+          <article class="trait-card"><h4>Aggression</h4><p>The intensity, force, and hostility of the post-drop signal.</p></article>
+          <article class="trait-card"><h4>Mass</h4><p>The combined sense of weight, width, low-end body, texture, and sustain.</p></article>
+          <article class="trait-card"><h4>Low-End Sustain</h4><p>How strongly the drop preserves its bass energy after impact.</p></article>
+        </div>
+      </div>
+
+      <div class="trait-category">
+        <h3><span>BUILD</span> Tension & Release</h3>
+        <div class="trait-grid">
+          <article class="trait-card"><h4>Tension</h4><p>The strongest detected form of anticipation before impact.</p></article>
+          <article class="trait-card"><h4>Vacuum Tension</h4><p>Tension created by removing energy and opening space before the drop.</p></article>
+          <article class="trait-card"><h4>Pressure Tension</h4><p>Tension created by accumulating loudness and pressure before release.</p></article>
+          <article class="trait-card"><h4>Charge-Up</h4><p>The combined escalation of loudness, brightness, rhythm, risers, and silence.</p></article>
+        </div>
+      </div>
+
+      <div class="trait-category">
+        <h3><span>CONSTRUCTION</span> Production Behavior</h3>
+        <div class="trait-grid">
+          <article class="trait-card"><h4>Width</h4><p>The perceived stereo scale and spatial reach of the drop.</p></article>
+          <article class="trait-card"><h4>Attack</h4><p>The sharpness and immediacy of individual transient strikes.</p></article>
+          <article class="trait-card"><h4>Density</h4><p>How much rhythmic and spectral information occupies the drop.</p></article>
+          <article class="trait-card"><h4>Texture</h4><p>The complexity and variation present in the sound surface.</p></article>
+          <article class="trait-card"><h4>Sustain</h4><p>How consistently the drop maintains energy after its initial strike.</p></article>
+          <article class="trait-card"><h4>Flow</h4><p>The continuity and smoothness of movement across the drop window.</p></article>
+        </div>
+      </div>
+
+      <div class="trait-category">
+        <h3><span>STYLE</span> Behavioral Identity</h3>
+        <div class="trait-grid">
+          <article class="trait-card"><h4>Groove</h4><p>Rhythmic movement created by balanced density, flow, sustain, and attack.</p></article>
+          <article class="trait-card"><h4>Nasty</h4><p>Abrasive character created by texture, aggression, attack, and brightness.</p></article>
+          <article class="trait-card"><h4>Melt</h4><p>A broad, sustained, fluid sound that spreads instead of striking cleanly.</p></article>
+          <article class="trait-card"><h4>Technical</h4><p>Precision and complexity expressed through density, attack, motion, and detail.</p></article>
+          <article class="trait-card"><h4>Cinematic</h4><p>Scale and drama created through width, tension, build, and sustained brightness.</p></article>
+          <article class="trait-card"><h4>Wonk</h4><p>Unstable, irregular movement shaped by texture, density, attack, and flow.</p></article>
+        </div>
+      </div>
+
+      <div class="trait-category">
+        <h3><span>TONALITY</span> Melody & Harmony</h3>
+        <div class="trait-grid">
+          <article class="trait-card"><h4>Melodic Presence</h4><p>How clearly pitched and harmonic content appears within the drop.</p></article>
+          <article class="trait-card"><h4>Harmonic Richness</h4><p>The variety and complexity of the specimen's tonal structure.</p></article>
+          <article class="trait-card"><h4>Tonal Motion</h4><p>How actively pitch and harmonic relationships change through time.</p></article>
+          <article class="trait-card"><h4>Melodic Payoff</h4><p>The increase in tonal activity created when the build resolves into the drop.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="classification-note">
+      <div class="classification-note-inner">
+        <p class="classification-section-kicker">Classification Note</p>
+        <h2>No single metric defines a specimen.</h2>
+        <p>
+          Classes emerge from combinations of traits. Two drops may share the
+          same class while reaching it through different acoustic fingerprints,
+          creating distinct strengths, weaknesses, and Arena behavior.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <strong>DROPDEX</strong>
+      <div class="footer-tagline">
+        Archive. Battle. Collect.
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      Where Bass Drops Become Legends. The search continues.
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/dropdex_labs" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.youtube.com/@dropdexlabs" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+        <span>YouTube</span>
+      </a>
+      <a href="https://discord.gg/3kxqnrJZy3" target="_blank" aria-label="Discord">
+        <i class="fab fa-discord"></i>
+        <span>Discord</span>
+      </a>
+      <a href="submit-evidence.html" aria-label="Submit Evidence">
+        <i class="fas fa-envelope"></i>
+        <span>Submit Evidence</span>
+      </a>
+    </div>
+
+    <div class="footer-meta">
+      Edition 001 // © DropDex Labs 2026
+    </div>
+  </footer>
+</body>
+</html>
