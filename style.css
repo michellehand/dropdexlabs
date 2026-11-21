@@ -1,0 +1,3232 @@
+/* DROPDEX — Unified stylesheet. Generated from staging CSS. */
+
+/* Each page retains its original base styles, scoped by body class. */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+
+/* ===== home-redesign.css ===== */
+body.page-index { --bg:#101411;--panel:#1b211b;--paper:#e9e8dc;--muted:#a5aa9f;--line:#414a40;--acid:#c5f05d;--dark:#121810 }
+
+* { box-sizing:border-box }
+
+html { scroll-behavior:smooth }
+
+body.page-index { margin:0;background:var(--bg);color:var(--paper);font-family:"DM Sans",sans-serif }
+
+:where(body.page-index) a { color:inherit;text-decoration:none }
+
+:where(body.page-index) button { font:inherit }
+
+:where(body.page-index) .topline { display:flex;justify-content:space-between;gap:12px;background:#202920;padding:9px 4%;color:#b9c5b1;font:10px "DM Mono",monospace;letter-spacing:.09em }
+
+:where(body.page-index) .live { color:var(--acid) }
+
+:where(body.page-index) .live-dot { display:inline-block;width:6px;height:6px;background:var(--acid);border-radius:50%;margin-right:7px }
+
+:where(body.page-index) .site-header { height:87px;display:flex;align-items:center;justify-content:space-between;padding:0 4%;border-bottom:1px solid var(--line);background:var(--bg);position:relative;z-index:5 }
+
+:where(body.page-index) .wordmark { font:900 39px/.8 "Barlow Condensed",sans-serif;letter-spacing:-.025em;display:inline-flex;align-items:flex-end;gap:7px }
+
+:where(body.page-index) .wordmark>span { color:var(--acid);margin-left:-7px }
+
+:where(body.page-index) .wordmark small { font:9px/1.3 "DM Mono",monospace;letter-spacing:0;color:var(--muted);width:38px;margin-left:5px }
+
+:where(body.page-index) .nav { display:flex;align-items:center;gap:32px }
+
+:where(body.page-index) .nav a { font:11px "DM Mono",monospace;letter-spacing:.04em;transition:color .2s }
+
+:where(body.page-index) .nav a:hover { color:var(--acid) }
+
+:where(body.page-index) .nav .nav-shop { padding:13px 17px;border:1px solid var(--acid);color:var(--acid) }
+
+:where(body.page-index) .nav-shop span { margin-left:12px }
+
+:where(body.page-index) .menu-toggle { display:none }
+
+:where(body.page-index) .hero { padding:0 4% }
+
+:where(body.page-index) .hero-rail,
+:where(body.page-index) .hero-bottom { display:flex;justify-content:space-between;font:10px "DM Mono",monospace;letter-spacing:.08em;color:var(--muted) }
+
+:where(body.page-index) .hero-rail { padding:23px 0 }
+
+:where(body.page-index) .hero-main { display:grid;grid-template-columns:55% 45%;min-height:630px;border-top:1px solid var(--line);border-bottom:1px solid var(--line) }
+
+:where(body.page-index) .hero-content { padding:58px 40px 70px 0;position:relative;z-index:1 }
+
+:where(body.page-index) .eyebrow { font:11px "DM Mono",monospace;letter-spacing:.11em;color:var(--acid);margin:0 0 25px }
+
+:where(body.page-index) .rule { display:inline-block;width:30px;height:1px;background:var(--acid);vertical-align:middle;margin-right:12px }
+
+:where(body.page-index) h1,
+:where(body.page-index) h2,
+:where(body.page-index) h3,
+:where(body.page-index) p { margin-top:0 }
+
+:where(body.page-index) h1,
+:where(body.page-index) h2 { font-family:"Barlow Condensed",sans-serif;font-weight:800;letter-spacing:-.035em;text-transform:uppercase }
+
+:where(body.page-index) h1 { font-size:clamp(90px,11vw,184px);line-height:.78;margin:0 0 36px }
+
+:where(body.page-index) h1 em,
+:where(body.page-index) h2 em { font-style:normal;color:var(--acid) }
+
+:where(body.page-index) .hero-deck { font:600 clamp(20px,2.2vw,30px)/1.25 "DM Sans",sans-serif;max-width:530px;margin-bottom:18px }
+
+:where(body.page-index) .hero-description { font-size:14px;line-height:1.75;color:#afb6aa;max-width:500px }
+
+:where(body.page-index) .hero-actions { display:flex;gap:26px;align-items:center;flex-wrap:wrap;margin-top:37px }
+
+:where(body.page-index) .button { display:inline-flex;align-items:center;justify-content:space-between;gap:35px;padding:17px 20px;font:11px "DM Mono",monospace;letter-spacing:.06em;transition:transform .2s,background .2s }
+
+:where(body.page-index) .button:hover { transform:translateY(-3px) }
+
+:where(body.page-index) .button-accent { background:var(--acid);color:var(--dark);font-weight:500 }
+
+:where(body.page-index) .text-link,
+:where(body.page-index) .under-link { font:11px "DM Mono",monospace;border-bottom:1px solid currentColor;padding-bottom:7px }
+
+:where(body.page-index) .text-link:hover,
+:where(body.page-index) .under-link:hover { color:var(--acid) }
+
+:where(body.page-index) .hero-visual { border-left:1px solid var(--line);background:radial-gradient(circle at 60% 47%,#2b3827 0%,#1a241c 33%,#151a16 72%);position:relative;overflow:hidden;min-height:550px }
+
+:where(body.page-index) .hero-visual:before,
+:where(body.page-index) .specimen-art-grid { content:"";position:absolute;inset:0;background-image:linear-gradient(#a9d28a0c 1px,transparent 1px),linear-gradient(90deg,#a9d28a0c 1px,transparent 1px);background-size:27px 27px }
+
+:where(body.page-index) .visual-top,
+:where(body.page-index) .visual-caption { position:absolute;left:24px;right:24px;display:flex;justify-content:space-between;gap:12px;color:#b7c7a9;font:9px "DM Mono",monospace;letter-spacing:.05em }
+
+:where(body.page-index) .visual-top { top:24px }
+
+:where(body.page-index) .visual-caption { bottom:23px }
+
+:where(body.page-index) .signal { position:absolute;left:7%;right:7%;top:30%;height:38%;display:flex;align-items:center;justify-content:space-between;gap:2px;filter:drop-shadow(0 0 12px #b7ef5930) }
+
+:where(body.page-index) .signal i { display:block;flex:1;max-width:5px;background:var(--acid);opacity:.88 }
+
+:where(body.page-index) .visual-cross { position:absolute;left:50%;top:50%;font:30px "DM Mono",monospace;color:#e9e8dc55;transform:translate(-50%,-50%) }
+
+:where(body.page-index) .visual-number { position:absolute;bottom:45px;right:22px;font:800 160px/.8 "Barlow Condensed",sans-serif;color:#e9e8dc0a }
+
+:where(body.page-index) .hero-bottom { padding:18px 0 21px }
+
+:where(body.page-index) .hero-bottom strong { color:var(--paper) }
+
+:where(body.page-index) .ticker { overflow:hidden;background:var(--acid);color:#172016;padding:16px 0;font:700 14px "DM Mono",monospace;white-space:nowrap;letter-spacing:.07em }
+
+:where(body.page-index) .ticker>div { min-width:max-content;animation:marquee 38s linear infinite }
+
+:where(body.page-index) .ticker b { padding:0 38px }
+
+@keyframes marquee {to{transform:translateX(-45%)}}
+
+:where(body.page-index) .section { padding:115px 4% }
+
+:where(body.page-index) .section-head { display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:50px }
+
+:where(body.page-index) .section-head h2,
+:where(body.page-index) .manifesto h2,
+:where(body.page-index) .arena-section h2,
+:where(body.page-index) .closing h2 { font-size:clamp(72px,9vw,138px);line-height:.82;margin:0 }
+
+:where(body.page-index) .section-aside { width:270px;padding-bottom:6px }
+
+:where(body.page-index) .section-aside p { font-size:14px;line-height:1.65;color:var(--muted);margin-bottom:24px }
+
+:where(body.page-index) .specimen-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px }
+
+:where(body.page-index) .specimen { border:1px solid var(--line);background:#171d17;min-width:0 }
+
+:where(body.page-index) .specimen-top { padding:15px;display:flex;justify-content:space-between;gap:10px;font:9px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-index) .specimen-art { height:300px;position:relative;overflow:hidden;background:radial-gradient(circle at 45% 55%,#354a31,#1b271c 53%,#141b16) }
+
+:where(body.page-index) .specimen:nth-child(2) .specimen-art { background:radial-gradient(circle at 45% 55%,#2c4440,#1a2927 53%,#141b19) }
+
+:where(body.page-index) .specimen:nth-child(3) .specimen-art { background:radial-gradient(circle at 45% 55%,#4a3b30,#2b251e 53%,#1c1916) }
+
+:where(body.page-index) .specimen-index { position:absolute;top:16px;left:22px;font:700 56px "Barlow Condensed";color:#e8e8dd33 }
+
+:where(body.page-index) .specimen-glyph { position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);font:170px "DM Sans";color:var(--acid);text-shadow:0 0 60px #c5f05d55 }
+
+:where(body.page-index) .specimen:nth-child(2) .specimen-glyph { color:#7cd4cb }
+
+:where(body.page-index) .specimen:nth-child(3) .specimen-glyph { color:#dfad81 }
+
+:where(body.page-index) .specimen-score { position:absolute;right:16px;bottom:14px;display:flex;align-items:end;gap:8px }
+
+:where(body.page-index) .specimen-score b { font:700 58px/.8 "Barlow Condensed" }
+
+:where(body.page-index) .specimen-score span { font:9px/1.4 "DM Mono";color:var(--muted) }
+
+:where(body.page-index) .specimen-info { padding:24px 20px 22px }
+
+:where(body.page-index) .specimen-artist { font:11px "DM Mono";color:var(--acid);margin-bottom:6px;text-transform:uppercase }
+
+:where(body.page-index) .specimen-info h3 { font:700 32px/1 "Barlow Condensed";text-transform:uppercase;min-height:32px;overflow-wrap:anywhere;margin-bottom:25px }
+
+:where(body.page-index) .specimen-tags { display:flex;gap:7px;flex-wrap:wrap }
+
+:where(body.page-index) .specimen-tags span { border:1px solid var(--line);padding:7px 9px;font:9px "DM Mono";color:var(--muted);text-transform:uppercase }
+
+:where(body.page-index) .archive-strip { display:grid;grid-template-columns:repeat(4,1fr);margin-top:45px;border-top:1px solid var(--line);border-bottom:1px solid var(--line) }
+
+:where(body.page-index) .archive-strip>span { padding:23px 16px;display:flex;align-items:baseline;gap:14px;font:10px "DM Mono";color:var(--muted);border-right:1px solid var(--line) }
+
+:where(body.page-index) .archive-strip>span:first-child { padding-left:0 }
+
+:where(body.page-index) .archive-strip>span:last-child { border-right:0 }
+
+:where(body.page-index) .archive-strip b { font:700 42px "Barlow Condensed";color:var(--paper) }
+
+:where(body.page-index) .loading { padding:45px;font:12px "DM Mono";color:var(--muted) }
+
+:where(body.page-index) .manifesto { display:grid;grid-template-columns:20% 80%;background:#202a20;padding:90px 4% }
+
+:where(body.page-index) .manifesto-side { display:flex;flex-direction:column;justify-content:space-between;font:10px "DM Mono";color:#b0bca9 }
+
+:where(body.page-index) .asterisk { font-size:95px;color:var(--acid) }
+
+:where(body.page-index) .manifesto-content { padding:0 4% 0 0 }
+
+:where(body.page-index) .manifesto-content>p:not(.eyebrow) { font-size:19px;line-height:1.5;max-width:650px;color:#c1c9ba;margin:40px 0 }
+
+:where(body.page-index) .metric-list { display:grid;grid-template-columns:repeat(2,1fr);gap:0 24px;max-width:790px;margin:0 0 40px }
+
+:where(body.page-index) .metric-list>div { border-top:1px solid #586354;padding:20px 0;display:flex;align-items:center;gap:20px;font:700 27px "Barlow Condensed" }
+
+:where(body.page-index) .metric-list span { font:11px "DM Mono";color:var(--acid) }
+
+:where(body.page-index) .metric-list small { font:9px "DM Mono";color:var(--muted);margin-left:auto }
+
+:where(body.page-index) .button-outline { border:1px solid var(--acid);color:var(--acid) }
+
+:where(body.page-index) .arena-section { display:grid;grid-template-columns:14% 48% 38%;min-height:570px;background:var(--acid);color:#152016;overflow:hidden }
+
+:where(body.page-index) .arena-label { padding:55px 20px 0 28%;font:10px "DM Mono" }
+
+:where(body.page-index) .arena-copy { padding:75px 25px 75px 0;z-index:1 }
+
+:where(body.page-index) .arena-copy .eyebrow { color:#344b21 }
+
+:where(body.page-index) .arena-copy h2 em { color:#405c26 }
+
+:where(body.page-index) .arena-copy>p:not(.eyebrow) { max-width:460px;font-size:17px;line-height:1.55;margin:30px 0 }
+
+:where(body.page-index) .button-dark { background:#172018;color:var(--paper) }
+
+:where(body.page-index) .arena-art { position:relative;min-height:400px;overflow:hidden;background:#b5dc56 }
+
+:where(body.page-index) .arena-art:before { content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 23px,#18231a12 24px 25px) }
+
+:where(body.page-index) .arena-a,
+:where(body.page-index) .arena-b { position:absolute;font:900 320px/.8 "Barlow Condensed";color:#263923 }
+
+:where(body.page-index) .arena-a { top:10%;left:3%;transform:rotate(-14deg) }
+
+:where(body.page-index) .arena-b { bottom:0;right:4%;transform:rotate(12deg) }
+
+:where(body.page-index) .versus { position:absolute;top:49%;left:50%;transform:translate(-50%,-50%) rotate(-10deg);z-index:2;background:#152016;color:var(--acid);padding:20px;font:800 52px "Barlow Condensed" }
+
+:where(body.page-index) .closing { text-align:center;padding:130px 4% 140px }
+
+:where(body.page-index) .closing h2 { margin-bottom:32px }
+
+:where(body.page-index) .closing>p:not(.eyebrow) { color:var(--muted);font-size:17px;margin-bottom:28px }
+
+:where(body.page-index) .footer { background:#0a0e0b;padding:48px 4% 28px }
+
+:where(body.page-index) .footer-top,
+:where(body.page-index) .footer-bottom { display:flex;justify-content:space-between;gap:25px }
+
+:where(body.page-index) .footer-top { align-items:end;padding-bottom:60px }
+
+:where(body.page-index) .footer-top>span { max-width:280px;font:11px/1.6 "DM Mono";color:var(--muted) }
+
+:where(body.page-index) .footer-bottom { border-top:1px solid var(--line);padding-top:25px;font:10px "DM Mono";color:var(--muted) }
+
+:where(body.page-index) .footer-bottom>div { display:flex;gap:20px;flex-wrap:wrap }
+
+:where(body.page-index) .footer-bottom a:hover { color:var(--acid) }
+
+@media (max-width:1000px) {
+:where(body.page-index) .nav { gap:15px }
+
+:where(body.page-index) .nav a { font-size:9px }
+
+:where(body.page-index) .hero-main { grid-template-columns:55% 45% }
+
+:where(body.page-index) h1 { font-size:clamp(75px,10vw,125px) }
+
+:where(body.page-index) .specimen-art { height:235px }
+
+:where(body.page-index) .arena-section { grid-template-columns:10% 50% 40% }
+}
+
+@media (max-width:700px) {
+:where(body.page-index) .topline { font-size:8px }
+
+:where(body.page-index) .topline>span:first-child { max-width:170px }
+
+:where(body.page-index) .site-header { height:74px }
+
+:where(body.page-index) .wordmark { font-size:34px }
+
+:where(body.page-index) .menu-toggle { display:block;background:none;border:1px solid var(--line);color:var(--paper);padding:10px 13px;font:11px "DM Mono" }
+
+:where(body.page-index) .menu-toggle span { color:var(--acid) }
+
+:where(body.page-index) .nav { display:none;position:absolute;left:0;right:0;top:74px;background:#171d17;padding:22px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0 }
+
+:where(body.page-index) .nav.open { display:flex }
+
+:where(body.page-index) .nav a { font-size:12px;padding:15px 0;border-bottom:1px solid var(--line) }
+
+:where(body.page-index) .nav .nav-shop { margin-top:15px;text-align:center }
+
+:where(body.page-index) .hero-rail { font-size:8px }
+
+:where(body.page-index) .hero-main { display:flex;flex-direction:column }
+
+:where(body.page-index) .hero-content { padding:55px 0 55px }
+
+:where(body.page-index) h1 { font-size:clamp(78px,17vw,140px) }
+
+:where(body.page-index) .hero-visual { min-height:340px;border-left:0;border-top:1px solid var(--line) }
+
+:where(body.page-index) .hero-bottom { font-size:8px;gap:20px }
+
+:where(body.page-index) .hero-bottom>span:last-child { display:none }
+
+:where(body.page-index) .section { padding:80px 4% }
+
+:where(body.page-index) .section-head { display:block }
+
+:where(body.page-index) .section-head h2,
+:where(body.page-index) .manifesto h2,
+:where(body.page-index) .arena-section h2,
+:where(body.page-index) .closing h2 { font-size:clamp(70px,15vw,112px) }
+
+:where(body.page-index) .section-aside { width:auto;margin-top:28px }
+
+:where(body.page-index) .specimen-grid { grid-template-columns:1fr }
+
+:where(body.page-index) .specimen-art { height:330px }
+
+:where(body.page-index) .archive-strip { grid-template-columns:repeat(2,1fr) }
+
+:where(body.page-index) .archive-strip>span { border-bottom:1px solid var(--line) }
+
+:where(body.page-index) .archive-strip b { font-size:35px }
+
+:where(body.page-index) .manifesto { grid-template-columns:1fr;padding:75px 4% }
+
+:where(body.page-index) .manifesto-side { flex-direction:row;align-items:center;margin-bottom:35px }
+
+:where(body.page-index) .asterisk { font-size:38px }
+
+:where(body.page-index) .manifesto-content { padding:0 }
+
+:where(body.page-index) .metric-list { grid-template-columns:1fr }
+
+:where(body.page-index) .arena-section { grid-template-columns:1fr }
+
+:where(body.page-index) .arena-label { padding:35px 4% 0 }
+
+:where(body.page-index) .arena-copy { padding:35px 4% 55px }
+
+:where(body.page-index) .arena-art { min-height:300px }
+
+:where(body.page-index) .arena-a,
+:where(body.page-index) .arena-b { font-size:260px }
+
+:where(body.page-index) .closing { padding:95px 4% }
+
+:where(body.page-index) .footer-top,
+:where(body.page-index) .footer-bottom { flex-direction:column }
+
+:where(body.page-index) .footer-top { padding-bottom:40px }
+
+:where(body.page-index) .footer-bottom>div { gap:14px }
+}
+
+@media (prefers-reduced-motion:reduce) {
+*,
+:where(body.page-index) *:before,
+:where(body.page-index) *:after { animation:none!important;scroll-behavior:auto!important;transition:none!important }
+}
+
+body.page-index { --cyan-accent:#61dce2 }
+
+:where(body.page-index) .logo-link { display:inline-flex;align-items:center;line-height:1;flex-shrink:0 }
+
+:where(body.page-index) .official-logo { display:block;width:clamp(185px,20vw,265px);height:75px;object-fit:contain;object-position:left center;mix-blend-mode:screen }
+
+:where(body.page-index) .footer .official-logo { width:250px;height:78px }
+
+:where(body.page-index) .cyan-word { color:var(--cyan-accent) }
+
+:where(body.page-index) .nav a:hover,
+:where(body.page-index) .nav a:focus-visible,
+:where(body.page-index) .footer-bottom a:hover,
+:where(body.page-index) .text-link:hover,
+:where(body.page-index) .under-link:hover { color:var(--cyan-accent) }
+
+:where(body.page-index) .nav .nav-shop:hover { color:var(--cyan-accent);border-color:var(--cyan-accent) }
+
+:where(body.page-index) .button-outline:hover { border-color:var(--cyan-accent);color:var(--cyan-accent) }
+
+:where(body.page-index) .specimen:hover { border-color:var(--cyan-accent) }
+
+@media (max-width:700px) {
+:where(body.page-index) .official-logo { width:185px;height:64px }
+
+:where(body.page-index) .footer .official-logo { width:220px;height:72px }
+}
+
+:where(body.page-index) .specimen-art { position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px;
+  min-height: 360px; }
+
+:where(body.page-index) .specimen-card-image { display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease; }
+
+:where(body.page-index) .specimen:hover .specimen-card-image { transform: scale(1.04); }
+
+
+/* ===== archive-redesign.css ===== */
+body.page-archive { --bg:#101411;--panel:#1b211b;--paper:#e9e8dc;--muted:#a5aa9f;--line:#414a40;--acid:#c5f05d;--cyan:#76d6d4;--dark:#121810 }
+
+* { box-sizing:border-box }
+
+html { scroll-behavior:smooth }
+
+body.page-archive { margin:0;background:var(--bg);color:var(--paper);font-family:"DM Sans",sans-serif }
+
+:where(body.page-archive) a { color:inherit;text-decoration:none }
+
+:where(body.page-archive) button,
+:where(body.page-archive) input,
+:where(body.page-archive) select { font:inherit }
+
+:where(body.page-archive) button { cursor:pointer }
+
+:where(body.page-archive) h1,
+:where(body.page-archive) h2,
+:where(body.page-archive) h3,
+:where(body.page-archive) p { margin-top:0 }
+
+:where(body.page-archive) h1,
+:where(body.page-archive) h2,
+:where(body.page-archive) h3 { font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:-.035em }
+
+:where(body.page-archive) .topline { display:flex;justify-content:space-between;gap:12px;background:#202920;padding:9px 4%;color:#b9c5b1;font:10px "DM Mono",monospace;letter-spacing:.09em }
+
+:where(body.page-archive) .live { color:var(--acid) }
+
+:where(body.page-archive) .dot { display:inline-block;width:6px;height:6px;background:var(--acid);border-radius:50%;margin-right:7px }
+
+:where(body.page-archive) .site-header { height:87px;display:flex;align-items:center;justify-content:space-between;padding:0 4%;border-bottom:1px solid var(--line);position:relative;z-index:5 }
+
+:where(body.page-archive) .logo-link { display:flex;align-items:center;flex-shrink:0 }
+
+:where(body.page-archive) .logo-link img { display:block;width:clamp(185px,20vw,280px);height:74px;object-fit:contain;object-position:left center }
+
+:where(body.page-archive) .nav { display:flex;align-items:center;gap:26px }
+
+:where(body.page-archive) .nav a { font:11px "DM Mono",monospace;transition:color .2s }
+
+:where(body.page-archive) .nav a:hover,
+:where(body.page-archive) .nav a:focus-visible { color:var(--cyan) }
+
+:where(body.page-archive) .nav .active { color:var(--acid) }
+
+:where(body.page-archive) .nav .nav-shop { border:1px solid var(--acid);padding:13px 16px;color:var(--acid) }
+
+:where(body.page-archive) .nav .nav-shop:hover { border-color:var(--cyan);color:var(--cyan) }
+
+:where(body.page-archive) .menu-toggle { display:none }
+
+:where(body.page-archive) .hero { padding:0 4% }
+
+:where(body.page-archive) .hero-meta,
+:where(body.page-archive) .hero-foot { display:flex;justify-content:space-between;gap:20px;font:10px "DM Mono",monospace;letter-spacing:.08em;color:var(--muted) }
+
+:where(body.page-archive) .hero-meta { padding:23px 0 }
+
+:where(body.page-archive) .hero-body { display:grid;grid-template-columns:64% 36%;border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:550px }
+
+:where(body.page-archive) .hero-left { padding:70px 40px 75px 0 }
+
+:where(body.page-archive) .eyebrow { font:11px "DM Mono",monospace;letter-spacing:.11em;color:var(--acid);margin-bottom:24px }
+
+:where(body.page-archive) .rule { display:inline-block;width:30px;height:1px;background:var(--acid);vertical-align:middle;margin-right:12px }
+
+:where(body.page-archive) h1 { font-size:clamp(100px,13vw,205px);font-weight:800;line-height:.77;margin:0 0 38px }
+
+:where(body.page-archive) h1 em,
+:where(body.page-archive) h2 em { font-style:normal;color:var(--acid) }
+
+:where(body.page-archive) .deck { font-size:clamp(21px,2.2vw,30px);font-weight:600;margin-bottom:15px }
+
+:where(body.page-archive) .description { font-size:14px;line-height:1.75;color:#afb6aa;max-width:560px }
+
+:where(body.page-archive) .hero-links { display:flex;align-items:center;gap:30px;flex-wrap:wrap;margin-top:35px }
+
+:where(body.page-archive) .primary-button { background:var(--acid);color:var(--dark);font:11px "DM Mono",monospace;padding:18px 21px;display:inline-flex;justify-content:space-between;gap:35px;transition:transform .2s }
+
+:where(body.page-archive) .primary-button:hover { transform:translateY(-3px) }
+
+:where(body.page-archive) .under-link { font:11px "DM Mono",monospace;border-bottom:1px solid;padding-bottom:7px }
+
+:where(body.page-archive) .under-link:hover { color:var(--cyan) }
+
+:where(body.page-archive) .hero-right { position:relative;overflow:hidden;border-left:1px solid var(--line);background:radial-gradient(circle at 60% 52%,#2b3827,#1a241c 55%,#151a16);padding:35px;display:flex;flex-direction:column;justify-content:center }
+
+:where(body.page-archive) .hero-right:before { content:"";position:absolute;inset:0;background-image:linear-gradient(#a9d28a0c 1px,transparent 1px),linear-gradient(90deg,#a9d28a0c 1px,transparent 1px);background-size:27px 27px }
+
+:where(body.page-archive) .side-head,
+:where(body.page-archive) .hero-right>p,
+:where(body.page-archive) .hero-mini,
+:where(body.page-archive) .large-number { position:relative;z-index:1 }
+
+:where(body.page-archive) .side-head { font:10px "DM Mono",monospace;color:var(--muted);display:flex;justify-content:space-between;position:absolute;top:28px;left:30px;right:30px }
+
+:where(body.page-archive) .side-head span { color:var(--acid) }
+
+:where(body.page-archive) .large-number { font:800 clamp(135px,19vw,310px)/.85 "Barlow Condensed",sans-serif;color:var(--acid);letter-spacing:-.06em }
+
+:where(body.page-archive) .hero-right>p { font:11px "DM Mono",monospace;letter-spacing:.13em;margin:10px 0 36px }
+
+:where(body.page-archive) .hero-mini { display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #65745d }
+
+:where(body.page-archive) .hero-mini>div { padding:20px 5px 0;display:flex;flex-direction:column;gap:5px }
+
+:where(body.page-archive) .hero-mini strong { font:700 43px "Barlow Condensed" }
+
+:where(body.page-archive) .hero-mini span { font:9px "DM Mono";color:var(--muted) }
+
+:where(body.page-archive) .hero-gridmark { position:absolute;bottom:-90px;right:-10px;font-size:270px;color:#c5f05d0a }
+
+:where(body.page-archive) .hero-foot { padding:20px 0 }
+
+:where(body.page-archive) .hero-foot strong { color:var(--paper) }
+
+:where(body.page-archive) .ticker { overflow:hidden;background:var(--acid);color:#172016;padding:16px 0;font:700 14px "DM Mono",monospace;white-space:nowrap }
+
+:where(body.page-archive) .ticker>div { min-width:max-content;animation:marquee 38s linear infinite }
+
+:where(body.page-archive) .ticker b { padding:0 38px }
+
+@keyframes marquee {to{transform:translateX(-45%)}}
+
+:where(body.page-archive) .collection { padding:110px 4% }
+
+:where(body.page-archive) .collection-head { display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:54px }
+
+:where(body.page-archive) .collection h2,
+:where(body.page-archive) .closing h2 { font-size:clamp(75px,9vw,140px);line-height:.82;margin:0 }
+
+:where(body.page-archive) .collection-aside { width:280px;padding-bottom:7px }
+
+:where(body.page-archive) .collection-aside p { font-size:14px;line-height:1.65;color:var(--muted) }
+
+:where(body.page-archive) .quick-links { display:flex;gap:17px;flex-wrap:wrap }
+
+:where(body.page-archive) .quick-links a { font:10px "DM Mono",monospace;border-bottom:1px solid;padding-bottom:6px }
+
+:where(body.page-archive) .quick-links a:hover { color:var(--cyan) }
+
+:where(body.page-archive) .filters { display:grid;grid-template-columns:minmax(220px,2fr) repeat(3,minmax(120px,1fr)) auto;gap:10px;background:#202920;border:1px solid var(--line);padding:16px;align-items:end }
+
+:where(body.page-archive) .filters label { display:flex;flex-direction:column;gap:9px;min-width:0 }
+
+:where(body.page-archive) .filters label>span { font:9px "DM Mono",monospace;color:var(--muted);letter-spacing:.06em }
+
+:where(body.page-archive) .filters input,
+:where(body.page-archive) .filters select { width:100%;height:48px;border:1px solid #586354;border-radius:0;background:#121a14;color:var(--paper);padding:0 13px;font:11px "DM Mono",monospace;outline:none }
+
+:where(body.page-archive) .filters input:focus,
+:where(body.page-archive) .filters select:focus { border-color:var(--cyan) }
+
+:where(body.page-archive) .filters input::placeholder { color:#89958a }
+
+:where(body.page-archive) .reset { height:48px;background:transparent;color:var(--paper);border:1px solid #586354;padding:0 13px;font:10px "DM Mono",monospace }
+
+:where(body.page-archive) .reset:hover { color:var(--cyan);border-color:var(--cyan) }
+
+:where(body.page-archive) .results-bar { display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:24px 0 18px;font:10px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-archive) .results-bar span:first-child { color:var(--acid) }
+
+:where(body.page-archive) .archive-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px }
+
+:where(body.page-archive) .record { min-width:0;background:#171d17;border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .2s,transform .2s }
+
+:where(body.page-archive) .record:hover { border-color:var(--cyan);transform:translateY(-2px) }
+
+:where(body.page-archive) .record-top { display:flex;justify-content:space-between;align-items:center;gap:10px;padding:17px 18px;border-bottom:1px solid var(--line);font:10px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-archive) .record-top .rarity { color:var(--acid);border:1px solid #677b45;padding:6px 9px }
+
+:where(body.page-archive) .record-body { padding:23px 20px 18px;flex:1 }
+
+:where(body.page-archive) .record-rank { font:700 54px/.9 "Barlow Condensed",sans-serif;color:var(--acid);margin-bottom:18px }
+
+:where(body.page-archive) .record-artist { font:10px "DM Mono",monospace;color:var(--acid);text-transform:uppercase;letter-spacing:.05em }
+
+:where(body.page-archive) .record-artist:hover { color:var(--cyan) }
+
+:where(body.page-archive) .record h3 { font:700 37px/.95 "Barlow Condensed",sans-serif;margin:9px 0 13px;overflow-wrap:anywhere }
+
+:where(body.page-archive) .record h3 a:hover { color:var(--cyan) }
+
+:where(body.page-archive) .record-meta { font:10px "DM Mono",monospace;color:var(--muted);margin-bottom:24px }
+
+:where(body.page-archive) .record-score { display:flex;justify-content:space-between;align-items:end;gap:15px;border-top:1px solid var(--line);padding-top:18px }
+
+:where(body.page-archive) .record-score>div:first-child { min-width:0 }
+
+:where(body.page-archive) .record-score small { display:block;font:9px "DM Mono",monospace;color:var(--muted);margin-bottom:8px }
+
+:where(body.page-archive) .record-score .class-name { font:700 21px/1.05 "Barlow Condensed",sans-serif;text-transform:uppercase }
+
+:where(body.page-archive) .record-score .score { font:700 56px/.8 "Barlow Condensed",sans-serif;color:var(--paper) }
+
+:where(body.page-archive) .record-metrics { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);background:#1e271e }
+
+:where(body.page-archive) .record-metrics>div { padding:14px 5px;text-align:center;border-right:1px solid var(--line) }
+
+:where(body.page-archive) .record-metrics>div:last-child { border:0 }
+
+:where(body.page-archive) .record-metrics span { display:block;font:9px "DM Mono",monospace;color:var(--muted);margin-bottom:6px }
+
+:where(body.page-archive) .record-metrics b { font:700 26px "Barlow Condensed" }
+
+:where(body.page-archive) .record-actions { display:flex;justify-content:space-between;align-items:center;padding:17px 20px;font:10px "DM Mono",monospace }
+
+:where(body.page-archive) .record-actions a { color:var(--acid) }
+
+:where(body.page-archive) .record-actions a:hover { color:var(--cyan) }
+
+:where(body.page-archive) .record-actions .details { color:var(--muted);background:none;border:0;padding:0;font:inherit }
+
+:where(body.page-archive) .record-actions .details:hover { color:var(--cyan) }
+
+:where(body.page-archive) .record-extra { padding:16px 20px;border-top:1px solid var(--line);font:10px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-archive) .record-extra[hidden] { display:none }
+
+:where(body.page-archive) .extra-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:15px }
+
+:where(body.page-archive) .extra-grid>div { display:flex;flex-direction:column;gap:6px }
+
+:where(body.page-archive) .extra-grid strong { color:var(--paper);font:700 23px "Barlow Condensed" }
+
+:where(body.page-archive) .loading,
+:where(body.page-archive) .empty { grid-column:1/-1;padding:55px 20px;text-align:center;border:1px solid var(--line);color:var(--muted);font:12px "DM Mono",monospace }
+
+:where(body.page-archive) .more-wrap { text-align:center;margin:36px 0 60px }
+
+:where(body.page-archive) .load-more { background:transparent;border:1px solid var(--acid);color:var(--acid);padding:18px 35px;font:11px "DM Mono",monospace }
+
+:where(body.page-archive) .load-more:hover { border-color:var(--cyan);color:var(--cyan) }
+
+:where(body.page-archive) .fingerprint-note { border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;display:flex;gap:24px;align-items:center }
+
+:where(body.page-archive) .note-icon { font-size:52px;color:var(--acid) }
+
+:where(body.page-archive) .fingerprint-note>div { flex:1 }
+
+:where(body.page-archive) .fingerprint-note strong { font:11px "DM Mono",monospace }
+
+:where(body.page-archive) .fingerprint-note p { color:var(--muted);font-size:13px;line-height:1.5;margin:8px 0 0;max-width:650px }
+
+:where(body.page-archive) .fingerprint-note>a { font:10px "DM Mono",monospace;border-bottom:1px solid;padding-bottom:6px }
+
+:where(body.page-archive) .fingerprint-note>a:hover { color:var(--cyan) }
+
+:where(body.page-archive) .closing { text-align:center;padding:110px 4% 125px;background:#202a20 }
+
+:where(body.page-archive) .closing p:not(.eyebrow) { font-size:16px;color:var(--muted);margin:30px 0 }
+
+:where(body.page-archive) .outline-button { display:inline-block;border:1px solid var(--acid);color:var(--acid);padding:17px 22px;font:11px "DM Mono",monospace }
+
+:where(body.page-archive) .outline-button:hover { border-color:var(--cyan);color:var(--cyan) }
+
+:where(body.page-archive) .footer { background:#0a0e0b;padding:45px 4% 25px }
+
+:where(body.page-archive) .footer-top,
+:where(body.page-archive) .footer-bottom { display:flex;justify-content:space-between;gap:25px }
+
+:where(body.page-archive) .footer-top { align-items:end;padding-bottom:45px }
+
+:where(body.page-archive) .footer-top>span { max-width:280px;font:11px/1.6 "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-archive) .footer-bottom { border-top:1px solid var(--line);padding-top:25px;font:10px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-archive) .footer-bottom>div { display:flex;gap:20px;flex-wrap:wrap }
+
+:where(body.page-archive) .footer-bottom a:hover { color:var(--cyan) }
+
+@media (max-width:1100px) {
+:where(body.page-archive) .nav { gap:15px }
+
+:where(body.page-archive) .nav a { font-size:9px }
+
+:where(body.page-archive) .filters { grid-template-columns:repeat(4,minmax(0,1fr)) }
+
+:where(body.page-archive) .search-label { grid-column:span 2 }
+
+:where(body.page-archive) .reset { grid-column:span 2 }
+
+:where(body.page-archive) .archive-grid { grid-template-columns:repeat(2,minmax(0,1fr)) }
+}
+
+@media (max-width:700px) {
+:where(body.page-archive) .topline { font-size:8px }
+
+:where(body.page-archive) .topline>span:first-child { max-width:170px }
+
+:where(body.page-archive) .site-header { height:74px }
+
+:where(body.page-archive) .logo-link img { width:200px;height:65px }
+
+:where(body.page-archive) .menu-toggle { display:block;background:none;border:1px solid var(--line);color:var(--paper);padding:10px 13px;font:11px "DM Mono" }
+
+:where(body.page-archive) .menu-toggle span { color:var(--acid) }
+
+:where(body.page-archive) .nav { display:none;position:absolute;left:0;right:0;top:74px;background:#171d17;padding:22px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0 }
+
+:where(body.page-archive) .nav.open { display:flex }
+
+:where(body.page-archive) .nav a { font-size:12px;padding:15px 0;border-bottom:1px solid var(--line) }
+
+:where(body.page-archive) .nav .nav-shop { margin-top:15px;text-align:center }
+
+:where(body.page-archive) .hero-meta,
+:where(body.page-archive) .hero-foot { font-size:8px }
+
+:where(body.page-archive) .hero-body { display:flex;flex-direction:column }
+
+:where(body.page-archive) .hero-left { padding:55px 0 }
+
+:where(body.page-archive) .hero-right { min-height:300px;border-left:0;border-top:1px solid var(--line) }
+
+:where(body.page-archive) h1 { font-size:clamp(92px,19vw,150px) }
+
+:where(body.page-archive) .hero-foot>span:last-child { display:none }
+
+:where(body.page-archive) .collection { padding:80px 4% }
+
+:where(body.page-archive) .collection-head { display:block }
+
+:where(body.page-archive) .collection h2,
+:where(body.page-archive) .closing h2 { font-size:clamp(75px,15vw,112px) }
+
+:where(body.page-archive) .collection-aside { width:auto;margin-top:30px }
+
+:where(body.page-archive) .filters { grid-template-columns:repeat(2,minmax(0,1fr)) }
+
+:where(body.page-archive) .search-label { grid-column:span 2 }
+
+:where(body.page-archive) .reset { grid-column:span 2 }
+
+:where(body.page-archive) .archive-grid { grid-template-columns:1fr }
+
+:where(body.page-archive) .results-bar>span:last-child { display:none }
+
+:where(body.page-archive) .fingerprint-note { flex-wrap:wrap }
+
+:where(body.page-archive) .fingerprint-note>a { width:100% }
+
+:where(body.page-archive) .footer-top,
+:where(body.page-archive) .footer-bottom { flex-direction:column }
+
+:where(body.page-archive) .footer-bottom>div { gap:14px }
+}
+
+@media (max-width:400px) {
+:where(body.page-archive) .filters { grid-template-columns:1fr }
+
+:where(body.page-archive) .search-label,
+:where(body.page-archive) .reset { grid-column:auto }
+}
+
+@media (prefers-reduced-motion:reduce) {
+*,
+:where(body.page-archive) *:before,
+:where(body.page-archive) *:after { animation:none!important;scroll-behavior:auto!important;transition:none!important }
+}
+
+:where(body.page-archive) .record-fingerprint { padding:13px 16px 16px;background:#101b1b;border-top:1px solid #355458;overflow:hidden }
+
+:where(body.page-archive) .record-fingerprint[hidden] { display:none }
+
+:where(body.page-archive) .record-fingerprint-heading { display:flex;justify-content:space-between;gap:8px;margin-bottom:10px;color:#00e5ff;font:9px "DM Mono",monospace;letter-spacing:.09em }
+
+:where(body.page-archive) .record-fingerprint-heading span:last-child { color:#a7b4b3 }
+
+:where(body.page-archive) .record-fingerprint img { display:block;width:100%;height:auto;aspect-ratio:3.4/1;object-fit:cover;border:1px solid #2a5154;background:#081313 }
+
+:where(body.page-archive) .record:hover .record-fingerprint { border-top-color:#00e5ff }
+
+
+/* ===== investigation-redesign.css ===== */
+body.page-investigation { --bg:#101411;--panel:#1b211b;--paper:#e9e8dc;--muted:#a5aa9f;--line:#414a40;--acid:#c5f05d;--cyan:#73d4d1;--dark:#121810 }
+
+* { box-sizing:border-box }
+
+html { scroll-behavior:smooth }
+
+body.page-investigation { margin:0;background:var(--bg);color:var(--paper);font-family:"DM Sans",sans-serif }
+
+:where(body.page-investigation) a { color:inherit;text-decoration:none }
+
+:where(body.page-investigation) button { font:inherit }
+
+:where(body.page-investigation) h1,
+:where(body.page-investigation) h2,
+:where(body.page-investigation) h3,
+:where(body.page-investigation) p { margin-top:0 }
+
+:where(body.page-investigation) h1,
+:where(body.page-investigation) h2,
+:where(body.page-investigation) h3 { font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:-.035em }
+
+:where(body.page-investigation) h1,
+:where(body.page-investigation) h2 { font-weight:800;line-height:.83 }
+
+:where(body.page-investigation) h2 { font-size:clamp(66px,8.5vw,138px) }
+
+:where(body.page-investigation) h1 em,
+:where(body.page-investigation) h2 em { color:var(--acid);font-style:normal }
+
+:where(body.page-investigation) .topline { display:flex;justify-content:space-between;gap:12px;background:#202920;padding:9px 4%;color:#b9c5b1;font:10px "DM Mono",monospace;letter-spacing:.09em }
+
+:where(body.page-investigation) .live { color:var(--acid) }
+
+:where(body.page-investigation) .live i { display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--acid);margin-right:7px }
+
+:where(body.page-investigation) .site-header { height:87px;display:flex;align-items:center;justify-content:space-between;padding:0 4%;border-bottom:1px solid var(--line);position:relative;z-index:5 }
+
+:where(body.page-investigation) .logo-link { display:inline-flex;align-items:center;flex-shrink:0 }
+
+:where(body.page-investigation) .logo-link img { width:clamp(190px,19vw,280px);height:78px;object-fit:contain;object-position:left center }
+
+:where(body.page-investigation) .nav { display:flex;align-items:center;gap:30px }
+
+:where(body.page-investigation) .nav a { font:11px "DM Mono",monospace;transition:color .2s }
+
+:where(body.page-investigation) .nav a:hover,
+:where(body.page-investigation) .nav a:focus-visible { color:var(--cyan) }
+
+:where(body.page-investigation) .nav a[aria-current=page] { color:var(--acid) }
+
+:where(body.page-investigation) .nav-shop { border:1px solid var(--acid);padding:12px 16px }
+
+:where(body.page-investigation) .menu-toggle { display:none }
+
+:where(body.page-investigation) .rail,
+:where(body.page-investigation) .hero-foot { display:flex;justify-content:space-between;gap:20px;font:10px "DM Mono",monospace;color:var(--muted);letter-spacing:.07em }
+
+:where(body.page-investigation) .hero { padding:0 4% }
+
+:where(body.page-investigation) .rail { padding:22px 0 }
+
+:where(body.page-investigation) .hero-grid { display:grid;grid-template-columns:58% 42%;border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:650px }
+
+:where(body.page-investigation) .hero-copy { padding:82px 45px 72px 0 }
+
+:where(body.page-investigation) .eyebrow { font:11px "DM Mono",monospace;letter-spacing:.12em;color:var(--acid);margin-bottom:28px }
+
+:where(body.page-investigation) .dash { display:inline-block;width:26px;height:1px;background:var(--acid);vertical-align:middle;margin-right:10px }
+
+:where(body.page-investigation) h1 { font-size:clamp(92px,10.5vw,174px);margin-bottom:42px }
+
+:where(body.page-investigation) .hero-lead { font-size:clamp(22px,2.25vw,31px);line-height:1.24;font-weight:600;max-width:560px }
+
+:where(body.page-investigation) .hero-sub { font-size:15px;line-height:1.8;color:var(--muted);max-width:510px;margin-bottom:34px }
+
+:where(body.page-investigation) .underline-link { font:11px "DM Mono",monospace;letter-spacing:.06em;border-bottom:1px solid currentColor;padding-bottom:8px }
+
+:where(body.page-investigation) .underline-link:hover { color:var(--cyan) }
+
+:where(body.page-investigation) .hero-art { position:relative;overflow:hidden;border-left:1px solid var(--line);background:radial-gradient(circle at 52% 45%,#30452d,#1d2b20 47%,#151b16 78%);min-height:560px }
+
+:where(body.page-investigation) .art-grid { position:absolute;inset:0;background-image:linear-gradient(#b7e58e10 1px,transparent 1px),linear-gradient(90deg,#b7e58e10 1px,transparent 1px);background-size:26px 26px }
+
+:where(body.page-investigation) .art-head,
+:where(body.page-investigation) .art-bottom { position:absolute;z-index:2;left:24px;right:24px;display:flex;justify-content:space-between;gap:15px;font:9px "DM Mono",monospace;color:#b9c6b1 }
+
+:where(body.page-investigation) .art-head { top:24px }
+
+:where(body.page-investigation) .art-bottom { bottom:25px }
+
+:where(body.page-investigation) .art-ring { position:absolute;width:74%;aspect-ratio:1;border:1px solid #c5f05d36;border-radius:50%;left:13%;top:16%;box-shadow:0 0 0 30px #c5f05d08,0 0 0 80px #c5f05d05 }
+
+:where(body.page-investigation) .wave { position:absolute;inset:32% 7%;height:34%;display:flex;align-items:center;gap:2px;filter:drop-shadow(0 0 10px #c5f05d44) }
+
+:where(body.page-investigation) .wave i { flex:1;max-width:5px;background:var(--acid) }
+
+:where(body.page-investigation) .art-center { position:absolute;left:50%;top:70%;transform:translateX(-50%);font:11px/1.5 "DM Mono",monospace;letter-spacing:.12em;text-align:center;color:var(--paper) }
+
+:where(body.page-investigation) .hero-foot { padding:19px 0 21px }
+
+:where(body.page-investigation) .ticker { background:var(--acid);color:#172016;white-space:nowrap;overflow:hidden;padding:16px 0;font:700 14px "DM Mono",monospace;letter-spacing:.06em }
+
+:where(body.page-investigation) .ticker>div { width:max-content;animation:scroll 38s linear infinite }
+
+:where(body.page-investigation) .ticker b { padding:0 32px }
+
+@keyframes scroll {to{transform:translateX(-50%)}}
+
+:where(body.page-investigation) .section { padding:110px 4% }
+
+:where(body.page-investigation) .section-marker { font:10px "DM Mono",monospace;letter-spacing:.1em;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-bottom:45px }
+
+:where(body.page-investigation) .founder-content,
+:where(body.page-investigation) .why-content,
+:where(body.page-investigation) .disclosure-body { margin-left:18% }
+
+:where(body.page-investigation) .founder h2 { max-width:1150px;margin-bottom:62px }
+
+:where(body.page-investigation) .story-grid { display:grid;grid-template-columns:43% 1fr;gap:9%;align-items:start }
+
+:where(body.page-investigation) .quote-block { border-left:2px solid var(--acid);padding:8px 0 8px 28px }
+
+:where(body.page-investigation) .quote-mark { font:100px/.6 "Barlow Condensed";color:var(--acid) }
+
+:where(body.page-investigation) blockquote { font:600 clamp(23px,2.6vw,39px)/1.25 "DM Sans",sans-serif;margin:24px 0 }
+
+:where(body.page-investigation) .quote-attribution { font:10px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-investigation) .story-body p { font-size:16px;line-height:1.85;color:#c0c6b9;margin-bottom:23px }
+
+:where(body.page-investigation) .story-body strong { color:var(--paper) }
+
+:where(body.page-investigation) .mission { position:relative;background:#202a20;padding:92px 4% 105px;display:grid;grid-template-columns:18% 1fr;overflow:hidden }
+
+:where(body.page-investigation) .mission-side { font:10px/1.7 "DM Mono",monospace;color:#b1bca9;display:flex;flex-direction:column;justify-content:space-between;z-index:1 }
+
+:where(body.page-investigation) .mission-main { position:relative;z-index:1 }
+
+:where(body.page-investigation) .mission h2 { font-size:clamp(65px,8.3vw,130px);margin-bottom:44px }
+
+:where(body.page-investigation) .mission-main>p:last-child { font-size:19px;line-height:1.6;color:#c7d1c2;max-width:690px }
+
+:where(body.page-investigation) .mission-seal { position:absolute;right:-40px;bottom:-150px;font-size:520px;line-height:1;color:#c5f05d0b }
+
+:where(body.page-investigation) .why h2 { margin-bottom:60px }
+
+:where(body.page-investigation) .principles { display:grid;grid-template-columns:repeat(3,1fr);gap:28px }
+
+:where(body.page-investigation) .principles article { border-top:1px solid var(--line);padding-top:24px }
+
+:where(body.page-investigation) .principles article>span { font:11px "DM Mono",monospace;color:var(--acid) }
+
+:where(body.page-investigation) .principles h3 { font-size:31px;line-height:1;margin:25px 0 18px }
+
+:where(body.page-investigation) .principles p { font-size:14px;line-height:1.8;color:var(--muted) }
+
+:where(body.page-investigation) .method { padding:100px 4%;background:#171e17 }
+
+:where(body.page-investigation) .method-intro { display:grid;grid-template-columns:60% 1fr;gap:40px;align-items:end }
+
+:where(body.page-investigation) .method-intro h2 { margin-bottom:50px }
+
+:where(body.page-investigation) .method-intro>p { font-size:16px;line-height:1.8;color:#c0c6b9;max-width:460px;margin-bottom:52px }
+
+:where(body.page-investigation) .steps { display:grid;grid-template-columns:repeat(4,1fr);gap:16px }
+
+:where(body.page-investigation) .steps article { padding:24px 20px 35px;border:1px solid var(--line);min-height:260px }
+
+:where(body.page-investigation) .steps article>span { font:11px "DM Mono",monospace;color:var(--acid) }
+
+:where(body.page-investigation) .steps h3 { font-size:34px;line-height:1;margin:50px 0 15px }
+
+:where(body.page-investigation) .steps p { font-size:13px;line-height:1.7;color:var(--muted) }
+
+:where(body.page-investigation) .method-footer { display:flex;justify-content:space-between;align-items:center;gap:28px;padding-top:44px }
+
+:where(body.page-investigation) .method-footer>div { display:flex;flex-wrap:wrap;gap:18px }
+
+:where(body.page-investigation) .method-footer strong { font:11px "DM Mono",monospace;color:var(--paper) }
+
+:where(body.page-investigation) .button { display:inline-flex;align-items:center;justify-content:center;padding:17px 20px;font:11px "DM Mono",monospace;letter-spacing:.04em;transition:transform .2s,background .2s }
+
+:where(body.page-investigation) .button:hover { transform:translateY(-3px) }
+
+:where(body.page-investigation) .button.outline { border:1px solid var(--acid);color:var(--acid) }
+
+:where(body.page-investigation) .button.outline:hover { border-color:var(--cyan);color:var(--cyan) }
+
+:where(body.page-investigation) .button.primary { background:var(--acid);color:#142013 }
+
+:where(body.page-investigation) .disclosure-body { max-width:900px }
+
+:where(body.page-investigation) .disclosure h2 { font-size:clamp(58px,7vw,110px);margin-bottom:36px }
+
+:where(body.page-investigation) .disclosure-body>p:not(.eyebrow) { font-size:16px;line-height:1.85;color:var(--muted) }
+
+:where(body.page-investigation) .end-cta { text-align:center;padding:100px 4% 120px;background:#202a20 }
+
+:where(body.page-investigation) .end-cta h2 { margin-bottom:30px }
+
+:where(body.page-investigation) .end-cta>p:not(.eyebrow) { color:#c0c6b9;font-size:17px }
+
+:where(body.page-investigation) .cta-actions { display:flex;justify-content:center;gap:14px;margin-top:32px;flex-wrap:wrap }
+
+:where(body.page-investigation) .footer { background:#0a0e0b;padding:40px 4% 28px }
+
+:where(body.page-investigation) .footer-top,
+:where(body.page-investigation) .footer-bottom { display:flex;justify-content:space-between;gap:25px }
+
+:where(body.page-investigation) .footer-top { align-items:center;padding-bottom:50px }
+
+:where(body.page-investigation) .footer-top>span { max-width:270px;font:11px/1.7 "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-investigation) .footer-bottom { border-top:1px solid var(--line);padding-top:24px;font:10px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-investigation) .footer-bottom>div { display:flex;gap:18px;flex-wrap:wrap }
+
+:where(body.page-investigation) .footer-bottom a:hover { color:var(--cyan) }
+
+@media (max-width:1100px) {
+:where(body.page-investigation) .nav { gap:14px }
+
+:where(body.page-investigation) .nav a { font-size:9px }
+
+:where(body.page-investigation) .hero-grid { grid-template-columns:55% 45% }
+
+:where(body.page-investigation) h1 { font-size:clamp(75px,10vw,125px) }
+
+:where(body.page-investigation) .principles { gap:16px }
+
+:where(body.page-investigation) .steps { grid-template-columns:repeat(2,1fr) }
+}
+
+@media (max-width:720px) {
+:where(body.page-investigation) .topline { font-size:8px }
+
+:where(body.page-investigation) .site-header { height:75px }
+
+:where(body.page-investigation) .logo-link img { width:200px;height:70px }
+
+:where(body.page-investigation) .menu-toggle { display:block;background:transparent;border:1px solid var(--line);padding:10px;color:var(--paper);font:11px "DM Mono",monospace }
+
+:where(body.page-investigation) .nav { display:none;position:absolute;top:75px;left:0;right:0;background:#171d17;padding:15px 4% 25px;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line) }
+
+:where(body.page-investigation) .nav.open { display:flex }
+
+:where(body.page-investigation) .nav a { padding:14px 0;font-size:11px;border-bottom:1px solid var(--line) }
+
+:where(body.page-investigation) .nav-shop { text-align:center;margin-top:14px }
+
+:where(body.page-investigation) .rail,
+:where(body.page-investigation) .hero-foot { font-size:8px }
+
+:where(body.page-investigation) .hero-grid { display:flex;flex-direction:column }
+
+:where(body.page-investigation) .hero-copy { padding:65px 0 }
+
+:where(body.page-investigation) h1 { font-size:clamp(74px,16vw,120px) }
+
+:where(body.page-investigation) .hero-art { border-left:0;border-top:1px solid var(--line);min-height:340px }
+
+:where(body.page-investigation) .section { padding:70px 4% }
+
+:where(body.page-investigation) .section-marker { margin-bottom:30px }
+
+:where(body.page-investigation) .founder-content,
+:where(body.page-investigation) .why-content,
+:where(body.page-investigation) .disclosure-body { margin-left:0 }
+
+:where(body.page-investigation) .founder h2 { margin-bottom:40px }
+
+:where(body.page-investigation) h2 { font-size:clamp(64px,14vw,100px) }
+
+:where(body.page-investigation) .story-grid { grid-template-columns:1fr;gap:40px }
+
+:where(body.page-investigation) .mission { grid-template-columns:1fr;padding:70px 4% }
+
+:where(body.page-investigation) .mission-side { flex-direction:row;margin-bottom:35px }
+
+:where(body.page-investigation) .mission h2 { font-size:clamp(57px,11.5vw,90px) }
+
+:where(body.page-investigation) .principles { grid-template-columns:1fr;gap:22px }
+
+:where(body.page-investigation) .method { padding:70px 4% }
+
+:where(body.page-investigation) .method-intro { grid-template-columns:1fr;gap:0 }
+
+:where(body.page-investigation) .method-intro h2 { margin-bottom:28px }
+
+:where(body.page-investigation) .method-intro>p { margin-bottom:35px }
+
+:where(body.page-investigation) .steps { grid-template-columns:1fr }
+
+:where(body.page-investigation) .steps article { min-height:auto }
+
+:where(body.page-investigation) .steps h3 { margin-top:30px }
+
+:where(body.page-investigation) .method-footer { flex-direction:column;align-items:flex-start }
+
+:where(body.page-investigation) .end-cta { padding:85px 4% }
+
+:where(body.page-investigation) .footer-top,
+:where(body.page-investigation) .footer-bottom { flex-direction:column }
+
+:where(body.page-investigation) .footer-top { padding-bottom:30px }
+
+:where(body.page-investigation) .footer-bottom>div { gap:13px }
+}
+
+@media (prefers-reduced-motion:reduce) {
+*,
+:where(body.page-investigation) *:before,
+:where(body.page-investigation) *:after { animation:none!important;transition:none!important;scroll-behavior:auto!important }
+}
+
+
+/* ===== editorial-system.css ===== */
+body.page-drop,
+body.page-submit-evidence,
+body.page-classification,
+body.page-rankings,
+body.page-artists,
+body.page-arena,
+body.page-artist,
+body.page-model,
+body.page-metrics { --bg:#101510;--panel:#1b251d;--paper:#e8e9dd;--muted:#a5b3a5;--line:#3b4b40;--acid:#c5f05d;--cyan:#73d4d1;--dark:#101610 }
+
+* { box-sizing:border-box }
+
+html { scroll-behavior:smooth }
+
+body.page-drop,
+body.page-submit-evidence,
+body.page-classification,
+body.page-rankings,
+body.page-artists,
+body.page-arena,
+body.page-artist,
+body.page-model,
+body.page-metrics { margin:0;background:var(--bg);color:var(--paper);font:15px/1.65 "DM Sans",sans-serif }
+
+:where(body.page-drop) a,
+:where(body.page-submit-evidence) a,
+:where(body.page-classification) a,
+:where(body.page-rankings) a,
+:where(body.page-artists) a,
+:where(body.page-arena) a,
+:where(body.page-artist) a,
+:where(body.page-model) a,
+:where(body.page-metrics) a { color:inherit;text-decoration:none }
+
+:where(body.page-drop) a:hover,
+:where(body.page-submit-evidence) a:hover,
+:where(body.page-classification) a:hover,
+:where(body.page-rankings) a:hover,
+:where(body.page-artists) a:hover,
+:where(body.page-arena) a:hover,
+:where(body.page-artist) a:hover,
+:where(body.page-model) a:hover,
+:where(body.page-metrics) a:hover { color:var(--cyan) }
+
+:where(body.page-drop) button,
+:where(body.page-submit-evidence) button,
+:where(body.page-classification) button,
+:where(body.page-rankings) button,
+:where(body.page-artists) button,
+:where(body.page-arena) button,
+:where(body.page-artist) button,
+:where(body.page-model) button,
+:where(body.page-metrics) button,
+:where(body.page-drop) input,
+:where(body.page-submit-evidence) input,
+:where(body.page-classification) input,
+:where(body.page-rankings) input,
+:where(body.page-artists) input,
+:where(body.page-arena) input,
+:where(body.page-artist) input,
+:where(body.page-model) input,
+:where(body.page-metrics) input,
+:where(body.page-drop) select,
+:where(body.page-submit-evidence) select,
+:where(body.page-classification) select,
+:where(body.page-rankings) select,
+:where(body.page-artists) select,
+:where(body.page-arena) select,
+:where(body.page-artist) select,
+:where(body.page-model) select,
+:where(body.page-metrics) select,
+:where(body.page-drop) textarea,
+:where(body.page-submit-evidence) textarea,
+:where(body.page-classification) textarea,
+:where(body.page-rankings) textarea,
+:where(body.page-artists) textarea,
+:where(body.page-arena) textarea,
+:where(body.page-artist) textarea,
+:where(body.page-model) textarea,
+:where(body.page-metrics) textarea { font:inherit }
+
+:where(body.page-drop) button,
+:where(body.page-submit-evidence) button,
+:where(body.page-classification) button,
+:where(body.page-rankings) button,
+:where(body.page-artists) button,
+:where(body.page-arena) button,
+:where(body.page-artist) button,
+:where(body.page-model) button,
+:where(body.page-metrics) button { cursor:pointer }
+
+:where(body.page-drop) h1,
+:where(body.page-submit-evidence) h1,
+:where(body.page-classification) h1,
+:where(body.page-rankings) h1,
+:where(body.page-artists) h1,
+:where(body.page-arena) h1,
+:where(body.page-artist) h1,
+:where(body.page-model) h1,
+:where(body.page-metrics) h1,
+:where(body.page-drop) h2,
+:where(body.page-submit-evidence) h2,
+:where(body.page-classification) h2,
+:where(body.page-rankings) h2,
+:where(body.page-artists) h2,
+:where(body.page-arena) h2,
+:where(body.page-artist) h2,
+:where(body.page-model) h2,
+:where(body.page-metrics) h2,
+:where(body.page-drop) h3,
+:where(body.page-submit-evidence) h3,
+:where(body.page-classification) h3,
+:where(body.page-rankings) h3,
+:where(body.page-artists) h3,
+:where(body.page-arena) h3,
+:where(body.page-artist) h3,
+:where(body.page-model) h3,
+:where(body.page-metrics) h3,
+:where(body.page-drop) h4,
+:where(body.page-submit-evidence) h4,
+:where(body.page-classification) h4,
+:where(body.page-rankings) h4,
+:where(body.page-artists) h4,
+:where(body.page-arena) h4,
+:where(body.page-artist) h4,
+:where(body.page-model) h4,
+:where(body.page-metrics) h4 { font-family:"Barlow Condensed",sans-serif;line-height:.95;text-transform:uppercase;letter-spacing:-.018em;margin:0 0 22px }
+
+:where(body.page-drop) h2,
+:where(body.page-submit-evidence) h2,
+:where(body.page-classification) h2,
+:where(body.page-rankings) h2,
+:where(body.page-artists) h2,
+:where(body.page-arena) h2,
+:where(body.page-artist) h2,
+:where(body.page-model) h2,
+:where(body.page-metrics) h2 { font-size:clamp(46px,5.5vw,88px) }
+
+:where(body.page-drop) h3,
+:where(body.page-submit-evidence) h3,
+:where(body.page-classification) h3,
+:where(body.page-rankings) h3,
+:where(body.page-artists) h3,
+:where(body.page-arena) h3,
+:where(body.page-artist) h3,
+:where(body.page-model) h3,
+:where(body.page-metrics) h3 { font-size:clamp(25px,2.6vw,42px) }
+
+:where(body.page-drop) p,
+:where(body.page-submit-evidence) p,
+:where(body.page-classification) p,
+:where(body.page-rankings) p,
+:where(body.page-artists) p,
+:where(body.page-arena) p,
+:where(body.page-artist) p,
+:where(body.page-model) p,
+:where(body.page-metrics) p { margin:0 0 20px }
+
+:where(body.page-drop) em,
+:where(body.page-submit-evidence) em,
+:where(body.page-classification) em,
+:where(body.page-rankings) em,
+:where(body.page-artists) em,
+:where(body.page-arena) em,
+:where(body.page-artist) em,
+:where(body.page-model) em,
+:where(body.page-metrics) em { color:var(--acid);font-style:normal }
+
+:where(body.page-drop) .topline,
+:where(body.page-submit-evidence) .topline,
+:where(body.page-classification) .topline,
+:where(body.page-rankings) .topline,
+:where(body.page-artists) .topline,
+:where(body.page-arena) .topline,
+:where(body.page-artist) .topline,
+:where(body.page-model) .topline,
+:where(body.page-metrics) .topline { display:flex;justify-content:space-between;gap:12px;background:#202a21;padding:9px 4%;font:10px "DM Mono",monospace;letter-spacing:.1em;color:#b5c4b2 }
+
+:where(body.page-drop) .live,
+:where(body.page-submit-evidence) .live,
+:where(body.page-classification) .live,
+:where(body.page-rankings) .live,
+:where(body.page-artists) .live,
+:where(body.page-arena) .live,
+:where(body.page-artist) .live,
+:where(body.page-model) .live,
+:where(body.page-metrics) .live { color:var(--acid) }
+
+:where(body.page-drop) .site-header,
+:where(body.page-submit-evidence) .site-header,
+:where(body.page-classification) .site-header,
+:where(body.page-rankings) .site-header,
+:where(body.page-artists) .site-header,
+:where(body.page-arena) .site-header,
+:where(body.page-artist) .site-header,
+:where(body.page-model) .site-header,
+:where(body.page-metrics) .site-header { height:92px;display:flex;align-items:center;justify-content:space-between;padding:0 4%;border-bottom:1px solid var(--line);position:relative;z-index:5;background:#111811 }
+
+:where(body.page-drop) .logo-link img,
+:where(body.page-submit-evidence) .logo-link img,
+:where(body.page-classification) .logo-link img,
+:where(body.page-rankings) .logo-link img,
+:where(body.page-artists) .logo-link img,
+:where(body.page-arena) .logo-link img,
+:where(body.page-artist) .logo-link img,
+:where(body.page-model) .logo-link img,
+:where(body.page-metrics) .logo-link img { width:clamp(175px,18vw,275px);height:75px;object-fit:contain;object-position:left }
+
+:where(body.page-drop) .nav,
+:where(body.page-submit-evidence) .nav,
+:where(body.page-classification) .nav,
+:where(body.page-rankings) .nav,
+:where(body.page-artists) .nav,
+:where(body.page-arena) .nav,
+:where(body.page-artist) .nav,
+:where(body.page-model) .nav,
+:where(body.page-metrics) .nav { display:flex;gap:27px;align-items:center }
+
+:where(body.page-drop) .nav a,
+:where(body.page-submit-evidence) .nav a,
+:where(body.page-classification) .nav a,
+:where(body.page-rankings) .nav a,
+:where(body.page-artists) .nav a,
+:where(body.page-arena) .nav a,
+:where(body.page-artist) .nav a,
+:where(body.page-model) .nav a,
+:where(body.page-metrics) .nav a { font:11px "DM Mono",monospace;letter-spacing:.03em }
+
+:where(body.page-drop) .nav a:hover,
+:where(body.page-submit-evidence) .nav a:hover,
+:where(body.page-classification) .nav a:hover,
+:where(body.page-rankings) .nav a:hover,
+:where(body.page-artists) .nav a:hover,
+:where(body.page-arena) .nav a:hover,
+:where(body.page-artist) .nav a:hover,
+:where(body.page-model) .nav a:hover,
+:where(body.page-metrics) .nav a:hover { color:var(--cyan) }
+
+:where(body.page-drop) .nav-shop,
+:where(body.page-submit-evidence) .nav-shop,
+:where(body.page-classification) .nav-shop,
+:where(body.page-rankings) .nav-shop,
+:where(body.page-artists) .nav-shop,
+:where(body.page-arena) .nav-shop,
+:where(body.page-artist) .nav-shop,
+:where(body.page-model) .nav-shop,
+:where(body.page-metrics) .nav-shop { padding:12px 16px;border:1px solid var(--acid) }
+
+:where(body.page-drop) .menu-toggle,
+:where(body.page-submit-evidence) .menu-toggle,
+:where(body.page-classification) .menu-toggle,
+:where(body.page-rankings) .menu-toggle,
+:where(body.page-artists) .menu-toggle,
+:where(body.page-arena) .menu-toggle,
+:where(body.page-artist) .menu-toggle,
+:where(body.page-model) .menu-toggle,
+:where(body.page-metrics) .menu-toggle { display:none }
+
+:where(body.page-drop) .editorial-hero,
+:where(body.page-submit-evidence) .editorial-hero,
+:where(body.page-classification) .editorial-hero,
+:where(body.page-rankings) .editorial-hero,
+:where(body.page-artists) .editorial-hero,
+:where(body.page-arena) .editorial-hero,
+:where(body.page-artist) .editorial-hero,
+:where(body.page-model) .editorial-hero,
+:where(body.page-metrics) .editorial-hero { padding:0 4%;background:radial-gradient(ellipse at 75% 40%,#203626 0,transparent 58%) }
+
+:where(body.page-drop) .editorial-rail,
+:where(body.page-submit-evidence) .editorial-rail,
+:where(body.page-classification) .editorial-rail,
+:where(body.page-rankings) .editorial-rail,
+:where(body.page-artists) .editorial-rail,
+:where(body.page-arena) .editorial-rail,
+:where(body.page-artist) .editorial-rail,
+:where(body.page-model) .editorial-rail,
+:where(body.page-metrics) .editorial-rail { display:flex;justify-content:space-between;gap:16px;padding:21px 0;color:var(--muted);font:10px "DM Mono",monospace;letter-spacing:.08em }
+
+:where(body.page-drop) .editorial-hero-grid,
+:where(body.page-submit-evidence) .editorial-hero-grid,
+:where(body.page-classification) .editorial-hero-grid,
+:where(body.page-rankings) .editorial-hero-grid,
+:where(body.page-artists) .editorial-hero-grid,
+:where(body.page-arena) .editorial-hero-grid,
+:where(body.page-artist) .editorial-hero-grid,
+:where(body.page-model) .editorial-hero-grid,
+:where(body.page-metrics) .editorial-hero-grid { display:grid;grid-template-columns:58% 42%;min-height:570px;border-block:1px solid var(--line) }
+
+:where(body.page-drop) .editorial-hero-grid>div:first-child,
+:where(body.page-submit-evidence) .editorial-hero-grid>div:first-child,
+:where(body.page-classification) .editorial-hero-grid>div:first-child,
+:where(body.page-rankings) .editorial-hero-grid>div:first-child,
+:where(body.page-artists) .editorial-hero-grid>div:first-child,
+:where(body.page-arena) .editorial-hero-grid>div:first-child,
+:where(body.page-artist) .editorial-hero-grid>div:first-child,
+:where(body.page-model) .editorial-hero-grid>div:first-child,
+:where(body.page-metrics) .editorial-hero-grid>div:first-child { padding:85px 30px 75px 0 }
+
+:where(body.page-drop) .eyebrow,
+:where(body.page-submit-evidence) .eyebrow,
+:where(body.page-classification) .eyebrow,
+:where(body.page-rankings) .eyebrow,
+:where(body.page-artists) .eyebrow,
+:where(body.page-arena) .eyebrow,
+:where(body.page-artist) .eyebrow,
+:where(body.page-model) .eyebrow,
+:where(body.page-metrics) .eyebrow,
+:where(body.page-drop) .kicker,
+:where(body.page-submit-evidence) .kicker,
+:where(body.page-classification) .kicker,
+:where(body.page-rankings) .kicker,
+:where(body.page-artists) .kicker,
+:where(body.page-arena) .kicker,
+:where(body.page-artist) .kicker,
+:where(body.page-model) .kicker,
+:where(body.page-metrics) .kicker,
+:where(body.page-drop) .classification-kicker,
+:where(body.page-submit-evidence) .classification-kicker,
+:where(body.page-classification) .classification-kicker,
+:where(body.page-rankings) .classification-kicker,
+:where(body.page-artists) .classification-kicker,
+:where(body.page-arena) .classification-kicker,
+:where(body.page-artist) .classification-kicker,
+:where(body.page-model) .classification-kicker,
+:where(body.page-metrics) .classification-kicker,
+:where(body.page-drop) .classification-section-kicker,
+:where(body.page-submit-evidence) .classification-section-kicker,
+:where(body.page-classification) .classification-section-kicker,
+:where(body.page-rankings) .classification-section-kicker,
+:where(body.page-artists) .classification-section-kicker,
+:where(body.page-arena) .classification-section-kicker,
+:where(body.page-artist) .classification-section-kicker,
+:where(body.page-model) .classification-section-kicker,
+:where(body.page-metrics) .classification-section-kicker { color:var(--acid);font:11px "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;margin-bottom:23px }
+
+:where(body.page-drop) .editorial-hero h1,
+:where(body.page-submit-evidence) .editorial-hero h1,
+:where(body.page-classification) .editorial-hero h1,
+:where(body.page-rankings) .editorial-hero h1,
+:where(body.page-artists) .editorial-hero h1,
+:where(body.page-arena) .editorial-hero h1,
+:where(body.page-artist) .editorial-hero h1,
+:where(body.page-model) .editorial-hero h1,
+:where(body.page-metrics) .editorial-hero h1 { font-size:clamp(78px,10vw,165px);line-height:.82;letter-spacing:-.035em;margin-bottom:38px }
+
+:where(body.page-drop) .editorial-deck,
+:where(body.page-submit-evidence) .editorial-deck,
+:where(body.page-classification) .editorial-deck,
+:where(body.page-rankings) .editorial-deck,
+:where(body.page-artists) .editorial-deck,
+:where(body.page-arena) .editorial-deck,
+:where(body.page-artist) .editorial-deck,
+:where(body.page-model) .editorial-deck,
+:where(body.page-metrics) .editorial-deck { max-width:560px;font-size:clamp(18px,2vw,27px);line-height:1.32;font-weight:600 }
+
+:where(body.page-drop) .editorial-visual,
+:where(body.page-submit-evidence) .editorial-visual,
+:where(body.page-classification) .editorial-visual,
+:where(body.page-rankings) .editorial-visual,
+:where(body.page-artists) .editorial-visual,
+:where(body.page-arena) .editorial-visual,
+:where(body.page-artist) .editorial-visual,
+:where(body.page-model) .editorial-visual,
+:where(body.page-metrics) .editorial-visual { position:relative;overflow:hidden;min-height:490px;border-left:1px solid var(--line);background:radial-gradient(circle at center,#2a4634 0%,#17271e 42%,#101810 78%) }
+
+:where(body.page-drop) .editorial-visual:before,
+:where(body.page-submit-evidence) .editorial-visual:before,
+:where(body.page-classification) .editorial-visual:before,
+:where(body.page-rankings) .editorial-visual:before,
+:where(body.page-artists) .editorial-visual:before,
+:where(body.page-arena) .editorial-visual:before,
+:where(body.page-artist) .editorial-visual:before,
+:where(body.page-model) .editorial-visual:before,
+:where(body.page-metrics) .editorial-visual:before { content:"";position:absolute;inset:0;background-image:linear-gradient(#b9f2b80d 1px,transparent 1px),linear-gradient(90deg,#b9f2b80d 1px,transparent 1px);background-size:24px 24px }
+
+:where(body.page-drop) .viz-top,
+:where(body.page-submit-evidence) .viz-top,
+:where(body.page-classification) .viz-top,
+:where(body.page-rankings) .viz-top,
+:where(body.page-artists) .viz-top,
+:where(body.page-arena) .viz-top,
+:where(body.page-artist) .viz-top,
+:where(body.page-model) .viz-top,
+:where(body.page-metrics) .viz-top,
+:where(body.page-drop) .viz-bottom,
+:where(body.page-submit-evidence) .viz-bottom,
+:where(body.page-classification) .viz-bottom,
+:where(body.page-rankings) .viz-bottom,
+:where(body.page-artists) .viz-bottom,
+:where(body.page-arena) .viz-bottom,
+:where(body.page-artist) .viz-bottom,
+:where(body.page-model) .viz-bottom,
+:where(body.page-metrics) .viz-bottom { position:absolute;z-index:2;left:22px;right:22px;display:flex;justify-content:space-between;font:10px "DM Mono",monospace;color:#b3c9b7 }
+
+:where(body.page-drop) .viz-top,
+:where(body.page-submit-evidence) .viz-top,
+:where(body.page-classification) .viz-top,
+:where(body.page-rankings) .viz-top,
+:where(body.page-artists) .viz-top,
+:where(body.page-arena) .viz-top,
+:where(body.page-artist) .viz-top,
+:where(body.page-model) .viz-top,
+:where(body.page-metrics) .viz-top { top:24px }
+
+:where(body.page-drop) .viz-bottom,
+:where(body.page-submit-evidence) .viz-bottom,
+:where(body.page-classification) .viz-bottom,
+:where(body.page-rankings) .viz-bottom,
+:where(body.page-artists) .viz-bottom,
+:where(body.page-arena) .viz-bottom,
+:where(body.page-artist) .viz-bottom,
+:where(body.page-model) .viz-bottom,
+:where(body.page-metrics) .viz-bottom { bottom:25px }
+
+:where(body.page-drop) .scope,
+:where(body.page-submit-evidence) .scope,
+:where(body.page-classification) .scope,
+:where(body.page-rankings) .scope,
+:where(body.page-artists) .scope,
+:where(body.page-arena) .scope,
+:where(body.page-artist) .scope,
+:where(body.page-model) .scope,
+:where(body.page-metrics) .scope { position:absolute;inset:12% 8%;display:flex;align-items:center;justify-content:center }
+
+:where(body.page-drop) .scope-ring,
+:where(body.page-submit-evidence) .scope-ring,
+:where(body.page-classification) .scope-ring,
+:where(body.page-rankings) .scope-ring,
+:where(body.page-artists) .scope-ring,
+:where(body.page-arena) .scope-ring,
+:where(body.page-artist) .scope-ring,
+:where(body.page-model) .scope-ring,
+:where(body.page-metrics) .scope-ring { width:min(75%,320px);aspect-ratio:1;border:1px solid #b9ef7860;border-radius:50%;box-shadow:0 0 0 38px #b9ef7808,0 0 0 84px #b9ef7805 }
+
+:where(body.page-drop) .scope-bars,
+:where(body.page-submit-evidence) .scope-bars,
+:where(body.page-classification) .scope-bars,
+:where(body.page-rankings) .scope-bars,
+:where(body.page-artists) .scope-bars,
+:where(body.page-arena) .scope-bars,
+:where(body.page-artist) .scope-bars,
+:where(body.page-model) .scope-bars,
+:where(body.page-metrics) .scope-bars { position:absolute;inset:30% 0;display:flex;align-items:center;gap:3px;filter:drop-shadow(0 0 10px #73d4d177) }
+
+:where(body.page-drop) .scope-bars i,
+:where(body.page-submit-evidence) .scope-bars i,
+:where(body.page-classification) .scope-bars i,
+:where(body.page-rankings) .scope-bars i,
+:where(body.page-artists) .scope-bars i,
+:where(body.page-arena) .scope-bars i,
+:where(body.page-artist) .scope-bars i,
+:where(body.page-model) .scope-bars i,
+:where(body.page-metrics) .scope-bars i { flex:1;background:var(--cyan);max-width:7px }
+
+:where(body.page-drop) .scope>span,
+:where(body.page-submit-evidence) .scope>span,
+:where(body.page-classification) .scope>span,
+:where(body.page-rankings) .scope>span,
+:where(body.page-artists) .scope>span,
+:where(body.page-arena) .scope>span,
+:where(body.page-artist) .scope>span,
+:where(body.page-model) .scope>span,
+:where(body.page-metrics) .scope>span { position:absolute;bottom:9%;font:10px "DM Mono",monospace;letter-spacing:.13em;color:var(--acid) }
+
+:where(body.page-drop) .editorial-foot,
+:where(body.page-submit-evidence) .editorial-foot,
+:where(body.page-classification) .editorial-foot,
+:where(body.page-rankings) .editorial-foot,
+:where(body.page-artists) .editorial-foot,
+:where(body.page-arena) .editorial-foot,
+:where(body.page-artist) .editorial-foot,
+:where(body.page-model) .editorial-foot,
+:where(body.page-metrics) .editorial-foot { border-bottom:1px solid var(--line) }
+
+:where(body.page-drop) main>section:not(.editorial-hero),
+:where(body.page-submit-evidence) main>section:not(.editorial-hero),
+:where(body.page-classification) main>section:not(.editorial-hero),
+:where(body.page-rankings) main>section:not(.editorial-hero),
+:where(body.page-artists) main>section:not(.editorial-hero),
+:where(body.page-arena) main>section:not(.editorial-hero),
+:where(body.page-artist) main>section:not(.editorial-hero),
+:where(body.page-model) main>section:not(.editorial-hero),
+:where(body.page-metrics) main>section:not(.editorial-hero),
+:where(body.page-drop) main>.archive-subnav,
+:where(body.page-submit-evidence) main>.archive-subnav,
+:where(body.page-classification) main>.archive-subnav,
+:where(body.page-rankings) main>.archive-subnav,
+:where(body.page-artists) main>.archive-subnav,
+:where(body.page-arena) main>.archive-subnav,
+:where(body.page-artist) main>.archive-subnav,
+:where(body.page-model) main>.archive-subnav,
+:where(body.page-metrics) main>.archive-subnav,
+:where(body.page-drop) main>.page-content,
+:where(body.page-submit-evidence) main>.page-content,
+:where(body.page-classification) main>.page-content,
+:where(body.page-rankings) main>.page-content,
+:where(body.page-artists) main>.page-content,
+:where(body.page-arena) main>.page-content,
+:where(body.page-artist) main>.page-content,
+:where(body.page-model) main>.page-content,
+:where(body.page-metrics) main>.page-content,
+:where(body.page-drop) main>.battle-panel,
+:where(body.page-submit-evidence) main>.battle-panel,
+:where(body.page-classification) main>.battle-panel,
+:where(body.page-rankings) main>.battle-panel,
+:where(body.page-artists) main>.battle-panel,
+:where(body.page-arena) main>.battle-panel,
+:where(body.page-artist) main>.battle-panel,
+:where(body.page-model) main>.battle-panel,
+:where(body.page-metrics) main>.battle-panel,
+:where(body.page-drop) main>.battle-result,
+:where(body.page-submit-evidence) main>.battle-result,
+:where(body.page-classification) main>.battle-result,
+:where(body.page-rankings) main>.battle-result,
+:where(body.page-artists) main>.battle-result,
+:where(body.page-arena) main>.battle-result,
+:where(body.page-artist) main>.battle-result,
+:where(body.page-model) main>.battle-result,
+:where(body.page-metrics) main>.battle-result { max-width:1440px;margin-inline:auto }
+
+:where(body.page-drop) main>section:not(.editorial-hero),
+:where(body.page-submit-evidence) main>section:not(.editorial-hero),
+:where(body.page-classification) main>section:not(.editorial-hero),
+:where(body.page-rankings) main>section:not(.editorial-hero),
+:where(body.page-artists) main>section:not(.editorial-hero),
+:where(body.page-arena) main>section:not(.editorial-hero),
+:where(body.page-artist) main>section:not(.editorial-hero),
+:where(body.page-model) main>section:not(.editorial-hero),
+:where(body.page-metrics) main>section:not(.editorial-hero) { padding:65px 4%;border-bottom:1px solid var(--line) }
+
+:where(body.page-drop) .record-intro,
+:where(body.page-submit-evidence) .record-intro,
+:where(body.page-classification) .record-intro,
+:where(body.page-rankings) .record-intro,
+:where(body.page-artists) .record-intro,
+:where(body.page-arena) .record-intro,
+:where(body.page-artist) .record-intro,
+:where(body.page-model) .record-intro,
+:where(body.page-metrics) .record-intro { padding:55px 4%!important;background:#1b251d }
+
+:where(body.page-drop) .record-intro h1,
+:where(body.page-submit-evidence) .record-intro h1,
+:where(body.page-classification) .record-intro h1,
+:where(body.page-rankings) .record-intro h1,
+:where(body.page-artists) .record-intro h1,
+:where(body.page-arena) .record-intro h1,
+:where(body.page-artist) .record-intro h1,
+:where(body.page-model) .record-intro h1,
+:where(body.page-metrics) .record-intro h1 { font-size:clamp(55px,7vw,115px) }
+
+:where(body.page-drop) .record-intro .hero-copy,
+:where(body.page-submit-evidence) .record-intro .hero-copy,
+:where(body.page-classification) .record-intro .hero-copy,
+:where(body.page-rankings) .record-intro .hero-copy,
+:where(body.page-artists) .record-intro .hero-copy,
+:where(body.page-arena) .record-intro .hero-copy,
+:where(body.page-artist) .record-intro .hero-copy,
+:where(body.page-model) .record-intro .hero-copy,
+:where(body.page-metrics) .record-intro .hero-copy,
+:where(body.page-drop) .record-intro p,
+:where(body.page-submit-evidence) .record-intro p,
+:where(body.page-classification) .record-intro p,
+:where(body.page-rankings) .record-intro p,
+:where(body.page-artists) .record-intro p,
+:where(body.page-arena) .record-intro p,
+:where(body.page-artist) .record-intro p,
+:where(body.page-model) .record-intro p,
+:where(body.page-metrics) .record-intro p { max-width:850px;color:var(--muted) }
+
+:where(body.page-drop) .page-content,
+:where(body.page-submit-evidence) .page-content,
+:where(body.page-classification) .page-content,
+:where(body.page-rankings) .page-content,
+:where(body.page-artists) .page-content,
+:where(body.page-arena) .page-content,
+:where(body.page-artist) .page-content,
+:where(body.page-model) .page-content,
+:where(body.page-metrics) .page-content,
+:where(body.page-drop) .section,
+:where(body.page-submit-evidence) .section,
+:where(body.page-classification) .section,
+:where(body.page-rankings) .section,
+:where(body.page-artists) .section,
+:where(body.page-arena) .section,
+:where(body.page-artist) .section,
+:where(body.page-model) .section,
+:where(body.page-metrics) .section,
+:where(body.page-drop) .classification-section,
+:where(body.page-submit-evidence) .classification-section,
+:where(body.page-classification) .classification-section,
+:where(body.page-rankings) .classification-section,
+:where(body.page-artists) .classification-section,
+:where(body.page-arena) .classification-section,
+:where(body.page-artist) .classification-section,
+:where(body.page-model) .classification-section,
+:where(body.page-metrics) .classification-section { padding:65px 4% }
+
+:where(body.page-drop) .section-head,
+:where(body.page-submit-evidence) .section-head,
+:where(body.page-classification) .section-head,
+:where(body.page-rankings) .section-head,
+:where(body.page-artists) .section-head,
+:where(body.page-arena) .section-head,
+:where(body.page-artist) .section-head,
+:where(body.page-model) .section-head,
+:where(body.page-metrics) .section-head { max-width:980px;margin-bottom:34px }
+
+:where(body.page-drop) .section-head p,
+:where(body.page-submit-evidence) .section-head p,
+:where(body.page-classification) .section-head p,
+:where(body.page-rankings) .section-head p,
+:where(body.page-artists) .section-head p,
+:where(body.page-arena) .section-head p,
+:where(body.page-artist) .section-head p,
+:where(body.page-model) .section-head p,
+:where(body.page-metrics) .section-head p { max-width:750px;color:var(--muted) }
+
+:where(body.page-drop) .grid,
+:where(body.page-submit-evidence) .grid,
+:where(body.page-classification) .grid,
+:where(body.page-rankings) .grid,
+:where(body.page-artists) .grid,
+:where(body.page-arena) .grid,
+:where(body.page-artist) .grid,
+:where(body.page-model) .grid,
+:where(body.page-metrics) .grid,
+:where(body.page-drop) .classification-grid,
+:where(body.page-submit-evidence) .classification-grid,
+:where(body.page-classification) .classification-grid,
+:where(body.page-rankings) .classification-grid,
+:where(body.page-artists) .classification-grid,
+:where(body.page-arena) .classification-grid,
+:where(body.page-artist) .classification-grid,
+:where(body.page-model) .classification-grid,
+:where(body.page-metrics) .classification-grid,
+:where(body.page-drop) .archive-grid,
+:where(body.page-submit-evidence) .archive-grid,
+:where(body.page-classification) .archive-grid,
+:where(body.page-rankings) .archive-grid,
+:where(body.page-artists) .archive-grid,
+:where(body.page-arena) .archive-grid,
+:where(body.page-artist) .archive-grid,
+:where(body.page-model) .archive-grid,
+:where(body.page-metrics) .archive-grid,
+:where(body.page-drop) .trait-grid,
+:where(body.page-submit-evidence) .trait-grid,
+:where(body.page-classification) .trait-grid,
+:where(body.page-rankings) .trait-grid,
+:where(body.page-artists) .trait-grid,
+:where(body.page-arena) .trait-grid,
+:where(body.page-artist) .trait-grid,
+:where(body.page-model) .trait-grid,
+:where(body.page-metrics) .trait-grid,
+:where(body.page-drop) .ranking-board,
+:where(body.page-submit-evidence) .ranking-board,
+:where(body.page-classification) .ranking-board,
+:where(body.page-rankings) .ranking-board,
+:where(body.page-artists) .ranking-board,
+:where(body.page-arena) .ranking-board,
+:where(body.page-artist) .ranking-board,
+:where(body.page-model) .ranking-board,
+:where(body.page-metrics) .ranking-board { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px }
+
+:where(body.page-drop) .classification-grid,
+:where(body.page-submit-evidence) .classification-grid,
+:where(body.page-classification) .classification-grid,
+:where(body.page-rankings) .classification-grid,
+:where(body.page-artists) .classification-grid,
+:where(body.page-arena) .classification-grid,
+:where(body.page-artist) .classification-grid,
+:where(body.page-model) .classification-grid,
+:where(body.page-metrics) .classification-grid,
+:where(body.page-drop) .ranking-board,
+:where(body.page-submit-evidence) .ranking-board,
+:where(body.page-classification) .ranking-board,
+:where(body.page-rankings) .ranking-board,
+:where(body.page-artists) .ranking-board,
+:where(body.page-arena) .ranking-board,
+:where(body.page-artist) .ranking-board,
+:where(body.page-model) .ranking-board,
+:where(body.page-metrics) .ranking-board { grid-template-columns:repeat(2,minmax(0,1fr)) }
+
+:where(body.page-drop) .panel,
+:where(body.page-submit-evidence) .panel,
+:where(body.page-classification) .panel,
+:where(body.page-rankings) .panel,
+:where(body.page-artists) .panel,
+:where(body.page-arena) .panel,
+:where(body.page-artist) .panel,
+:where(body.page-model) .panel,
+:where(body.page-metrics) .panel,
+:where(body.page-drop) .classification-card,
+:where(body.page-submit-evidence) .classification-card,
+:where(body.page-classification) .classification-card,
+:where(body.page-rankings) .classification-card,
+:where(body.page-artists) .classification-card,
+:where(body.page-arena) .classification-card,
+:where(body.page-artist) .classification-card,
+:where(body.page-model) .classification-card,
+:where(body.page-metrics) .classification-card,
+:where(body.page-drop) .trait-card,
+:where(body.page-submit-evidence) .trait-card,
+:where(body.page-classification) .trait-card,
+:where(body.page-rankings) .trait-card,
+:where(body.page-artists) .trait-card,
+:where(body.page-arena) .trait-card,
+:where(body.page-artist) .trait-card,
+:where(body.page-model) .trait-card,
+:where(body.page-metrics) .trait-card,
+:where(body.page-drop) .archive-card,
+:where(body.page-submit-evidence) .archive-card,
+:where(body.page-classification) .archive-card,
+:where(body.page-rankings) .archive-card,
+:where(body.page-artists) .archive-card,
+:where(body.page-arena) .archive-card,
+:where(body.page-artist) .archive-card,
+:where(body.page-model) .archive-card,
+:where(body.page-metrics) .archive-card,
+:where(body.page-drop) .ranking-panel,
+:where(body.page-submit-evidence) .ranking-panel,
+:where(body.page-classification) .ranking-panel,
+:where(body.page-rankings) .ranking-panel,
+:where(body.page-artists) .ranking-panel,
+:where(body.page-arena) .ranking-panel,
+:where(body.page-artist) .ranking-panel,
+:where(body.page-model) .ranking-panel,
+:where(body.page-metrics) .ranking-panel,
+:where(body.page-drop) .battle-panel,
+:where(body.page-submit-evidence) .battle-panel,
+:where(body.page-classification) .battle-panel,
+:where(body.page-rankings) .battle-panel,
+:where(body.page-artists) .battle-panel,
+:where(body.page-arena) .battle-panel,
+:where(body.page-artist) .battle-panel,
+:where(body.page-model) .battle-panel,
+:where(body.page-metrics) .battle-panel,
+:where(body.page-drop) .battle-result,
+:where(body.page-submit-evidence) .battle-result,
+:where(body.page-classification) .battle-result,
+:where(body.page-rankings) .battle-result,
+:where(body.page-artists) .battle-result,
+:where(body.page-arena) .battle-result,
+:where(body.page-artist) .battle-result,
+:where(body.page-model) .battle-result,
+:where(body.page-metrics) .battle-result,
+:where(body.page-drop) .home-archive-stats-wrap,
+:where(body.page-submit-evidence) .home-archive-stats-wrap,
+:where(body.page-classification) .home-archive-stats-wrap,
+:where(body.page-rankings) .home-archive-stats-wrap,
+:where(body.page-artists) .home-archive-stats-wrap,
+:where(body.page-arena) .home-archive-stats-wrap,
+:where(body.page-artist) .home-archive-stats-wrap,
+:where(body.page-model) .home-archive-stats-wrap,
+:where(body.page-metrics) .home-archive-stats-wrap,
+:where(body.page-drop) .trading-card-panel,
+:where(body.page-submit-evidence) .trading-card-panel,
+:where(body.page-classification) .trading-card-panel,
+:where(body.page-rankings) .trading-card-panel,
+:where(body.page-artists) .trading-card-panel,
+:where(body.page-arena) .trading-card-panel,
+:where(body.page-artist) .trading-card-panel,
+:where(body.page-model) .trading-card-panel,
+:where(body.page-metrics) .trading-card-panel,
+:where(body.page-drop) .arena-champion-card,
+:where(body.page-submit-evidence) .arena-champion-card,
+:where(body.page-classification) .arena-champion-card,
+:where(body.page-rankings) .arena-champion-card,
+:where(body.page-artists) .arena-champion-card,
+:where(body.page-arena) .arena-champion-card,
+:where(body.page-artist) .arena-champion-card,
+:where(body.page-model) .arena-champion-card,
+:where(body.page-metrics) .arena-champion-card { position:relative;border:1px solid var(--line);background:linear-gradient(150deg,#263a282a,transparent 60%),#171f19;padding:28px;overflow:hidden }
+
+:where(body.page-drop) .panel:before,
+:where(body.page-submit-evidence) .panel:before,
+:where(body.page-classification) .panel:before,
+:where(body.page-rankings) .panel:before,
+:where(body.page-artists) .panel:before,
+:where(body.page-arena) .panel:before,
+:where(body.page-artist) .panel:before,
+:where(body.page-model) .panel:before,
+:where(body.page-metrics) .panel:before,
+:where(body.page-drop) .classification-card:before,
+:where(body.page-submit-evidence) .classification-card:before,
+:where(body.page-classification) .classification-card:before,
+:where(body.page-rankings) .classification-card:before,
+:where(body.page-artists) .classification-card:before,
+:where(body.page-arena) .classification-card:before,
+:where(body.page-artist) .classification-card:before,
+:where(body.page-model) .classification-card:before,
+:where(body.page-metrics) .classification-card:before,
+:where(body.page-drop) .ranking-panel:before,
+:where(body.page-submit-evidence) .ranking-panel:before,
+:where(body.page-classification) .ranking-panel:before,
+:where(body.page-rankings) .ranking-panel:before,
+:where(body.page-artists) .ranking-panel:before,
+:where(body.page-arena) .ranking-panel:before,
+:where(body.page-artist) .ranking-panel:before,
+:where(body.page-model) .ranking-panel:before,
+:where(body.page-metrics) .ranking-panel:before,
+:where(body.page-drop) .archive-card:before,
+:where(body.page-submit-evidence) .archive-card:before,
+:where(body.page-classification) .archive-card:before,
+:where(body.page-rankings) .archive-card:before,
+:where(body.page-artists) .archive-card:before,
+:where(body.page-arena) .archive-card:before,
+:where(body.page-artist) .archive-card:before,
+:where(body.page-model) .archive-card:before,
+:where(body.page-metrics) .archive-card:before { content:"+";position:absolute;right:14px;top:8px;color:var(--cyan);font:16px "DM Mono",monospace }
+
+:where(body.page-drop) .panel h3,
+:where(body.page-submit-evidence) .panel h3,
+:where(body.page-classification) .panel h3,
+:where(body.page-rankings) .panel h3,
+:where(body.page-artists) .panel h3,
+:where(body.page-arena) .panel h3,
+:where(body.page-artist) .panel h3,
+:where(body.page-model) .panel h3,
+:where(body.page-metrics) .panel h3,
+:where(body.page-drop) .classification-card h3,
+:where(body.page-submit-evidence) .classification-card h3,
+:where(body.page-classification) .classification-card h3,
+:where(body.page-rankings) .classification-card h3,
+:where(body.page-artists) .classification-card h3,
+:where(body.page-arena) .classification-card h3,
+:where(body.page-artist) .classification-card h3,
+:where(body.page-model) .classification-card h3,
+:where(body.page-metrics) .classification-card h3,
+:where(body.page-drop) .trait-card h4,
+:where(body.page-submit-evidence) .trait-card h4,
+:where(body.page-classification) .trait-card h4,
+:where(body.page-rankings) .trait-card h4,
+:where(body.page-artists) .trait-card h4,
+:where(body.page-arena) .trait-card h4,
+:where(body.page-artist) .trait-card h4,
+:where(body.page-model) .trait-card h4,
+:where(body.page-metrics) .trait-card h4 { color:var(--paper);margin:12px 0 14px }
+
+:where(body.page-drop) .panel p,
+:where(body.page-submit-evidence) .panel p,
+:where(body.page-classification) .panel p,
+:where(body.page-rankings) .panel p,
+:where(body.page-artists) .panel p,
+:where(body.page-arena) .panel p,
+:where(body.page-artist) .panel p,
+:where(body.page-model) .panel p,
+:where(body.page-metrics) .panel p,
+:where(body.page-drop) .classification-card p,
+:where(body.page-submit-evidence) .classification-card p,
+:where(body.page-classification) .classification-card p,
+:where(body.page-rankings) .classification-card p,
+:where(body.page-artists) .classification-card p,
+:where(body.page-arena) .classification-card p,
+:where(body.page-artist) .classification-card p,
+:where(body.page-model) .classification-card p,
+:where(body.page-metrics) .classification-card p,
+:where(body.page-drop) .trait-card p,
+:where(body.page-submit-evidence) .trait-card p,
+:where(body.page-classification) .trait-card p,
+:where(body.page-rankings) .trait-card p,
+:where(body.page-artists) .trait-card p,
+:where(body.page-arena) .trait-card p,
+:where(body.page-artist) .trait-card p,
+:where(body.page-model) .trait-card p,
+:where(body.page-metrics) .trait-card p { color:var(--muted) }
+
+:where(body.page-drop) .classification-signals,
+:where(body.page-submit-evidence) .classification-signals,
+:where(body.page-classification) .classification-signals,
+:where(body.page-rankings) .classification-signals,
+:where(body.page-artists) .classification-signals,
+:where(body.page-arena) .classification-signals,
+:where(body.page-artist) .classification-signals,
+:where(body.page-model) .classification-signals,
+:where(body.page-metrics) .classification-signals,
+:where(body.page-drop) .classification-code,
+:where(body.page-submit-evidence) .classification-code,
+:where(body.page-classification) .classification-code,
+:where(body.page-rankings) .classification-code,
+:where(body.page-artists) .classification-code,
+:where(body.page-arena) .classification-code,
+:where(body.page-artist) .classification-code,
+:where(body.page-model) .classification-code,
+:where(body.page-metrics) .classification-code { font:11px/1.6 "DM Mono",monospace;color:var(--cyan);letter-spacing:.05em }
+
+:where(body.page-drop) .classification-summary,
+:where(body.page-submit-evidence) .classification-summary,
+:where(body.page-classification) .classification-summary,
+:where(body.page-rankings) .classification-summary,
+:where(body.page-artists) .classification-summary,
+:where(body.page-arena) .classification-summary,
+:where(body.page-artist) .classification-summary,
+:where(body.page-model) .classification-summary,
+:where(body.page-metrics) .classification-summary,
+:where(body.page-drop) .classification-note-inner,
+:where(body.page-submit-evidence) .classification-note-inner,
+:where(body.page-classification) .classification-note-inner,
+:where(body.page-rankings) .classification-note-inner,
+:where(body.page-artists) .classification-note-inner,
+:where(body.page-arena) .classification-note-inner,
+:where(body.page-artist) .classification-note-inner,
+:where(body.page-model) .classification-note-inner,
+:where(body.page-metrics) .classification-note-inner,
+:where(body.page-drop) .cta-strip,
+:where(body.page-submit-evidence) .cta-strip,
+:where(body.page-classification) .cta-strip,
+:where(body.page-rankings) .cta-strip,
+:where(body.page-artists) .cta-strip,
+:where(body.page-arena) .cta-strip,
+:where(body.page-artist) .cta-strip,
+:where(body.page-model) .cta-strip,
+:where(body.page-metrics) .cta-strip { border:1px solid var(--line);padding:25px;background:#1c2a20 }
+
+:where(body.page-drop) .classification-summary strong,
+:where(body.page-submit-evidence) .classification-summary strong,
+:where(body.page-classification) .classification-summary strong,
+:where(body.page-rankings) .classification-summary strong,
+:where(body.page-artists) .classification-summary strong,
+:where(body.page-arena) .classification-summary strong,
+:where(body.page-artist) .classification-summary strong,
+:where(body.page-model) .classification-summary strong,
+:where(body.page-metrics) .classification-summary strong { color:var(--acid) }
+
+:where(body.page-drop) .classification-section-header,
+:where(body.page-submit-evidence) .classification-section-header,
+:where(body.page-classification) .classification-section-header,
+:where(body.page-rankings) .classification-section-header,
+:where(body.page-artists) .classification-section-header,
+:where(body.page-arena) .classification-section-header,
+:where(body.page-artist) .classification-section-header,
+:where(body.page-model) .classification-section-header,
+:where(body.page-metrics) .classification-section-header { display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:30px }
+
+:where(body.page-drop) .classification-section-header>p,
+:where(body.page-submit-evidence) .classification-section-header>p,
+:where(body.page-classification) .classification-section-header>p,
+:where(body.page-rankings) .classification-section-header>p,
+:where(body.page-artists) .classification-section-header>p,
+:where(body.page-arena) .classification-section-header>p,
+:where(body.page-artist) .classification-section-header>p,
+:where(body.page-model) .classification-section-header>p,
+:where(body.page-metrics) .classification-section-header>p { max-width:480px;color:var(--muted) }
+
+:where(body.page-drop) .trait-category,
+:where(body.page-submit-evidence) .trait-category,
+:where(body.page-classification) .trait-category,
+:where(body.page-rankings) .trait-category,
+:where(body.page-artists) .trait-category,
+:where(body.page-arena) .trait-category,
+:where(body.page-artist) .trait-category,
+:where(body.page-model) .trait-category,
+:where(body.page-metrics) .trait-category { margin:40px 0 }
+
+:where(body.page-drop) .trait-category h3 span,
+:where(body.page-submit-evidence) .trait-category h3 span,
+:where(body.page-classification) .trait-category h3 span,
+:where(body.page-rankings) .trait-category h3 span,
+:where(body.page-artists) .trait-category h3 span,
+:where(body.page-arena) .trait-category h3 span,
+:where(body.page-artist) .trait-category h3 span,
+:where(body.page-model) .trait-category h3 span,
+:where(body.page-metrics) .trait-category h3 span { color:var(--cyan);font:11px "DM Mono",monospace }
+
+:where(body.page-drop) .archive-subnav,
+:where(body.page-submit-evidence) .archive-subnav,
+:where(body.page-classification) .archive-subnav,
+:where(body.page-rankings) .archive-subnav,
+:where(body.page-artists) .archive-subnav,
+:where(body.page-arena) .archive-subnav,
+:where(body.page-artist) .archive-subnav,
+:where(body.page-model) .archive-subnav,
+:where(body.page-metrics) .archive-subnav { display:flex;gap:10px;padding:22px 4%;border-bottom:1px solid var(--line) }
+
+:where(body.page-drop) .archive-subnav a,
+:where(body.page-submit-evidence) .archive-subnav a,
+:where(body.page-classification) .archive-subnav a,
+:where(body.page-rankings) .archive-subnav a,
+:where(body.page-artists) .archive-subnav a,
+:where(body.page-arena) .archive-subnav a,
+:where(body.page-artist) .archive-subnav a,
+:where(body.page-model) .archive-subnav a,
+:where(body.page-metrics) .archive-subnav a { padding:11px 20px;border:1px solid var(--line);font:11px "DM Mono",monospace;text-transform:uppercase }
+
+:where(body.page-drop) .archive-subnav a.active,
+:where(body.page-submit-evidence) .archive-subnav a.active,
+:where(body.page-classification) .archive-subnav a.active,
+:where(body.page-rankings) .archive-subnav a.active,
+:where(body.page-artists) .archive-subnav a.active,
+:where(body.page-arena) .archive-subnav a.active,
+:where(body.page-artist) .archive-subnav a.active,
+:where(body.page-model) .archive-subnav a.active,
+:where(body.page-metrics) .archive-subnav a.active,
+:where(body.page-drop) .archive-subnav a:hover,
+:where(body.page-submit-evidence) .archive-subnav a:hover,
+:where(body.page-classification) .archive-subnav a:hover,
+:where(body.page-rankings) .archive-subnav a:hover,
+:where(body.page-artists) .archive-subnav a:hover,
+:where(body.page-arena) .archive-subnav a:hover,
+:where(body.page-artist) .archive-subnav a:hover,
+:where(body.page-model) .archive-subnav a:hover,
+:where(body.page-metrics) .archive-subnav a:hover { background:var(--acid);color:var(--dark) }
+
+:where(body.page-drop) .button,
+:where(body.page-submit-evidence) .button,
+:where(body.page-classification) .button,
+:where(body.page-rankings) .button,
+:where(body.page-artists) .button,
+:where(body.page-arena) .button,
+:where(body.page-artist) .button,
+:where(body.page-model) .button,
+:where(body.page-metrics) .button,
+:where(body.page-drop) .button-primary,
+:where(body.page-submit-evidence) .button-primary,
+:where(body.page-classification) .button-primary,
+:where(body.page-rankings) .button-primary,
+:where(body.page-artists) .button-primary,
+:where(body.page-arena) .button-primary,
+:where(body.page-artist) .button-primary,
+:where(body.page-model) .button-primary,
+:where(body.page-metrics) .button-primary,
+:where(body.page-drop) .arena-cta,
+:where(body.page-submit-evidence) .arena-cta,
+:where(body.page-classification) .arena-cta,
+:where(body.page-rankings) .arena-cta,
+:where(body.page-artists) .arena-cta,
+:where(body.page-arena) .arena-cta,
+:where(body.page-artist) .arena-cta,
+:where(body.page-model) .arena-cta,
+:where(body.page-metrics) .arena-cta,
+:where(body.page-drop) #battleBtn,
+:where(body.page-submit-evidence) #battleBtn,
+:where(body.page-classification) #battleBtn,
+:where(body.page-rankings) #battleBtn,
+:where(body.page-artists) #battleBtn,
+:where(body.page-arena) #battleBtn,
+:where(body.page-artist) #battleBtn,
+:where(body.page-model) #battleBtn,
+:where(body.page-metrics) #battleBtn,
+:where(body.page-drop) .waitlist-button,
+:where(body.page-submit-evidence) .waitlist-button,
+:where(body.page-classification) .waitlist-button,
+:where(body.page-rankings) .waitlist-button,
+:where(body.page-artists) .waitlist-button,
+:where(body.page-arena) .waitlist-button,
+:where(body.page-artist) .waitlist-button,
+:where(body.page-model) .waitlist-button,
+:where(body.page-metrics) .waitlist-button { display:inline-flex;align-items:center;justify-content:center;gap:12px;background:transparent;border:1px solid var(--acid);color:var(--acid);padding:15px 23px;font:11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.04em;cursor:pointer }
+
+:where(body.page-drop) .button.primary,
+:where(body.page-submit-evidence) .button.primary,
+:where(body.page-classification) .button.primary,
+:where(body.page-rankings) .button.primary,
+:where(body.page-artists) .button.primary,
+:where(body.page-arena) .button.primary,
+:where(body.page-artist) .button.primary,
+:where(body.page-model) .button.primary,
+:where(body.page-metrics) .button.primary,
+:where(body.page-drop) .button-primary,
+:where(body.page-submit-evidence) .button-primary,
+:where(body.page-classification) .button-primary,
+:where(body.page-rankings) .button-primary,
+:where(body.page-artists) .button-primary,
+:where(body.page-arena) .button-primary,
+:where(body.page-artist) .button-primary,
+:where(body.page-model) .button-primary,
+:where(body.page-metrics) .button-primary,
+:where(body.page-drop) #battleBtn,
+:where(body.page-submit-evidence) #battleBtn,
+:where(body.page-classification) #battleBtn,
+:where(body.page-rankings) #battleBtn,
+:where(body.page-artists) #battleBtn,
+:where(body.page-arena) #battleBtn,
+:where(body.page-artist) #battleBtn,
+:where(body.page-model) #battleBtn,
+:where(body.page-metrics) #battleBtn,
+:where(body.page-drop) .waitlist-button,
+:where(body.page-submit-evidence) .waitlist-button,
+:where(body.page-classification) .waitlist-button,
+:where(body.page-rankings) .waitlist-button,
+:where(body.page-artists) .waitlist-button,
+:where(body.page-arena) .waitlist-button,
+:where(body.page-artist) .waitlist-button,
+:where(body.page-model) .waitlist-button,
+:where(body.page-metrics) .waitlist-button { background:var(--acid);color:var(--dark) }
+
+:where(body.page-drop) .button:hover,
+:where(body.page-submit-evidence) .button:hover,
+:where(body.page-classification) .button:hover,
+:where(body.page-rankings) .button:hover,
+:where(body.page-artists) .button:hover,
+:where(body.page-arena) .button:hover,
+:where(body.page-artist) .button:hover,
+:where(body.page-model) .button:hover,
+:where(body.page-metrics) .button:hover,
+:where(body.page-drop) #battleBtn:hover,
+:where(body.page-submit-evidence) #battleBtn:hover,
+:where(body.page-classification) #battleBtn:hover,
+:where(body.page-rankings) #battleBtn:hover,
+:where(body.page-artists) #battleBtn:hover,
+:where(body.page-arena) #battleBtn:hover,
+:where(body.page-artist) #battleBtn:hover,
+:where(body.page-model) #battleBtn:hover,
+:where(body.page-metrics) #battleBtn:hover { background:var(--cyan);color:var(--dark);border-color:var(--cyan) }
+
+:where(body.page-drop) .button-row,
+:where(body.page-submit-evidence) .button-row,
+:where(body.page-classification) .button-row,
+:where(body.page-rankings) .button-row,
+:where(body.page-artists) .button-row,
+:where(body.page-arena) .button-row,
+:where(body.page-artist) .button-row,
+:where(body.page-model) .button-row,
+:where(body.page-metrics) .button-row { display:flex;flex-wrap:wrap;gap:14px;margin-top:28px }
+
+:where(body.page-drop) .metric-list,
+:where(body.page-submit-evidence) .metric-list,
+:where(body.page-classification) .metric-list,
+:where(body.page-rankings) .metric-list,
+:where(body.page-artists) .metric-list,
+:where(body.page-arena) .metric-list,
+:where(body.page-artist) .metric-list,
+:where(body.page-model) .metric-list,
+:where(body.page-metrics) .metric-list { display:grid;grid-template-columns:repeat(2,1fr);gap:12px }
+
+:where(body.page-drop) .metric,
+:where(body.page-submit-evidence) .metric,
+:where(body.page-classification) .metric,
+:where(body.page-rankings) .metric,
+:where(body.page-artists) .metric,
+:where(body.page-arena) .metric,
+:where(body.page-artist) .metric,
+:where(body.page-model) .metric,
+:where(body.page-metrics) .metric { padding:24px;border-top:1px solid var(--line);background:#19231b }
+
+:where(body.page-drop) .metric strong,
+:where(body.page-submit-evidence) .metric strong,
+:where(body.page-classification) .metric strong,
+:where(body.page-rankings) .metric strong,
+:where(body.page-artists) .metric strong,
+:where(body.page-arena) .metric strong,
+:where(body.page-artist) .metric strong,
+:where(body.page-model) .metric strong,
+:where(body.page-metrics) .metric strong { display:block;font:25px "Barlow Condensed",sans-serif;text-transform:uppercase;color:var(--acid) }
+
+:where(body.page-drop) .metric p,
+:where(body.page-submit-evidence) .metric p,
+:where(body.page-classification) .metric p,
+:where(body.page-rankings) .metric p,
+:where(body.page-artists) .metric p,
+:where(body.page-arena) .metric p,
+:where(body.page-artist) .metric p,
+:where(body.page-model) .metric p,
+:where(body.page-metrics) .metric p { color:var(--muted);margin:8px 0 }
+
+:where(body.page-drop) .archive-card,
+:where(body.page-submit-evidence) .archive-card,
+:where(body.page-classification) .archive-card,
+:where(body.page-rankings) .archive-card,
+:where(body.page-artists) .archive-card,
+:where(body.page-arena) .archive-card,
+:where(body.page-artist) .archive-card,
+:where(body.page-model) .archive-card,
+:where(body.page-metrics) .archive-card { cursor:pointer;transition:transform .2s,border-color .2s }
+
+:where(body.page-drop) .archive-card:hover,
+:where(body.page-submit-evidence) .archive-card:hover,
+:where(body.page-classification) .archive-card:hover,
+:where(body.page-rankings) .archive-card:hover,
+:where(body.page-artists) .archive-card:hover,
+:where(body.page-arena) .archive-card:hover,
+:where(body.page-artist) .archive-card:hover,
+:where(body.page-model) .archive-card:hover,
+:where(body.page-metrics) .archive-card:hover { transform:translateY(-3px);border-color:var(--cyan) }
+
+:where(body.page-drop) .card-topline,
+:where(body.page-submit-evidence) .card-topline,
+:where(body.page-classification) .card-topline,
+:where(body.page-rankings) .card-topline,
+:where(body.page-artists) .card-topline,
+:where(body.page-arena) .card-topline,
+:where(body.page-artist) .card-topline,
+:where(body.page-model) .card-topline,
+:where(body.page-metrics) .card-topline,
+:where(body.page-drop) .card-footer-link,
+:where(body.page-submit-evidence) .card-footer-link,
+:where(body.page-classification) .card-footer-link,
+:where(body.page-rankings) .card-footer-link,
+:where(body.page-artists) .card-footer-link,
+:where(body.page-arena) .card-footer-link,
+:where(body.page-artist) .card-footer-link,
+:where(body.page-model) .card-footer-link,
+:where(body.page-metrics) .card-footer-link,
+:where(body.page-drop) .spectrogram-label,
+:where(body.page-submit-evidence) .spectrogram-label,
+:where(body.page-classification) .spectrogram-label,
+:where(body.page-rankings) .spectrogram-label,
+:where(body.page-artists) .spectrogram-label,
+:where(body.page-arena) .spectrogram-label,
+:where(body.page-artist) .spectrogram-label,
+:where(body.page-model) .spectrogram-label,
+:where(body.page-metrics) .spectrogram-label { display:flex;justify-content:space-between;font:10px "DM Mono",monospace;color:var(--cyan);letter-spacing:.05em }
+
+:where(body.page-drop) .card-rank-row,
+:where(body.page-submit-evidence) .card-rank-row,
+:where(body.page-classification) .card-rank-row,
+:where(body.page-rankings) .card-rank-row,
+:where(body.page-artists) .card-rank-row,
+:where(body.page-arena) .card-rank-row,
+:where(body.page-artist) .card-rank-row,
+:where(body.page-model) .card-rank-row,
+:where(body.page-metrics) .card-rank-row { display:flex;gap:22px;align-items:center;margin:24px 0 }
+
+:where(body.page-drop) .global-rank,
+:where(body.page-submit-evidence) .global-rank,
+:where(body.page-classification) .global-rank,
+:where(body.page-rankings) .global-rank,
+:where(body.page-artists) .global-rank,
+:where(body.page-arena) .global-rank,
+:where(body.page-artist) .global-rank,
+:where(body.page-model) .global-rank,
+:where(body.page-metrics) .global-rank { font:800 clamp(45px,5vw,80px)/1 "Barlow Condensed";color:var(--acid) }
+
+:where(body.page-drop) .card-rank-row h3,
+:where(body.page-submit-evidence) .card-rank-row h3,
+:where(body.page-classification) .card-rank-row h3,
+:where(body.page-rankings) .card-rank-row h3,
+:where(body.page-artists) .card-rank-row h3,
+:where(body.page-arena) .card-rank-row h3,
+:where(body.page-artist) .card-rank-row h3,
+:where(body.page-model) .card-rank-row h3,
+:where(body.page-metrics) .card-rank-row h3 { font-size:32px;margin:0 0 8px }
+
+:where(body.page-drop) .card-rank-row p,
+:where(body.page-submit-evidence) .card-rank-row p,
+:where(body.page-classification) .card-rank-row p,
+:where(body.page-rankings) .card-rank-row p,
+:where(body.page-artists) .card-rank-row p,
+:where(body.page-arena) .card-rank-row p,
+:where(body.page-artist) .card-rank-row p,
+:where(body.page-model) .card-rank-row p,
+:where(body.page-metrics) .card-rank-row p { color:var(--muted);font-size:12px }
+
+:where(body.page-drop) .archive-stat-list,
+:where(body.page-submit-evidence) .archive-stat-list,
+:where(body.page-classification) .archive-stat-list,
+:where(body.page-rankings) .archive-stat-list,
+:where(body.page-artists) .archive-stat-list,
+:where(body.page-arena) .archive-stat-list,
+:where(body.page-artist) .archive-stat-list,
+:where(body.page-model) .archive-stat-list,
+:where(body.page-metrics) .archive-stat-list { display:grid;gap:10px;margin:20px 0 }
+
+:where(body.page-drop) .archive-stat-list>div,
+:where(body.page-submit-evidence) .archive-stat-list>div,
+:where(body.page-classification) .archive-stat-list>div,
+:where(body.page-rankings) .archive-stat-list>div,
+:where(body.page-artists) .archive-stat-list>div,
+:where(body.page-arena) .archive-stat-list>div,
+:where(body.page-artist) .archive-stat-list>div,
+:where(body.page-model) .archive-stat-list>div,
+:where(body.page-metrics) .archive-stat-list>div { display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding:10px 0 }
+
+:where(body.page-drop) .archive-stat-list span,
+:where(body.page-submit-evidence) .archive-stat-list span,
+:where(body.page-classification) .archive-stat-list span,
+:where(body.page-rankings) .archive-stat-list span,
+:where(body.page-artists) .archive-stat-list span,
+:where(body.page-arena) .archive-stat-list span,
+:where(body.page-artist) .archive-stat-list span,
+:where(body.page-model) .archive-stat-list span,
+:where(body.page-metrics) .archive-stat-list span { font:11px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-drop) .archive-stat-list strong,
+:where(body.page-submit-evidence) .archive-stat-list strong,
+:where(body.page-classification) .archive-stat-list strong,
+:where(body.page-rankings) .archive-stat-list strong,
+:where(body.page-artists) .archive-stat-list strong,
+:where(body.page-arena) .archive-stat-list strong,
+:where(body.page-artist) .archive-stat-list strong,
+:where(body.page-model) .archive-stat-list strong,
+:where(body.page-metrics) .archive-stat-list strong { color:var(--paper);text-align:right }
+
+:where(body.page-drop) .metric-strip,
+:where(body.page-submit-evidence) .metric-strip,
+:where(body.page-classification) .metric-strip,
+:where(body.page-rankings) .metric-strip,
+:where(body.page-artists) .metric-strip,
+:where(body.page-arena) .metric-strip,
+:where(body.page-artist) .metric-strip,
+:where(body.page-model) .metric-strip,
+:where(body.page-metrics) .metric-strip { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:15px 0 }
+
+:where(body.page-drop) .metric-strip>div,
+:where(body.page-submit-evidence) .metric-strip>div,
+:where(body.page-classification) .metric-strip>div,
+:where(body.page-rankings) .metric-strip>div,
+:where(body.page-artists) .metric-strip>div,
+:where(body.page-arena) .metric-strip>div,
+:where(body.page-artist) .metric-strip>div,
+:where(body.page-model) .metric-strip>div,
+:where(body.page-metrics) .metric-strip>div { background:#233429;padding:13px 9px;min-width:0 }
+
+:where(body.page-drop) .metric-strip span,
+:where(body.page-submit-evidence) .metric-strip span,
+:where(body.page-classification) .metric-strip span,
+:where(body.page-rankings) .metric-strip span,
+:where(body.page-artists) .metric-strip span,
+:where(body.page-arena) .metric-strip span,
+:where(body.page-artist) .metric-strip span,
+:where(body.page-model) .metric-strip span,
+:where(body.page-metrics) .metric-strip span { display:block;color:var(--muted);font:10px "DM Mono",monospace }
+
+:where(body.page-drop) .metric-strip strong,
+:where(body.page-submit-evidence) .metric-strip strong,
+:where(body.page-classification) .metric-strip strong,
+:where(body.page-rankings) .metric-strip strong,
+:where(body.page-artists) .metric-strip strong,
+:where(body.page-arena) .metric-strip strong,
+:where(body.page-artist) .metric-strip strong,
+:where(body.page-model) .metric-strip strong,
+:where(body.page-metrics) .metric-strip strong { font:800 30px "Barlow Condensed";color:var(--acid) }
+
+:where(body.page-drop) .card-footer-link,
+:where(body.page-submit-evidence) .card-footer-link,
+:where(body.page-classification) .card-footer-link,
+:where(body.page-rankings) .card-footer-link,
+:where(body.page-artists) .card-footer-link,
+:where(body.page-arena) .card-footer-link,
+:where(body.page-artist) .card-footer-link,
+:where(body.page-model) .card-footer-link,
+:where(body.page-metrics) .card-footer-link { margin-top:24px }
+
+:where(body.page-drop) .ranking-panel h2,
+:where(body.page-submit-evidence) .ranking-panel h2,
+:where(body.page-classification) .ranking-panel h2,
+:where(body.page-rankings) .ranking-panel h2,
+:where(body.page-artists) .ranking-panel h2,
+:where(body.page-arena) .ranking-panel h2,
+:where(body.page-artist) .ranking-panel h2,
+:where(body.page-model) .ranking-panel h2,
+:where(body.page-metrics) .ranking-panel h2 { font-size:44px }
+
+:where(body.page-drop) .ranking-row,
+:where(body.page-submit-evidence) .ranking-row,
+:where(body.page-classification) .ranking-row,
+:where(body.page-rankings) .ranking-row,
+:where(body.page-artists) .ranking-row,
+:where(body.page-arena) .ranking-row,
+:where(body.page-artist) .ranking-row,
+:where(body.page-model) .ranking-row,
+:where(body.page-metrics) .ranking-row { display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid var(--line) }
+
+:where(body.page-drop) .ranking-position,
+:where(body.page-submit-evidence) .ranking-position,
+:where(body.page-classification) .ranking-position,
+:where(body.page-rankings) .ranking-position,
+:where(body.page-artists) .ranking-position,
+:where(body.page-arena) .ranking-position,
+:where(body.page-artist) .ranking-position,
+:where(body.page-model) .ranking-position,
+:where(body.page-metrics) .ranking-position { color:var(--cyan);font:24px "Barlow Condensed" }
+
+:where(body.page-drop) .ranking-title,
+:where(body.page-submit-evidence) .ranking-title,
+:where(body.page-classification) .ranking-title,
+:where(body.page-rankings) .ranking-title,
+:where(body.page-artists) .ranking-title,
+:where(body.page-arena) .ranking-title,
+:where(body.page-artist) .ranking-title,
+:where(body.page-model) .ranking-title,
+:where(body.page-metrics) .ranking-title { font-size:12px;color:var(--muted) }
+
+:where(body.page-drop) .ranking-title strong,
+:where(body.page-submit-evidence) .ranking-title strong,
+:where(body.page-classification) .ranking-title strong,
+:where(body.page-rankings) .ranking-title strong,
+:where(body.page-artists) .ranking-title strong,
+:where(body.page-arena) .ranking-title strong,
+:where(body.page-artist) .ranking-title strong,
+:where(body.page-model) .ranking-title strong,
+:where(body.page-metrics) .ranking-title strong { display:block;font-size:16px;color:var(--paper) }
+
+:where(body.page-drop) .ranking-score,
+:where(body.page-submit-evidence) .ranking-score,
+:where(body.page-classification) .ranking-score,
+:where(body.page-rankings) .ranking-score,
+:where(body.page-artists) .ranking-score,
+:where(body.page-arena) .ranking-score,
+:where(body.page-artist) .ranking-score,
+:where(body.page-model) .ranking-score,
+:where(body.page-metrics) .ranking-score { font:800 31px "Barlow Condensed";color:var(--acid) }
+
+:where(body.page-drop) .drop-record-layout,
+:where(body.page-submit-evidence) .drop-record-layout,
+:where(body.page-classification) .drop-record-layout,
+:where(body.page-rankings) .drop-record-layout,
+:where(body.page-artists) .drop-record-layout,
+:where(body.page-arena) .drop-record-layout,
+:where(body.page-artist) .drop-record-layout,
+:where(body.page-model) .drop-record-layout,
+:where(body.page-metrics) .drop-record-layout { display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:20px }
+
+:where(body.page-drop) .drop-record-right,
+:where(body.page-submit-evidence) .drop-record-right,
+:where(body.page-classification) .drop-record-right,
+:where(body.page-rankings) .drop-record-right,
+:where(body.page-artists) .drop-record-right,
+:where(body.page-arena) .drop-record-right,
+:where(body.page-artist) .drop-record-right,
+:where(body.page-model) .drop-record-right,
+:where(body.page-metrics) .drop-record-right { display:flex;flex-direction:column;gap:20px }
+
+:where(body.page-drop) .drop-detail-card img,
+:where(body.page-submit-evidence) .drop-detail-card img,
+:where(body.page-classification) .drop-detail-card img,
+:where(body.page-rankings) .drop-detail-card img,
+:where(body.page-artists) .drop-detail-card img,
+:where(body.page-arena) .drop-detail-card img,
+:where(body.page-artist) .drop-detail-card img,
+:where(body.page-model) .drop-detail-card img,
+:where(body.page-metrics) .drop-detail-card img,
+:where(body.page-drop) .trading-card-panel img,
+:where(body.page-submit-evidence) .trading-card-panel img,
+:where(body.page-classification) .trading-card-panel img,
+:where(body.page-rankings) .trading-card-panel img,
+:where(body.page-artists) .trading-card-panel img,
+:where(body.page-arena) .trading-card-panel img,
+:where(body.page-artist) .trading-card-panel img,
+:where(body.page-model) .trading-card-panel img,
+:where(body.page-metrics) .trading-card-panel img { max-width:100%;height:auto }
+
+:where(body.page-drop) .all-fields-table-wrap,
+:where(body.page-submit-evidence) .all-fields-table-wrap,
+:where(body.page-classification) .all-fields-table-wrap,
+:where(body.page-rankings) .all-fields-table-wrap,
+:where(body.page-artists) .all-fields-table-wrap,
+:where(body.page-arena) .all-fields-table-wrap,
+:where(body.page-artist) .all-fields-table-wrap,
+:where(body.page-model) .all-fields-table-wrap,
+:where(body.page-metrics) .all-fields-table-wrap { overflow:auto }
+
+:where(body.page-drop) .all-fields-table,
+:where(body.page-submit-evidence) .all-fields-table,
+:where(body.page-classification) .all-fields-table,
+:where(body.page-rankings) .all-fields-table,
+:where(body.page-artists) .all-fields-table,
+:where(body.page-arena) .all-fields-table,
+:where(body.page-artist) .all-fields-table,
+:where(body.page-model) .all-fields-table,
+:where(body.page-metrics) .all-fields-table { width:100%;border-collapse:collapse }
+
+:where(body.page-drop) .all-fields-table th,
+:where(body.page-submit-evidence) .all-fields-table th,
+:where(body.page-classification) .all-fields-table th,
+:where(body.page-rankings) .all-fields-table th,
+:where(body.page-artists) .all-fields-table th,
+:where(body.page-arena) .all-fields-table th,
+:where(body.page-artist) .all-fields-table th,
+:where(body.page-model) .all-fields-table th,
+:where(body.page-metrics) .all-fields-table th,
+:where(body.page-drop) .all-fields-table td,
+:where(body.page-submit-evidence) .all-fields-table td,
+:where(body.page-classification) .all-fields-table td,
+:where(body.page-rankings) .all-fields-table td,
+:where(body.page-artists) .all-fields-table td,
+:where(body.page-arena) .all-fields-table td,
+:where(body.page-artist) .all-fields-table td,
+:where(body.page-model) .all-fields-table td,
+:where(body.page-metrics) .all-fields-table td { padding:12px 18px;border-bottom:1px solid var(--line);text-align:left }
+
+:where(body.page-drop) .all-fields-table th,
+:where(body.page-submit-evidence) .all-fields-table th,
+:where(body.page-classification) .all-fields-table th,
+:where(body.page-rankings) .all-fields-table th,
+:where(body.page-artists) .all-fields-table th,
+:where(body.page-arena) .all-fields-table th,
+:where(body.page-artist) .all-fields-table th,
+:where(body.page-model) .all-fields-table th,
+:where(body.page-metrics) .all-fields-table th { color:var(--cyan);font:11px "DM Mono",monospace }
+
+:where(body.page-drop) .drop-all-fields,
+:where(body.page-submit-evidence) .drop-all-fields,
+:where(body.page-classification) .drop-all-fields,
+:where(body.page-rankings) .drop-all-fields,
+:where(body.page-artists) .drop-all-fields,
+:where(body.page-arena) .drop-all-fields,
+:where(body.page-artist) .drop-all-fields,
+:where(body.page-model) .drop-all-fields,
+:where(body.page-metrics) .drop-all-fields { margin-top:50px }
+
+:where(body.page-drop) .home-stats-grid,
+:where(body.page-submit-evidence) .home-stats-grid,
+:where(body.page-classification) .home-stats-grid,
+:where(body.page-rankings) .home-stats-grid,
+:where(body.page-artists) .home-stats-grid,
+:where(body.page-arena) .home-stats-grid,
+:where(body.page-artist) .home-stats-grid,
+:where(body.page-model) .home-stats-grid,
+:where(body.page-metrics) .home-stats-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:16px }
+
+:where(body.page-drop) .home-stat,
+:where(body.page-submit-evidence) .home-stat,
+:where(body.page-classification) .home-stat,
+:where(body.page-rankings) .home-stat,
+:where(body.page-artists) .home-stat,
+:where(body.page-arena) .home-stat,
+:where(body.page-artist) .home-stat,
+:where(body.page-model) .home-stat,
+:where(body.page-metrics) .home-stat { padding:15px;border:1px solid var(--line) }
+
+:where(body.page-drop) .home-stat strong,
+:where(body.page-submit-evidence) .home-stat strong,
+:where(body.page-classification) .home-stat strong,
+:where(body.page-rankings) .home-stat strong,
+:where(body.page-artists) .home-stat strong,
+:where(body.page-arena) .home-stat strong,
+:where(body.page-artist) .home-stat strong,
+:where(body.page-model) .home-stat strong,
+:where(body.page-metrics) .home-stat strong { display:block;color:var(--acid);font:800 48px "Barlow Condensed" }
+
+:where(body.page-drop) .home-stat span,
+:where(body.page-submit-evidence) .home-stat span,
+:where(body.page-classification) .home-stat span,
+:where(body.page-rankings) .home-stat span,
+:where(body.page-artists) .home-stat span,
+:where(body.page-arena) .home-stat span,
+:where(body.page-artist) .home-stat span,
+:where(body.page-model) .home-stat span,
+:where(body.page-metrics) .home-stat span { font:11px "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-drop) .select-grid,
+:where(body.page-submit-evidence) .select-grid,
+:where(body.page-classification) .select-grid,
+:where(body.page-rankings) .select-grid,
+:where(body.page-artists) .select-grid,
+:where(body.page-arena) .select-grid,
+:where(body.page-artist) .select-grid,
+:where(body.page-model) .select-grid,
+:where(body.page-metrics) .select-grid { display:grid;grid-template-columns:1fr 1fr;gap:20px }
+
+:where(body.page-drop) .select-grid label,
+:where(body.page-submit-evidence) .select-grid label,
+:where(body.page-classification) .select-grid label,
+:where(body.page-rankings) .select-grid label,
+:where(body.page-artists) .select-grid label,
+:where(body.page-arena) .select-grid label,
+:where(body.page-artist) .select-grid label,
+:where(body.page-model) .select-grid label,
+:where(body.page-metrics) .select-grid label { display:block;color:var(--cyan);font:12px "DM Mono",monospace;margin-bottom:10px }
+
+:where(body.page-drop) select,
+:where(body.page-submit-evidence) select,
+:where(body.page-classification) select,
+:where(body.page-rankings) select,
+:where(body.page-artists) select,
+:where(body.page-arena) select,
+:where(body.page-artist) select,
+:where(body.page-model) select,
+:where(body.page-metrics) select,
+:where(body.page-drop) input,
+:where(body.page-submit-evidence) input,
+:where(body.page-classification) input,
+:where(body.page-rankings) input,
+:where(body.page-artists) input,
+:where(body.page-arena) input,
+:where(body.page-artist) input,
+:where(body.page-model) input,
+:where(body.page-metrics) input,
+:where(body.page-drop) textarea,
+:where(body.page-submit-evidence) textarea,
+:where(body.page-classification) textarea,
+:where(body.page-rankings) textarea,
+:where(body.page-artists) textarea,
+:where(body.page-arena) textarea,
+:where(body.page-artist) textarea,
+:where(body.page-model) textarea,
+:where(body.page-metrics) textarea { background:#111b15;color:var(--paper);border:1px solid var(--line);padding:13px;max-width:100%;width:100% }
+
+:where(body.page-drop) #battleBtn,
+:where(body.page-submit-evidence) #battleBtn,
+:where(body.page-classification) #battleBtn,
+:where(body.page-rankings) #battleBtn,
+:where(body.page-artists) #battleBtn,
+:where(body.page-arena) #battleBtn,
+:where(body.page-artist) #battleBtn,
+:where(body.page-model) #battleBtn,
+:where(body.page-metrics) #battleBtn { margin-top:25px }
+
+:where(body.page-drop) .hidden,
+:where(body.page-submit-evidence) .hidden,
+:where(body.page-classification) .hidden,
+:where(body.page-rankings) .hidden,
+:where(body.page-artists) .hidden,
+:where(body.page-arena) .hidden,
+:where(body.page-artist) .hidden,
+:where(body.page-model) .hidden,
+:where(body.page-metrics) .hidden { display:none!important }
+
+:where(body.page-drop) .battle-score,
+:where(body.page-submit-evidence) .battle-score,
+:where(body.page-classification) .battle-score,
+:where(body.page-rankings) .battle-score,
+:where(body.page-artists) .battle-score,
+:where(body.page-arena) .battle-score,
+:where(body.page-artist) .battle-score,
+:where(body.page-model) .battle-score,
+:where(body.page-metrics) .battle-score { font:800 70px "Barlow Condensed";color:var(--acid) }
+
+:where(body.page-drop) .round-row,
+:where(body.page-submit-evidence) .round-row,
+:where(body.page-classification) .round-row,
+:where(body.page-rankings) .round-row,
+:where(body.page-artists) .round-row,
+:where(body.page-arena) .round-row,
+:where(body.page-artist) .round-row,
+:where(body.page-model) .round-row,
+:where(body.page-metrics) .round-row { display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid var(--line) }
+
+:where(body.page-drop) .footer,
+:where(body.page-submit-evidence) .footer,
+:where(body.page-classification) .footer,
+:where(body.page-rankings) .footer,
+:where(body.page-artists) .footer,
+:where(body.page-arena) .footer,
+:where(body.page-artist) .footer,
+:where(body.page-model) .footer,
+:where(body.page-metrics) .footer { background:#0b100d;padding:45px 4% 25px }
+
+:where(body.page-drop) .footer-top,
+:where(body.page-submit-evidence) .footer-top,
+:where(body.page-classification) .footer-top,
+:where(body.page-rankings) .footer-top,
+:where(body.page-artists) .footer-top,
+:where(body.page-arena) .footer-top,
+:where(body.page-artist) .footer-top,
+:where(body.page-model) .footer-top,
+:where(body.page-metrics) .footer-top,
+:where(body.page-drop) .footer-bottom,
+:where(body.page-submit-evidence) .footer-bottom,
+:where(body.page-classification) .footer-bottom,
+:where(body.page-rankings) .footer-bottom,
+:where(body.page-artists) .footer-bottom,
+:where(body.page-arena) .footer-bottom,
+:where(body.page-artist) .footer-bottom,
+:where(body.page-model) .footer-bottom,
+:where(body.page-metrics) .footer-bottom { display:flex;justify-content:space-between;gap:24px }
+
+:where(body.page-drop) .footer-top,
+:where(body.page-submit-evidence) .footer-top,
+:where(body.page-classification) .footer-top,
+:where(body.page-rankings) .footer-top,
+:where(body.page-artists) .footer-top,
+:where(body.page-arena) .footer-top,
+:where(body.page-artist) .footer-top,
+:where(body.page-model) .footer-top,
+:where(body.page-metrics) .footer-top { align-items:center;padding-bottom:40px }
+
+:where(body.page-drop) .footer-top>span,
+:where(body.page-submit-evidence) .footer-top>span,
+:where(body.page-classification) .footer-top>span,
+:where(body.page-rankings) .footer-top>span,
+:where(body.page-artists) .footer-top>span,
+:where(body.page-arena) .footer-top>span,
+:where(body.page-artist) .footer-top>span,
+:where(body.page-model) .footer-top>span,
+:where(body.page-metrics) .footer-top>span { max-width:300px;font:11px/1.7 "DM Mono",monospace;color:var(--muted) }
+
+:where(body.page-drop) .footer-bottom,
+:where(body.page-submit-evidence) .footer-bottom,
+:where(body.page-classification) .footer-bottom,
+:where(body.page-rankings) .footer-bottom,
+:where(body.page-artists) .footer-bottom,
+:where(body.page-arena) .footer-bottom,
+:where(body.page-artist) .footer-bottom,
+:where(body.page-model) .footer-bottom,
+:where(body.page-metrics) .footer-bottom { border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font:10px "DM Mono",monospace }
+
+:where(body.page-drop) .footer-bottom>div,
+:where(body.page-submit-evidence) .footer-bottom>div,
+:where(body.page-classification) .footer-bottom>div,
+:where(body.page-rankings) .footer-bottom>div,
+:where(body.page-artists) .footer-bottom>div,
+:where(body.page-arena) .footer-bottom>div,
+:where(body.page-artist) .footer-bottom>div,
+:where(body.page-model) .footer-bottom>div,
+:where(body.page-metrics) .footer-bottom>div { display:flex;gap:18px;flex-wrap:wrap }
+
+:where(body.page-drop) main .arena-hero,
+:where(body.page-submit-evidence) main .arena-hero,
+:where(body.page-classification) main .arena-hero,
+:where(body.page-rankings) main .arena-hero,
+:where(body.page-artists) main .arena-hero,
+:where(body.page-arena) main .arena-hero,
+:where(body.page-artist) main .arena-hero,
+:where(body.page-model) main .arena-hero,
+:where(body.page-metrics) main .arena-hero { background:#202c23 }
+
+:where(body.page-drop) .classification-note,
+:where(body.page-submit-evidence) .classification-note,
+:where(body.page-classification) .classification-note,
+:where(body.page-rankings) .classification-note,
+:where(body.page-artists) .classification-note,
+:where(body.page-arena) .classification-note,
+:where(body.page-artist) .classification-note,
+:where(body.page-model) .classification-note,
+:where(body.page-metrics) .classification-note { margin-bottom:40px }
+
+:where(body.page-drop) .score-wide,
+:where(body.page-submit-evidence) .score-wide,
+:where(body.page-classification) .score-wide,
+:where(body.page-rankings) .score-wide,
+:where(body.page-artists) .score-wide,
+:where(body.page-arena) .score-wide,
+:where(body.page-artist) .score-wide,
+:where(body.page-model) .score-wide,
+:where(body.page-metrics) .score-wide { grid-column:1/-1 }
+
+:where(body.page-drop) .asset-error,
+:where(body.page-submit-evidence) .asset-error,
+:where(body.page-classification) .asset-error,
+:where(body.page-rankings) .asset-error,
+:where(body.page-artists) .asset-error,
+:where(body.page-arena) .asset-error,
+:where(body.page-artist) .asset-error,
+:where(body.page-model) .asset-error,
+:where(body.page-metrics) .asset-error { color:var(--muted) }
+
+@media (max-width:1000px) {
+:where(body.page-drop) .nav,
+:where(body.page-submit-evidence) .nav,
+:where(body.page-classification) .nav,
+:where(body.page-rankings) .nav,
+:where(body.page-artists) .nav,
+:where(body.page-arena) .nav,
+:where(body.page-artist) .nav,
+:where(body.page-model) .nav,
+:where(body.page-metrics) .nav { gap:12px }
+
+:where(body.page-drop) .nav a,
+:where(body.page-submit-evidence) .nav a,
+:where(body.page-classification) .nav a,
+:where(body.page-rankings) .nav a,
+:where(body.page-artists) .nav a,
+:where(body.page-arena) .nav a,
+:where(body.page-artist) .nav a,
+:where(body.page-model) .nav a,
+:where(body.page-metrics) .nav a { font-size:10px }
+
+:where(body.page-drop) .editorial-hero h1,
+:where(body.page-submit-evidence) .editorial-hero h1,
+:where(body.page-classification) .editorial-hero h1,
+:where(body.page-rankings) .editorial-hero h1,
+:where(body.page-artists) .editorial-hero h1,
+:where(body.page-arena) .editorial-hero h1,
+:where(body.page-artist) .editorial-hero h1,
+:where(body.page-model) .editorial-hero h1,
+:where(body.page-metrics) .editorial-hero h1 { font-size:clamp(65px,9vw,110px) }
+
+:where(body.page-drop) .grid,
+:where(body.page-submit-evidence) .grid,
+:where(body.page-classification) .grid,
+:where(body.page-rankings) .grid,
+:where(body.page-artists) .grid,
+:where(body.page-arena) .grid,
+:where(body.page-artist) .grid,
+:where(body.page-model) .grid,
+:where(body.page-metrics) .grid,
+:where(body.page-drop) .archive-grid,
+:where(body.page-submit-evidence) .archive-grid,
+:where(body.page-classification) .archive-grid,
+:where(body.page-rankings) .archive-grid,
+:where(body.page-artists) .archive-grid,
+:where(body.page-arena) .archive-grid,
+:where(body.page-artist) .archive-grid,
+:where(body.page-model) .archive-grid,
+:where(body.page-metrics) .archive-grid,
+:where(body.page-drop) .trait-grid,
+:where(body.page-submit-evidence) .trait-grid,
+:where(body.page-classification) .trait-grid,
+:where(body.page-rankings) .trait-grid,
+:where(body.page-artists) .trait-grid,
+:where(body.page-arena) .trait-grid,
+:where(body.page-artist) .trait-grid,
+:where(body.page-model) .trait-grid,
+:where(body.page-metrics) .trait-grid { grid-template-columns:repeat(2,minmax(0,1fr)) }
+}
+
+@media (max-width:720px) {
+:where(body.page-drop) .topline,
+:where(body.page-submit-evidence) .topline,
+:where(body.page-classification) .topline,
+:where(body.page-rankings) .topline,
+:where(body.page-artists) .topline,
+:where(body.page-arena) .topline,
+:where(body.page-artist) .topline,
+:where(body.page-model) .topline,
+:where(body.page-metrics) .topline { font-size:8px }
+
+:where(body.page-drop) .site-header,
+:where(body.page-submit-evidence) .site-header,
+:where(body.page-classification) .site-header,
+:where(body.page-rankings) .site-header,
+:where(body.page-artists) .site-header,
+:where(body.page-arena) .site-header,
+:where(body.page-artist) .site-header,
+:where(body.page-model) .site-header,
+:where(body.page-metrics) .site-header { height:76px }
+
+:where(body.page-drop) .logo-link img,
+:where(body.page-submit-evidence) .logo-link img,
+:where(body.page-classification) .logo-link img,
+:where(body.page-rankings) .logo-link img,
+:where(body.page-artists) .logo-link img,
+:where(body.page-arena) .logo-link img,
+:where(body.page-artist) .logo-link img,
+:where(body.page-model) .logo-link img,
+:where(body.page-metrics) .logo-link img { width:185px;height:68px }
+
+:where(body.page-drop) .menu-toggle,
+:where(body.page-submit-evidence) .menu-toggle,
+:where(body.page-classification) .menu-toggle,
+:where(body.page-rankings) .menu-toggle,
+:where(body.page-artists) .menu-toggle,
+:where(body.page-arena) .menu-toggle,
+:where(body.page-artist) .menu-toggle,
+:where(body.page-model) .menu-toggle,
+:where(body.page-metrics) .menu-toggle { display:block;background:transparent;border:1px solid var(--line);color:var(--paper);font:11px "DM Mono",monospace;padding:10px }
+
+:where(body.page-drop) .nav,
+:where(body.page-submit-evidence) .nav,
+:where(body.page-classification) .nav,
+:where(body.page-rankings) .nav,
+:where(body.page-artists) .nav,
+:where(body.page-arena) .nav,
+:where(body.page-artist) .nav,
+:where(body.page-model) .nav,
+:where(body.page-metrics) .nav { display:none;position:absolute;top:76px;left:0;right:0;background:#151f18;padding:20px 4%;flex-direction:column;align-items:stretch }
+
+:where(body.page-drop) .nav.open,
+:where(body.page-submit-evidence) .nav.open,
+:where(body.page-classification) .nav.open,
+:where(body.page-rankings) .nav.open,
+:where(body.page-artists) .nav.open,
+:where(body.page-arena) .nav.open,
+:where(body.page-artist) .nav.open,
+:where(body.page-model) .nav.open,
+:where(body.page-metrics) .nav.open { display:flex }
+
+:where(body.page-drop) .nav a,
+:where(body.page-submit-evidence) .nav a,
+:where(body.page-classification) .nav a,
+:where(body.page-rankings) .nav a,
+:where(body.page-artists) .nav a,
+:where(body.page-arena) .nav a,
+:where(body.page-artist) .nav a,
+:where(body.page-model) .nav a,
+:where(body.page-metrics) .nav a { padding:12px 0;border-bottom:1px solid var(--line) }
+
+:where(body.page-drop) .editorial-hero-grid,
+:where(body.page-submit-evidence) .editorial-hero-grid,
+:where(body.page-classification) .editorial-hero-grid,
+:where(body.page-rankings) .editorial-hero-grid,
+:where(body.page-artists) .editorial-hero-grid,
+:where(body.page-arena) .editorial-hero-grid,
+:where(body.page-artist) .editorial-hero-grid,
+:where(body.page-model) .editorial-hero-grid,
+:where(body.page-metrics) .editorial-hero-grid { grid-template-columns:1fr }
+
+:where(body.page-drop) .editorial-hero-grid>div:first-child,
+:where(body.page-submit-evidence) .editorial-hero-grid>div:first-child,
+:where(body.page-classification) .editorial-hero-grid>div:first-child,
+:where(body.page-rankings) .editorial-hero-grid>div:first-child,
+:where(body.page-artists) .editorial-hero-grid>div:first-child,
+:where(body.page-arena) .editorial-hero-grid>div:first-child,
+:where(body.page-artist) .editorial-hero-grid>div:first-child,
+:where(body.page-model) .editorial-hero-grid>div:first-child,
+:where(body.page-metrics) .editorial-hero-grid>div:first-child { padding:65px 0 }
+
+:where(body.page-drop) .editorial-hero h1,
+:where(body.page-submit-evidence) .editorial-hero h1,
+:where(body.page-classification) .editorial-hero h1,
+:where(body.page-rankings) .editorial-hero h1,
+:where(body.page-artists) .editorial-hero h1,
+:where(body.page-arena) .editorial-hero h1,
+:where(body.page-artist) .editorial-hero h1,
+:where(body.page-model) .editorial-hero h1,
+:where(body.page-metrics) .editorial-hero h1 { font-size:clamp(70px,14vw,115px) }
+
+:where(body.page-drop) .editorial-visual,
+:where(body.page-submit-evidence) .editorial-visual,
+:where(body.page-classification) .editorial-visual,
+:where(body.page-rankings) .editorial-visual,
+:where(body.page-artists) .editorial-visual,
+:where(body.page-arena) .editorial-visual,
+:where(body.page-artist) .editorial-visual,
+:where(body.page-model) .editorial-visual,
+:where(body.page-metrics) .editorial-visual { min-height:320px;border-left:0;border-top:1px solid var(--line) }
+
+:where(body.page-drop) .grid,
+:where(body.page-submit-evidence) .grid,
+:where(body.page-classification) .grid,
+:where(body.page-rankings) .grid,
+:where(body.page-artists) .grid,
+:where(body.page-arena) .grid,
+:where(body.page-artist) .grid,
+:where(body.page-model) .grid,
+:where(body.page-metrics) .grid,
+:where(body.page-drop) .archive-grid,
+:where(body.page-submit-evidence) .archive-grid,
+:where(body.page-classification) .archive-grid,
+:where(body.page-rankings) .archive-grid,
+:where(body.page-artists) .archive-grid,
+:where(body.page-arena) .archive-grid,
+:where(body.page-artist) .archive-grid,
+:where(body.page-model) .archive-grid,
+:where(body.page-metrics) .archive-grid,
+:where(body.page-drop) .trait-grid,
+:where(body.page-submit-evidence) .trait-grid,
+:where(body.page-classification) .trait-grid,
+:where(body.page-rankings) .trait-grid,
+:where(body.page-artists) .trait-grid,
+:where(body.page-arena) .trait-grid,
+:where(body.page-artist) .trait-grid,
+:where(body.page-model) .trait-grid,
+:where(body.page-metrics) .trait-grid,
+:where(body.page-drop) .classification-grid,
+:where(body.page-submit-evidence) .classification-grid,
+:where(body.page-classification) .classification-grid,
+:where(body.page-rankings) .classification-grid,
+:where(body.page-artists) .classification-grid,
+:where(body.page-arena) .classification-grid,
+:where(body.page-artist) .classification-grid,
+:where(body.page-model) .classification-grid,
+:where(body.page-metrics) .classification-grid,
+:where(body.page-drop) .ranking-board,
+:where(body.page-submit-evidence) .ranking-board,
+:where(body.page-classification) .ranking-board,
+:where(body.page-rankings) .ranking-board,
+:where(body.page-artists) .ranking-board,
+:where(body.page-arena) .ranking-board,
+:where(body.page-artist) .ranking-board,
+:where(body.page-model) .ranking-board,
+:where(body.page-metrics) .ranking-board,
+:where(body.page-drop) .select-grid,
+:where(body.page-submit-evidence) .select-grid,
+:where(body.page-classification) .select-grid,
+:where(body.page-rankings) .select-grid,
+:where(body.page-artists) .select-grid,
+:where(body.page-arena) .select-grid,
+:where(body.page-artist) .select-grid,
+:where(body.page-model) .select-grid,
+:where(body.page-metrics) .select-grid,
+:where(body.page-drop) .drop-record-layout,
+:where(body.page-submit-evidence) .drop-record-layout,
+:where(body.page-classification) .drop-record-layout,
+:where(body.page-rankings) .drop-record-layout,
+:where(body.page-artists) .drop-record-layout,
+:where(body.page-arena) .drop-record-layout,
+:where(body.page-artist) .drop-record-layout,
+:where(body.page-model) .drop-record-layout,
+:where(body.page-metrics) .drop-record-layout,
+:where(body.page-drop) .classification-section-header,
+:where(body.page-submit-evidence) .classification-section-header,
+:where(body.page-classification) .classification-section-header,
+:where(body.page-rankings) .classification-section-header,
+:where(body.page-artists) .classification-section-header,
+:where(body.page-arena) .classification-section-header,
+:where(body.page-artist) .classification-section-header,
+:where(body.page-model) .classification-section-header,
+:where(body.page-metrics) .classification-section-header,
+:where(body.page-drop) .metric-list,
+:where(body.page-submit-evidence) .metric-list,
+:where(body.page-classification) .metric-list,
+:where(body.page-rankings) .metric-list,
+:where(body.page-artists) .metric-list,
+:where(body.page-arena) .metric-list,
+:where(body.page-artist) .metric-list,
+:where(body.page-model) .metric-list,
+:where(body.page-metrics) .metric-list { grid-template-columns:1fr }
+
+:where(body.page-drop) .metric-strip,
+:where(body.page-submit-evidence) .metric-strip,
+:where(body.page-classification) .metric-strip,
+:where(body.page-rankings) .metric-strip,
+:where(body.page-artists) .metric-strip,
+:where(body.page-arena) .metric-strip,
+:where(body.page-artist) .metric-strip,
+:where(body.page-model) .metric-strip,
+:where(body.page-metrics) .metric-strip { grid-template-columns:repeat(2,1fr) }
+
+:where(body.page-drop) .footer-top,
+:where(body.page-submit-evidence) .footer-top,
+:where(body.page-classification) .footer-top,
+:where(body.page-rankings) .footer-top,
+:where(body.page-artists) .footer-top,
+:where(body.page-arena) .footer-top,
+:where(body.page-artist) .footer-top,
+:where(body.page-model) .footer-top,
+:where(body.page-metrics) .footer-top,
+:where(body.page-drop) .footer-bottom,
+:where(body.page-submit-evidence) .footer-bottom,
+:where(body.page-classification) .footer-bottom,
+:where(body.page-rankings) .footer-bottom,
+:where(body.page-artists) .footer-bottom,
+:where(body.page-arena) .footer-bottom,
+:where(body.page-artist) .footer-bottom,
+:where(body.page-model) .footer-bottom,
+:where(body.page-metrics) .footer-bottom { flex-direction:column }
+
+:where(body.page-drop) .editorial-rail,
+:where(body.page-submit-evidence) .editorial-rail,
+:where(body.page-classification) .editorial-rail,
+:where(body.page-rankings) .editorial-rail,
+:where(body.page-artists) .editorial-rail,
+:where(body.page-arena) .editorial-rail,
+:where(body.page-artist) .editorial-rail,
+:where(body.page-model) .editorial-rail,
+:where(body.page-metrics) .editorial-rail { font-size:8px }
+
+:where(body.page-drop) main>section:not(.editorial-hero),
+:where(body.page-submit-evidence) main>section:not(.editorial-hero),
+:where(body.page-classification) main>section:not(.editorial-hero),
+:where(body.page-rankings) main>section:not(.editorial-hero),
+:where(body.page-artists) main>section:not(.editorial-hero),
+:where(body.page-arena) main>section:not(.editorial-hero),
+:where(body.page-artist) main>section:not(.editorial-hero),
+:where(body.page-model) main>section:not(.editorial-hero),
+:where(body.page-metrics) main>section:not(.editorial-hero) { padding:45px 4% }
+}
+
+@media (prefers-reduced-motion:reduce) {
+*,
+:where(body.page-drop) *:before,
+:where(body.page-submit-evidence) *:before,
+:where(body.page-classification) *:before,
+:where(body.page-rankings) *:before,
+:where(body.page-artists) *:before,
+:where(body.page-arena) *:before,
+:where(body.page-artist) *:before,
+:where(body.page-model) *:before,
+:where(body.page-metrics) *:before,
+:where(body.page-drop) *:after,
+:where(body.page-submit-evidence) *:after,
+:where(body.page-classification) *:after,
+:where(body.page-rankings) *:after,
+:where(body.page-artists) *:after,
+:where(body.page-arena) *:after,
+:where(body.page-artist) *:after,
+:where(body.page-model) *:after,
+:where(body.page-metrics) *:after { transition:none!important;animation:none!important }
+}
+
+
+/* ===== Shared balanced-neon.css overrides ===== */
+/* DROPDEX / BALANCED NEON — edition 001
+   Green = identity; cyan = measurement/interaction; pink = arena/rarity.
+   This is a non-destructive design layer over the original editorial page styles. */
+:root { --acid:#baff59; --cyan:#00e5ff; --pink:#ff3d9a; --neon-green:#baff59; --neon-cyan:#00e5ff; --neon-pink:#ff3d9a; }
+::selection{background:var(--cyan);color:#071310}
+:focus-visible{outline:2px solid var(--cyan)!important;outline-offset:4px}
+.nav a:hover,.footer a:hover,.text-link:hover,.under-link:hover,.archive-subnav a:hover{color:var(--cyan)!important}
+.nav a.active,.archive-subnav a.active{color:var(--acid)}
+.nav .nav-shop:hover,.button-accent:hover,.button.primary:hover,.button-primary:hover{background:var(--cyan)!important;color:#08120e!important;border-color:var(--cyan)!important}
+/* Quiet cyan annotations; primary headings and CTAs remain green. */
+.cyan-word,.signal-word{color:var(--cyan)!important}
+.hero-visual .visual-top span:last-child,.visual-caption span:first-child,.editorial-visual .viz-top span:last-child,.editorial-visual .viz-bottom span:first-child{color:var(--cyan)!important}
+.signal i:nth-child(9n+3){background:var(--cyan)!important;opacity:.95}
+.signal i:nth-child(17n+9){background:var(--pink)!important;opacity:.9}
+.specimen:nth-child(2) .specimen-glyph,.specimen:nth-child(2) .specimen-index{color:var(--cyan)!important}
+.specimen:nth-child(3) .specimen-glyph,.specimen:nth-child(3) .specimen-index{color:var(--pink)!important}
+.specimen:nth-child(2) .specimen-art{border-color:rgba(0,229,255,.32)!important}
+.specimen:nth-child(3) .specimen-art{border-color:rgba(255,61,154,.32)!important}
+/* Interactive discovery / data records */
+.archive-card:hover,.ranking-row:hover,.panel:hover,.classification-card:hover,.trait-card:hover{border-color:rgba(0,229,255,.68)!important}
+.archive-card:hover .card-footer-link,.ranking-row:hover .ranking-title,.panel a:hover{color:var(--cyan)!important}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan)!important;outline-offset:1px;border-color:var(--cyan)!important}
+.ranking-panel:nth-child(2) .kicker,.ranking-panel:nth-child(4) .kicker,.metric-production strong{color:var(--cyan)!important}
+.ranking-panel:nth-child(3) .kicker,.ranking-panel:nth-child(6) .kicker{color:var(--pink)!important}
+.classification-card:nth-child(3n+2) .classification-code,.classification-card:nth-child(3n+2) .classification-signals{color:var(--cyan)!important}
+.classification-card:nth-child(5n) .classification-code{color:var(--pink)!important}
+/* Arena gets the boldest pink, without replacing green identity */
+.page-arena .arena-hero .kicker,.page-arena .arena-hero .eyebrow,.page-arena .arena-kicker{color:var(--pink)!important}
+.page-arena .battle-score,.page-arena .battle-result h2{color:var(--pink)!important}
+.page-arena .battle-panel{border-color:rgba(255,61,154,.38)!important;box-shadow:inset 0 1px rgba(255,61,154,.08)}
+.page-arena .round-row:nth-child(even) strong{color:var(--cyan)!important}
+.page-arena .round-row:nth-child(odd) strong{color:var(--pink)!important}
+.page-arena .arena-champion-card{border-color:rgba(255,61,154,.38)!important}
+.page-arena .arena-champion-card .champion-label{color:var(--pink)!important}
+.page-home .arena-section{position:relative;isolation:isolate}
+.page-home .arena-section:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 82% 54%,rgba(255,61,154,.15),transparent 42%);z-index:-1}
+.page-home .arena-section .versus{color:var(--pink)!important;text-shadow:0 0 36px rgba(255,61,154,.28)}
+.page-home .arena-section .arena-b{color:var(--cyan)!important}
+/* Record-level rarity uses pink only for labels, never the score */
+.page-drop .card-topline span:first-child,.page-drop .trading-card-panel .kicker{color:var(--pink)!important}
+.page-drop .metric-strip>div:nth-child(even) strong{color:var(--cyan)}
+/* Restrained editorial microdetails */
+.page-investigation .editorial-visual .scope-ring,.page-investigation .scope-bars>*:nth-child(3n){border-color:var(--cyan)!important}
+.page-investigation .editorial-foot a:hover{color:var(--cyan)!important}
+.page-classification .trait-category:nth-of-type(2n) h3 span{color:var(--cyan)!important}
+.page-classification .trait-category:nth-of-type(3n) h3 span{color:var(--pink)!important}
+/* Keep accessible colors and layouts on mobile */
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* Homepage archive: actual DropDex cards */
+
+.specimen-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 360px;
+  height: auto;
+  overflow: hidden;
+}
+
+.specimen-art .specimen-card-image {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
+.specimen:hover .specimen-card-image {
+  transform: scale(1.04);
+}
