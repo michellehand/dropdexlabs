@@ -1,0 +1,48 @@
+/* DROPDEX / BALANCED NEON — edition 001
+   Green = identity; cyan = measurement/interaction; pink = arena/rarity.
+   This is a non-destructive design layer over the original editorial page styles. */
+:root { --acid:#baff59; --cyan:#00e5ff; --pink:#ff3d9a; --neon-green:#baff59; --neon-cyan:#00e5ff; --neon-pink:#ff3d9a; }
+::selection{background:var(--cyan);color:#071310}
+:focus-visible{outline:2px solid var(--cyan)!important;outline-offset:4px}
+.nav a:hover,.footer a:hover,.text-link:hover,.under-link:hover,.archive-subnav a:hover{color:var(--cyan)!important}
+.nav a.active,.archive-subnav a.active{color:var(--acid)}
+.nav .nav-shop:hover,.button-accent:hover,.button.primary:hover,.button-primary:hover{background:var(--cyan)!important;color:#08120e!important;border-color:var(--cyan)!important}
+/* Quiet cyan annotations; primary headings and CTAs remain green. */
+.cyan-word,.signal-word{color:var(--cyan)!important}
+.hero-visual .visual-top span:last-child,.visual-caption span:first-child,.editorial-visual .viz-top span:last-child,.editorial-visual .viz-bottom span:first-child{color:var(--cyan)!important}
+.signal i:nth-child(9n+3){background:var(--cyan)!important;opacity:.95}
+.signal i:nth-child(17n+9){background:var(--pink)!important;opacity:.9}
+.specimen:nth-child(2) .specimen-glyph,.specimen:nth-child(2) .specimen-index{color:var(--cyan)!important}
+.specimen:nth-child(3) .specimen-glyph,.specimen:nth-child(3) .specimen-index{color:var(--pink)!important}
+.specimen:nth-child(2) .specimen-art{border-color:rgba(0,229,255,.32)!important}
+.specimen:nth-child(3) .specimen-art{border-color:rgba(255,61,154,.32)!important}
+/* Interactive discovery / data records */
+.archive-card:hover,.ranking-row:hover,.panel:hover,.classification-card:hover,.trait-card:hover{border-color:rgba(0,229,255,.68)!important}
+.archive-card:hover .card-footer-link,.ranking-row:hover .ranking-title,.panel a:hover{color:var(--cyan)!important}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan)!important;outline-offset:1px;border-color:var(--cyan)!important}
+.ranking-panel:nth-child(2) .kicker,.ranking-panel:nth-child(4) .kicker,.metric-production strong{color:var(--cyan)!important}
+.ranking-panel:nth-child(3) .kicker,.ranking-panel:nth-child(6) .kicker{color:var(--pink)!important}
+.classification-card:nth-child(3n+2) .classification-code,.classification-card:nth-child(3n+2) .classification-signals{color:var(--cyan)!important}
+.classification-card:nth-child(5n) .classification-code{color:var(--pink)!important}
+/* Arena gets the boldest pink, without replacing green identity */
+.page-arena .arena-hero .kicker,.page-arena .arena-hero .eyebrow,.page-arena .arena-kicker{color:var(--pink)!important}
+.page-arena .battle-score,.page-arena .battle-result h2{color:var(--pink)!important}
+.page-arena .battle-panel{border-color:rgba(255,61,154,.38)!important;box-shadow:inset 0 1px rgba(255,61,154,.08)}
+.page-arena .round-row:nth-child(even) strong{color:var(--cyan)!important}
+.page-arena .round-row:nth-child(odd) strong{color:var(--pink)!important}
+.page-arena .arena-champion-card{border-color:rgba(255,61,154,.38)!important}
+.page-arena .arena-champion-card .champion-label{color:var(--pink)!important}
+.page-home .arena-section{position:relative;isolation:isolate}
+.page-home .arena-section:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 82% 54%,rgba(255,61,154,.15),transparent 42%);z-index:-1}
+.page-home .arena-section .versus{color:var(--pink)!important;text-shadow:0 0 36px rgba(255,61,154,.28)}
+.page-home .arena-section .arena-b{color:var(--cyan)!important}
+/* Record-level rarity uses pink only for labels, never the score */
+.page-drop .card-topline span:first-child,.page-drop .trading-card-panel .kicker{color:var(--pink)!important}
+.page-drop .metric-strip>div:nth-child(even) strong{color:var(--cyan)}
+/* Restrained editorial microdetails */
+.page-investigation .editorial-visual .scope-ring,.page-investigation .scope-bars>*:nth-child(3n){border-color:var(--cyan)!important}
+.page-investigation .editorial-foot a:hover{color:var(--cyan)!important}
+.page-classification .trait-category:nth-of-type(2n) h3 span{color:var(--cyan)!important}
+.page-classification .trait-category:nth-of-type(3n) h3 span{color:var(--pink)!important}
+/* Keep accessible colors and layouts on mobile */
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
