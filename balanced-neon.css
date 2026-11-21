@@ -46,3 +46,30 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan)!important;
 .page-classification .trait-category:nth-of-type(3n) h3 span{color:var(--pink)!important}
 /* Keep accessible colors and layouts on mobile */
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* Homepage archive: actual DropDex cards */
+
+.specimen-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 360px;
+  height: auto;
+  overflow: hidden;
+}
+
+.specimen-art .specimen-card-image {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
+.specimen:hover .specimen-card-image {
+  transform: scale(1.04);
+}
