@@ -3230,3 +3230,31 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan)!important;
 .specimen:hover .specimen-card-image {
   transform: scale(1.04);
 }
+
+/* ========================================
+   DROPDEX HEADER LOGO
+======================================== */
+
+.site-header .logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: auto;
+  max-width: none;
+}
+
+.site-header .official-logo {
+  display: block;
+  width: 180px;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .site-header .official-logo {
+    width: 145px;
+  }
+}
