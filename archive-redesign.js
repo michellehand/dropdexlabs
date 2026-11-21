@@ -15,6 +15,19 @@ function renderCard(d){
  const h=node('h3');h.append(a(text(d.track),'drop.html?id='+encodeURIComponent(d.dropdex_id??'')));body.append(h);
  body.append(node('p','record-meta','DROP '+text(d.drop_no)+' / '+text(d.release_year)+' / '+text(d.genre)));
  const sc=node('div','record-score'),cl=node('div');cl.append(node('small','','CLASSIFICATION'),node('div','class-name',text(d.drop_class)));if(d.secondary_class)cl.append(node('small','',text(d.secondary_class)));const num=node('div');num.append(node('small','','DROPDEX SCORE'),node('div','score',score(d.dropdex_score_abs)));sc.append(cl,num);body.append(sc);card.append(body);
+ // Restore the original per-drop spectrogram fingerprint in archive previews.
+ const rawPath=typeof d.spectrogram_path==='string'?d.spectrogram_path.trim():'';
+ if(rawPath){
+  const visual=node('div','record-fingerprint');
+  const heading=node('div','record-fingerprint-heading');
+  heading.append(node('span','','AUDIO FINGERPRINT'),node('span','','SIGNAL / DROP '+text(d.drop_no)));
+  const img=document.createElement('img');
+  img.src=rawPath.replace(/^\.\//,'').replace(/^\//,'');
+  img.alt=text(d.artist)+' — '+text(d.track)+' audio spectrogram';
+  img.loading='lazy';img.decoding='async';
+  img.addEventListener('error',()=>{visual.hidden=true});
+  visual.append(heading,img);card.append(visual);
+ }
  const metrics=node('div','record-metrics');[['POWER',d.power_score_abs],['BUILD',d.build_score_abs],['PROD.',d.production_score_abs],['TONALITY',d.tonality_score_abs]].forEach(([k,v])=>metrics.append(metric(k,v)));card.append(metrics);
  const actions=node('div','record-actions');actions.append(a('VIEW FULL RECORD ↗','drop.html?id='+encodeURIComponent(d.dropdex_id??'')));
  const toggle=node('button','details','MORE METRICS +');toggle.type='button';toggle.setAttribute('aria-expanded','false');const extra=node('div','record-extra');extra.hidden=true;const exgrid=node('div','extra-grid');[['BATTLE RANK',rank(d.battle_rank)],['BATTLE SCORE',score(d.battle_score_abs)],['WEIGHT',score(d.weight_score_abs)],['SHOCK',score(d.shock_score_abs)],['AGGRESSION',score(d.aggression_score_abs)],['TENSION',score(d.tension_score_abs)],['BRIGHTNESS',score(d.brightness_score_abs)],['BADGES',text(d.badges)],['SECONDARY',text(d.secondary_class)]].forEach(([k,v])=>{const item=node('div');item.append(node('span','',k),node('strong','',v));exgrid.append(item)});extra.append(exgrid);
